@@ -19,6 +19,8 @@ const slides = [Slide1, Slide2, Slide3];
   RadialComponent={RadialBackground}
   backgroundColor="bg-blue-100"
   transitionDuration={1000}
+  aspectRatio="16/9"
+  margin={20}
 />
 ```
 
@@ -29,6 +31,8 @@ const slides = [Slide1, Slide2, Slide3];
 - `scrollThreshold` - Wheel scroll threshold (default: 30)
 - `swipeThreshold` - Touch swipe threshold (default: 50)
 - `showRadialProgress` - Show radial progress (default: true)
+- `aspectRatio` - Aspect ratio string (default: '4/3')
+- `margin` - Margin in pixels (default: 40)
 - `RadialComponent` - Custom radial progress component
 
 **Navigation:**
