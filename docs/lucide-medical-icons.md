@@ -49,6 +49,11 @@ Based on lucide-react v0.563.0 and lucide.dev website.
 - `MessageSquareHeart` - Message square with heart
 - `ScanHeart` - Scan with heart
 
+### Lab Icons (External Library)
+**Note**: These require enabling "Lab" in the Lucide icon picker
+- `GlassesSquare` - Glasses/vision care
+- `WatchActivity` - Smartwatch with activity tracking
+
 ## Usage in React
 
 ```tsx
