@@ -18,7 +18,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-4">
             <Image src="/icon1.png" alt="LEVIX Logo" width={48} height={48} className="rounded-xl" />
-            <h1 className={`text-3xl font-black text-yellow-400 tracking-tight ${expletus.className}`}>LEVIX</h1>
+            <h1 className={`text-3xl font-black text-[#ffdc00] tracking-tight ${expletus.className}`}>LEVIX</h1>
           </div>
         </div>
       </header>
@@ -32,7 +32,7 @@ export default function LandingPage() {
           <h2 className={`text-6xl font-black text-white mb-6 tracking-tight ${expletus.className}`}>
             Interactive Presentation
             <br />
-            <span className="text-yellow-400">Platform</span>
+            <span className="text-[#ffdc00]">Platform</span>
           </h2>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             A professional, large-screen optimized presentation application for creating and delivering engaging interactive presentations
@@ -41,33 +41,33 @@ export default function LandingPage() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-[#ffdc00]/50 transition-all">
             <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
-              <Presentation className="w-8 h-8 text-yellow-400" />
+              <Presentation className="w-8 h-8 text-[#ffdc00]" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Interactive Slides</h3>
             <p className="text-gray-400">Smooth animations, transitions, and engaging visual elements</p>
           </div>
 
-          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-[#ffdc00]/50 transition-all">
             <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
-              <Target className="w-8 h-8 text-yellow-400" />
+              <Target className="w-8 h-8 text-[#ffdc00]" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Rich Content</h3>
             <p className="text-gray-400">Support for examples, case studies, and interactive elements</p>
           </div>
 
-          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-[#ffdc00]/50 transition-all">
             <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
-              <TrendingUp className="w-8 h-8 text-yellow-400" />
+              <TrendingUp className="w-8 h-8 text-[#ffdc00]" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Structured Flow</h3>
             <p className="text-gray-400">Organized navigation with radial progress indicator</p>
           </div>
 
-          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-[#ffdc00]/50 transition-all">
             <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
-              <Users className="w-8 h-8 text-yellow-400" />
+              <Users className="w-8 h-8 text-[#ffdc00]" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Professional Design</h3>
             <p className="text-gray-400">Clean, modern interface optimized for large displays</p>
@@ -78,7 +78,7 @@ export default function LandingPage() {
         <div className="text-center">
           <Link 
             href="/presentation"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-black text-xl font-bold rounded-full transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[#ffdc00] hover:bg-[#ffd700] text-black text-xl font-bold rounded-full transition-colors shadow-lg hover:shadow-xl"
           >
             <Presentation className="w-6 h-6" />
             Start Presentation
