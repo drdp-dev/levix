@@ -17,7 +17,7 @@ export default function LandingPage() {
       <header className="border-b border-gray-700 bg-black/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-4">
-            <Image src="/icon1.png" alt="LEVIX Logo" width={48} height={48} className="rounded-xl" />
+            <Image src="/web-app-manifest-512x512.png" alt="LEVIX Logo" width={48} height={48} className="rounded-xl" />
             <h1 className={`text-3xl font-black text-[#ffdc00] tracking-tight ${expletus.className}`}>LEVIX</h1>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function LandingPage() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <Image src="/icon1.png" alt="LEVIX" width={120} height={120} className="rounded-3xl shadow-2xl" />
+            <Image src="/web-app-manifest-512x512.png" alt="LEVIX" width={160} height={160} className="rounded-3xl shadow-2xl" />
           </div>
           <h2 className={`text-6xl font-black text-white mb-6 tracking-tight ${expletus.className}`}>
             Levitate Your Learning
