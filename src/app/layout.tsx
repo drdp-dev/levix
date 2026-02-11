@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Expletus_Sans } from "next/font/google";
 import "./globals.css";
+
+const expletus = Expletus_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-expletus",
+});
 
 export const metadata: Metadata = {
   title: "Levix - Health Evaluation Presenter",
@@ -16,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`${expletus.variable} antialiased`}>
         {children}
       </body>
     </html>
