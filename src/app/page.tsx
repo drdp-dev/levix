@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Presentation, Target, TrendingUp, Users } from 'lucide-react';
 import { Expletus_Sans } from 'next/font/google';
+import { APP_VERSION, VERSION_NAME } from '@/src/version';
 
 const expletus = Expletus_Sans({
   subsets: ["latin"],
@@ -87,7 +88,8 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-gray-700 bg-black/50 backdrop-blur-sm mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8 text-center text-gray-400">
-          <p className="text-lg">© 2026 drdp. All rights reserved.</p>
+          <p className="text-lg">{VERSION_NAME} v{APP_VERSION} • Built at exactly the right time ⏰</p>
+          <p className="text-sm mt-2">© 2026 drdp. All rights reserved.</p>
         </div>
       </footer>
     </div>
