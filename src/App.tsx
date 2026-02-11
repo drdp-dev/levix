@@ -186,7 +186,7 @@ const App: React.FC = () => {
 
   return (
     <div 
-      className="fixed inset-0 w-full h-full bg-olive-50 overflow-hidden select-none"
+      className="fixed inset-0 w-full h-full bg-lime-100 overflow-hidden select-none"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >

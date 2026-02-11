@@ -110,7 +110,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                 <AlertTriangle className="w-12 h-12 text-red-600" strokeWidth={2.5} />
             </div>
             <div>
-                <h2 className="text-4xl font-bold text-olive-900">
+                <h2 className="text-4xl font-bold text-lime-950">
                 Common Pitfalls
                 </h2>
                 <h3 className="text-2xl text-red-500 font-medium">
@@ -140,10 +140,10 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
                 
                 <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-olive-900 leading-tight group-hover:text-black transition-colors">
+                    <h3 className="text-2xl font-bold text-lime-950 leading-tight group-hover:text-black transition-colors">
                     {item.title}
                     </h3>
-                    <p className="text-lg text-olive-600 font-medium mt-1 group-hover:text-olive-800 transition-colors">
+                    <p className="text-lg text-lime-700 font-medium mt-1 group-hover:text-lime-900 transition-colors">
                         {item.desc}
                     </p>
                 </div>
@@ -157,8 +157,8 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer Insight */}
-      <div className={`flex-none mt-6 bg-olive-900 rounded-2xl p-6 flex items-center justify-center gap-6 shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
-        <div className="p-3 bg-olive-800 rounded-full border border-olive-700">
+      <div className={`flex-none mt-6 bg-lime-950 rounded-2xl p-6 flex items-center justify-center gap-6 shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
+        <div className="p-3 bg-lime-900 rounded-full border border-lime-800">
             <Scale className="w-10 h-10 text-yellow-600" />
         </div>
         <p className="text-3xl font-bold text-yellow-100 tracking-wide">
@@ -202,7 +202,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                         {selectedPitfall.points.map((point, i) => (
                             <li key={i} className="flex items-start gap-4">
                                 <div className={`mt-2 p-1.5 rounded-full ${getThemeStyles(selectedPitfall.theme).bullet}`}></div>
-                                <span className="text-2xl font-medium text-olive-900 leading-snug">
+                                <span className="text-2xl font-medium text-lime-950 leading-snug">
                                     {point}
                                 </span>
                             </li>

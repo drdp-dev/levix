@@ -8,10 +8,10 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
       
       {/* Header */}
       <div className="flex-none mb-6 text-center">
-        <h2 className={`text-5xl font-bold text-olive-900 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-bold text-lime-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Step 4: Choosing Evaluation Design
         </h2>
-        <div className={`h-1.5 w-48 bg-olive-200 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
+        <div className={`h-1.5 w-48 bg-lime-300 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
       </div>
 
       {/* Main Content - Designs Grid */}
@@ -27,7 +27,7 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <ArrowRight className="w-8 h-8" strokeWidth={3} />
             </div>
             <div>
-                <h3 className="text-3xl font-bold text-olive-900 leading-none">Before–After</h3>
+                <h3 className="text-3xl font-bold text-lime-950 leading-none">Before–After</h3>
                 <p className="text-sm font-bold text-orange-700 uppercase tracking-widest mt-1">Pre & Post Test</p>
             </div>
           </div>
@@ -54,10 +54,10 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
           <div className="flex-1 p-2 bg-white flex flex-col">
              <div className="w-full h-full bg-orange-100/60 rounded-2xl p-5 border border-orange-200 flex flex-col justify-center">
                  <h4 className="text-xs font-bold text-orange-900 mb-2 uppercase tracking-widest border-b border-orange-300 pb-1 self-start">Scenario</h4>
-                 <p className="text-xl font-bold text-olive-900 leading-tight mb-3">
+                 <p className="text-xl font-bold text-lime-950 leading-tight mb-3">
                     Evaluating a <span className="text-orange-800">Dengue Workshop</span> for high school students.
                  </p>
-                 <p className="text-base text-olive-700 leading-relaxed font-medium">
+                 <p className="text-base text-lime-800 leading-relaxed font-medium">
                     We administer a knowledge test at 9:00 AM, deliver the lecture, and repeat the test at 11:00 AM.
                  </p>
                  <p className="text-sm text-orange-900 font-bold italic mt-3 bg-white/50 p-2 rounded-lg">
@@ -72,14 +72,14 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <div className="bg-white p-2 rounded-full text-green-600 shadow-sm"><CheckCircle2 className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-green-800 uppercase tracking-wider block mb-0.5">Pros</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Simple & Fast.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Simple & Fast.</p>
                 </div>
             </div>
             <div className="bg-red-50 rounded-2xl p-4 flex items-center gap-4 border border-red-100">
                 <div className="bg-white p-2 rounded-full text-red-500 shadow-sm"><XCircle className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-red-800 uppercase tracking-wider block mb-0.5">Cons</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Weak Validity.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Weak Validity.</p>
                 </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <Users className="w-8 h-8" strokeWidth={3} />
             </div>
             <div>
-                <h3 className="text-3xl font-bold text-olive-900 leading-none">Control Group</h3>
+                <h3 className="text-3xl font-bold text-lime-950 leading-none">Control Group</h3>
                 <p className="text-sm font-bold text-green-700 uppercase tracking-widest mt-1">Intervention vs Control</p>
             </div>
           </div>
@@ -127,10 +127,10 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
           <div className="flex-1 p-2 bg-white flex flex-col">
              <div className="w-full h-full bg-green-100/60 rounded-2xl p-5 border border-green-200 flex flex-col justify-center">
                  <h4 className="text-xs font-bold text-green-900 mb-2 uppercase tracking-widest border-b border-green-300 pb-1 self-start">Scenario</h4>
-                 <p className="text-xl font-bold text-olive-900 leading-tight mb-3">
+                 <p className="text-xl font-bold text-lime-950 leading-tight mb-3">
                     Efficacy of <span className="text-green-800">Supplements</span> in Village A vs Village B.
                  </p>
-                 <p className="text-base text-olive-700 leading-relaxed font-medium">
+                 <p className="text-base text-lime-800 leading-relaxed font-medium">
                     Village A gets supplements; Village B gets only education.
                  </p>
                  <p className="text-sm text-green-900 font-bold italic mt-3 bg-white/50 p-2 rounded-lg">
@@ -145,14 +145,14 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <div className="bg-white p-2 rounded-full text-green-600 shadow-sm"><CheckCircle2 className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-green-800 uppercase tracking-wider block mb-0.5">Pros</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Gold Standard.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Gold Standard.</p>
                 </div>
             </div>
             <div className="bg-red-50 rounded-2xl p-4 flex items-center gap-4 border border-red-100">
                 <div className="bg-white p-2 rounded-full text-red-500 shadow-sm"><XCircle className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-red-800 uppercase tracking-wider block mb-0.5">Cons</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Ethical Issues.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Ethical Issues.</p>
                 </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <Activity className="w-8 h-8" strokeWidth={3} />
             </div>
             <div>
-                <h3 className="text-3xl font-bold text-olive-900 leading-none">Time Series</h3>
+                <h3 className="text-3xl font-bold text-lime-950 leading-none">Time Series</h3>
                 <p className="text-sm font-bold text-amber-700 uppercase tracking-widest mt-1">Trend Analysis</p>
             </div>
           </div>
@@ -192,10 +192,10 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
           <div className="flex-1 p-2 bg-white flex flex-col">
              <div className="w-full h-full bg-amber-100/60 rounded-2xl p-5 border border-amber-200 flex flex-col justify-center">
                  <h4 className="text-xs font-bold text-amber-900 mb-2 uppercase tracking-widest border-b border-amber-300 pb-1 self-start">Scenario</h4>
-                 <p className="text-xl font-bold text-olive-900 leading-tight mb-3">
+                 <p className="text-xl font-bold text-lime-950 leading-tight mb-3">
                     <span className="text-amber-800">Malaria Cases</span> tracked monthly for 24 months.
                  </p>
-                 <p className="text-base text-olive-700 leading-relaxed font-medium">
+                 <p className="text-base text-lime-800 leading-relaxed font-medium">
                     Bed nets are distributed at month 12.
                  </p>
                  <p className="text-sm text-amber-900 font-bold italic mt-3 bg-white/50 p-2 rounded-lg">
@@ -210,14 +210,14 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
                 <div className="bg-white p-2 rounded-full text-green-600 shadow-sm"><CheckCircle2 className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-green-800 uppercase tracking-wider block mb-0.5">Pros</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Trends & Seasonality.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Trends & Seasonality.</p>
                 </div>
             </div>
             <div className="bg-red-50 rounded-2xl p-4 flex items-center gap-4 border border-red-100">
                 <div className="bg-white p-2 rounded-full text-red-500 shadow-sm"><XCircle className="w-6 h-6" strokeWidth={3} /></div>
                 <div>
                     <span className="text-[10px] font-bold text-red-800 uppercase tracking-wider block mb-0.5">Cons</span>
-                    <p className="text-xl text-olive-900 font-bold leading-none">Data Dependent.</p>
+                    <p className="text-xl text-lime-950 font-bold leading-none">Data Dependent.</p>
                 </div>
             </div>
           </div>
@@ -228,11 +228,11 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
       {/* Footer */}
       <div className={`flex-none mt-5 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
          <div className="bg-yellow-100 border-l-[6px] border-yellow-500 rounded-r-2xl py-3 px-6 shadow-sm flex items-center justify-between">
-            <h4 className="text-xl font-bold text-olive-800 mr-4">Choice depends on:</h4>
+            <h4 className="text-xl font-bold text-lime-900 mr-4">Choice depends on:</h4>
             <div className="flex-1 flex justify-around">
-                <div className="flex items-center gap-3"><Scale size={24} className="text-green-700" /><span className="text-xl font-bold text-olive-700">Feasibility</span></div>
-                <div className="flex items-center gap-3"><HeartHandshake size={24} className="text-red-500" /><span className="text-xl font-bold text-olive-700">Ethics</span></div>
-                <div className="flex items-center gap-3"><Wallet size={24} className="text-blue-600" /><span className="text-xl font-bold text-olive-700">Resources</span></div>
+                <div className="flex items-center gap-3"><Scale size={24} className="text-green-700" /><span className="text-xl font-bold text-lime-800">Feasibility</span></div>
+                <div className="flex items-center gap-3"><HeartHandshake size={24} className="text-red-500" /><span className="text-xl font-bold text-lime-800">Ethics</span></div>
+                <div className="flex items-center gap-3"><Wallet size={24} className="text-blue-600" /><span className="text-xl font-bold text-lime-800">Resources</span></div>
             </div>
          </div>
       </div>

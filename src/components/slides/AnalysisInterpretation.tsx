@@ -18,10 +18,10 @@ const AnalysisInterpretation: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Header */}
       <div className="flex-none mb-8 text-center">
-        <h2 className={`text-5xl font-bold text-olive-900 mb-4 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-bold text-lime-950 mb-4 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Step 6: Analysis and Interpretation
         </h2>
-        <div className={`h-1.5 w-32 bg-olive-200 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
+        <div className={`h-1.5 w-32 bg-lime-300 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
       </div>
 
       {/* Key Insight - Warning Box */}
@@ -31,7 +31,7 @@ const AnalysisInterpretation: React.FC<SlideProps> = ({ isActive }) => {
          </div>
          <div>
             <h3 className="text-xl font-bold text-red-800 uppercase tracking-widest mb-1">Crucial Distinction</h3>
-            <p className="text-3xl font-medium text-olive-900">
+            <p className="text-3xl font-medium text-lime-950">
                 "Statistical significance <span className="text-red-600 font-bold px-2 bg-red-100 rounded">does not equal</span> program relevance."
             </p>
          </div>
@@ -48,16 +48,16 @@ const AnalysisInterpretation: React.FC<SlideProps> = ({ isActive }) => {
                 <div className={`p-4 ${factor.bg} rounded-full mr-6 ${factor.color}`}>
                     <factor.icon className="w-10 h-10" strokeWidth={2} />
                 </div>
-                <span className="text-2xl font-bold text-olive-800">{factor.label}</span>
+                <span className="text-2xl font-bold text-lime-900">{factor.label}</span>
             </div>
         ))}
       </div>
 
       {/* Footer Context */}
-      <div className={`flex-none mt-8 flex items-center justify-center gap-3 text-olive-600 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        <FileSearch className="w-8 h-8 text-olive-500" />
+      <div className={`flex-none mt-8 flex items-center justify-center gap-3 text-lime-700 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <FileSearch className="w-8 h-8 text-lime-1000" />
         <p className="text-2xl font-medium tracking-wide">
-          Always interpret results in the <span className="font-bold text-olive-800 border-b-2 border-olive-300">program context</span>.
+          Always interpret results in the <span className="font-bold text-lime-900 border-b-2 border-lime-400">program context</span>.
         </p>
       </div>
 

@@ -18,13 +18,13 @@ const FeedbackUtilization: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Header */}
       <div className="flex-none mb-10 text-center">
-        <h2 className={`text-5xl font-bold text-olive-900 mb-6 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-bold text-lime-950 mb-6 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Step 7: Feedback and Utilization of Findings
         </h2>
-        <div className={`inline-block px-10 py-4 bg-olive-100 rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
-            <p className="text-3xl font-bold text-olive-800 flex items-center gap-4">
+        <div className={`inline-block px-10 py-4 bg-lime-200 rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+            <p className="text-3xl font-bold text-lime-900 flex items-center gap-4">
                 <Megaphone className="w-8 h-8" />
-                Evaluation must lead to <span className="underline decoration-wavy decoration-olive-500 underline-offset-4">action</span>.
+                Evaluation must lead to <span className="underline decoration-wavy decoration-lime-1000 underline-offset-4">action</span>.
             </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const FeedbackUtilization: React.FC<SlideProps> = ({ isActive }) => {
                 <div className={`p-5 bg-white rounded-full mr-8 shadow-sm ${action.color}`}>
                     <action.icon className="w-12 h-12" strokeWidth={2} />
                 </div>
-                <span className="text-3xl font-bold text-olive-900">{action.text}</span>
+                <span className="text-3xl font-bold text-lime-950">{action.text}</span>
             </div>
         ))}
       </div>

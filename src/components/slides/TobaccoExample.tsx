@@ -15,8 +15,8 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
                     <CigaretteOff className="w-10 h-10 text-red-600" strokeWidth={2} />
                  </div>
                  <div>
-                    <h2 className="text-4xl font-bold text-olive-900">National Tobacco Control Programme</h2>
-                    <p className="text-2xl text-olive-600 font-medium mt-1">IEC Component Evaluation Example</p>
+                    <h2 className="text-4xl font-bold text-lime-950">National Tobacco Control Programme</h2>
+                    <p className="text-2xl text-lime-700 font-medium mt-1">IEC Component Evaluation Example</p>
                  </div>
             </div>
         </div>
@@ -37,34 +37,34 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
                 <CheckCircle2 className="w-16 h-16 text-green-700 mr-8 flex-shrink-0" strokeWidth={2} />
                 <div>
                     <h3 className="text-xl font-bold text-green-700 uppercase tracking-widest mb-3">Clear Objective</h3>
-                    <p className="text-5xl text-olive-900 font-bold leading-tight">
-                        Increase proportion of <span className="text-blue-700 bg-blue-50 px-2 rounded-lg">adults</span> who can identify <span className="text-amber-700 bg-amber-100 px-2 rounded-lg">≥3 harms</span> of smokeless tobacco from <span className="text-red-600 bg-red-50 px-2 rounded-lg">40% to 70%</span> in <span className="text-olive-700 bg-olive-100 px-2 rounded-lg">6 months</span>.
+                    <p className="text-5xl text-lime-950 font-bold leading-tight">
+                        Increase proportion of <span className="text-blue-700 bg-blue-50 px-2 rounded-lg">adults</span> who can identify <span className="text-amber-700 bg-amber-100 px-2 rounded-lg">≥3 harms</span> of smokeless tobacco from <span className="text-red-600 bg-red-50 px-2 rounded-lg">40% to 70%</span> in <span className="text-lime-800 bg-lime-200 px-2 rounded-lg">6 months</span>.
                     </p>
                 </div>
             </div>
         </div>
 
         {/* Benefits Section */}
-        <div className={`flex-none bg-olive-50 rounded-2xl p-6 mt-4 transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-            <h4 className="text-lg font-bold text-olive-800 mb-4 border-b border-olive-200 pb-2 uppercase tracking-wide">This Specificity Allows:</h4>
+        <div className={`flex-none bg-lime-100 rounded-2xl p-6 mt-4 transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+            <h4 className="text-lg font-bold text-lime-900 mb-4 border-b border-lime-300 pb-2 uppercase tracking-wide">This Specificity Allows:</h4>
             <div className="grid grid-cols-3 gap-8">
                 <div className="flex flex-col items-center text-center gap-3 group">
                     <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform duration-300">
                         <History className="w-8 h-8 text-amber-700" />
                     </div>
-                    <span className="text-xl font-semibold text-olive-900">Baseline Assessment</span>
+                    <span className="text-xl font-semibold text-lime-950">Baseline Assessment</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-3 group">
                      <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform duration-300">
                         <Scale className="w-8 h-8 text-blue-600" />
                     </div>
-                    <span className="text-xl font-semibold text-olive-900">Post-intervention Comparison</span>
+                    <span className="text-xl font-semibold text-lime-950">Post-intervention Comparison</span>
                 </div>
                 <div className="flex flex-col items-center text-center gap-3 group">
                      <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform duration-300">
                         <BarChart3 className="w-8 h-8 text-green-700" />
                     </div>
-                    <span className="text-xl font-semibold text-olive-900">Measurable Outcome Tracking</span>
+                    <span className="text-xl font-semibold text-lime-950">Measurable Outcome Tracking</span>
                 </div>
             </div>
         </div>

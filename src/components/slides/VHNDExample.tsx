@@ -7,18 +7,18 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full p-8 relative overflow-hidden bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background with skewed partition */}
-      <div className="absolute top-0 right-0 w-[55%] h-full bg-olive-50/50 -z-10 transform -skew-x-6 origin-top-right translate-x-20"></div>
+      <div className="absolute top-0 right-0 w-[55%] h-full bg-lime-100/50 -z-10 transform -skew-x-6 origin-top-right translate-x-20"></div>
 
       {/* Header */}
-      <div className="flex-none mb-4 flex justify-between items-end border-b-2 border-olive-100 pb-3">
+      <div className="flex-none mb-4 flex justify-between items-end border-b-2 border-lime-200 pb-3">
         <div>
-             <div className="flex items-center gap-3 mb-2 text-olive-600 font-bold uppercase tracking-widest">
+             <div className="flex items-center gap-3 mb-2 text-lime-700 font-bold uppercase tracking-widest">
                 <ClipboardCheck className="w-6 h-6" /> Process Evaluation
              </div>
-             <h2 className="text-4xl font-bold text-olive-900">Village Health Nutrition Day (VHND)</h2>
+             <h2 className="text-4xl font-bold text-lime-950">Village Health Nutrition Day (VHND)</h2>
         </div>
         <div className="text-right pb-1">
-             <p className="text-xl text-olive-500 font-serif italic">"Are we doing what we said we'd do?"</p>
+             <p className="text-xl text-lime-1000 font-serif italic">"Are we doing what we said we'd do?"</p>
         </div>
       </div>
 
@@ -79,8 +79,8 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
         <div className="col-span-7 flex flex-col gap-6">
              {/* Title */}
              <div className={`transition-all duration-700 delay-400 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-                <h3 className="text-2xl font-black text-olive-900 flex items-center gap-4 pl-2 uppercase tracking-widest">
-                    <div className="p-2 bg-olive-100 rounded-xl"><Users className="w-8 h-8" strokeWidth={2.5} /></div> Qualitative Assessment
+                <h3 className="text-2xl font-black text-lime-950 flex items-center gap-4 pl-2 uppercase tracking-widest">
+                    <div className="p-2 bg-lime-200 rounded-xl"><Users className="w-8 h-8" strokeWidth={2.5} /></div> Qualitative Assessment
                 </h3>
              </div>
 
@@ -94,7 +94,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
                     <div className="flex-1">
                         <h4 className="text-2xl font-black text-green-950 mb-2 uppercase tracking-wide">Service Completeness</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
+                        <p className="text-xl text-lime-900 font-bold leading-snug">
                             Did the ANM carry out <span className="text-green-800 bg-green-200 px-2 py-0.5 rounded-lg border border-green-300">all</span> mandated services?
                         </p>
                         <p className="text-base text-gray-500 font-bold mt-2 flex items-center gap-2">
@@ -113,7 +113,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
                      <div className="flex-1">
                         <h4 className="text-2xl font-black text-amber-950 mb-2 uppercase tracking-wide">Logistics & Supply</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
+                        <p className="text-xl text-lime-900 font-bold leading-snug">
                             Were essential supplies available on site?
                         </p>
                         <p className="text-base text-gray-500 font-bold mt-2 flex items-center gap-2">
@@ -132,7 +132,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                     </div>
                      <div className="flex-1">
                         <h4 className="text-2xl font-black text-orange-950 mb-2 uppercase tracking-wide">Beneficiary Reach</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
+                        <p className="text-xl text-lime-900 font-bold leading-snug">
                             Was mobilization effective? Did target beneficiaries actually attend?
                         </p>
                     </div>
@@ -147,7 +147,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer Insight */}
-      <div className={`flex-none mt-6 bg-olive-900 text-white p-6 rounded-2xl flex items-center justify-between shadow-lg transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
+      <div className={`flex-none mt-6 bg-lime-950 text-white p-6 rounded-2xl flex items-center justify-between shadow-lg transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
           <div className="flex items-center gap-6">
                <div className="p-3 bg-white/10 rounded-full">
                     <AlertOctagon className="w-8 h-8 text-red-300" strokeWidth={2} />
@@ -156,7 +156,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                    "Numbers tell you <span className="font-bold text-red-300 border-b-2 border-red-300/50">what</span> happened. Process evaluation tells you <span className="font-bold text-green-300 border-b-2 border-green-300/50">why</span>."
                </p>
           </div>
-          <ArrowRight className="w-8 h-8 text-olive-400" />
+          <ArrowRight className="w-8 h-8 text-lime-500" />
       </div>
 
     </div>

@@ -37,13 +37,13 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
             </h2>
             
             <h1 className="flex flex-col gap-2">
-                <span className={`text-8xl font-black text-olive-900 tracking-tight leading-none transition-all duration-1000 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                    Health <span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-green-700">Promotion</span>
+                <span className={`text-8xl font-black text-lime-950 tracking-tight leading-none transition-all duration-1000 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
+                    Health <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-700 to-green-700">Promotion</span>
                 </span>
                 <span className={`text-6xl font-bold text-gray-300 transition-all duration-1000 delay-700 transform ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                     &
                 </span>
-                <span className={`text-8xl font-black text-olive-900 tracking-tight leading-none transition-all duration-1000 delay-900 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
+                <span className={`text-8xl font-black text-lime-950 tracking-tight leading-none transition-all duration-1000 delay-900 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
                     Health <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Education</span>
                 </span>
             </h1>
@@ -55,12 +55,12 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
 
         {/* Presenter Badge */}
         <div className={`mt-16 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full pl-3 pr-8 py-3 shadow-lg flex items-center gap-4 transition-all duration-1000 delay-[1200ms] transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-105 hover:shadow-xl`}>
-            <div className="w-16 h-16 bg-gradient-to-br from-olive-500 to-olive-700 rounded-full flex items-center justify-center text-white shadow-inner">
+            <div className="w-16 h-16 bg-gradient-to-br from-lime-1000 to-lime-800 rounded-full flex items-center justify-center text-white shadow-inner">
                 <Stethoscope className="w-8 h-8" />
             </div>
             <div className="text-left">
                 <p className="text-sm font-bold text-gray-400 uppercase tracking-wider">Presented By</p>
-                <p className="text-2xl font-bold text-olive-900">Dr. Devaprasad Reddy</p>
+                <p className="text-2xl font-bold text-lime-950">Dr. Devaprasad Reddy</p>
             </div>
         </div>
 
