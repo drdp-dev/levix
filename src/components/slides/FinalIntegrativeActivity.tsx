@@ -104,9 +104,9 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
 
   const tasks = [
     { id: "task-0", text: "Define one measurable objective", icon: Target, color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-100" },
-    { id: "task-1", text: "Identify 3 key indicators", icon: ListChecks, color: "text-forest-600", bg: "bg-forest-50", border: "border-forest-100" },
-    { id: "task-2", text: "Choose evaluation design", icon: LayoutTemplate, color: "text-copper-600", bg: "bg-copper-50", border: "border-copper-100" },
-    { id: "task-3", text: "Decide data collection tools", icon: ClipboardPen, color: "text-clay-600", bg: "bg-clay-50", border: "border-clay-100" },
+    { id: "task-1", text: "Identify 3 key indicators", icon: ListChecks, color: "text-green-700", bg: "bg-green-100", border: "border-green-200" },
+    { id: "task-2", text: "Choose evaluation design", icon: LayoutTemplate, color: "text-amber-700", bg: "bg-amber-100", border: "border-amber-200" },
+    { id: "task-3", text: "Decide data collection tools", icon: ClipboardPen, color: "text-orange-700", bg: "bg-orange-100", border: "border-orange-200" },
     { id: "task-4", text: "Identify bias strategy", icon: ShieldAlert, color: "text-red-500", bg: "bg-red-50", border: "border-red-100" },
     { id: "task-5", text: "District action plan", icon: Megaphone, color: "text-olive-600", bg: "bg-olive-50", border: "border-olive-100" },
   ];
@@ -114,9 +114,9 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
   const getThemeStyles = (theme: string) => {
       switch(theme) {
           case 'blue': return { bg: 'bg-blue-50', text: 'text-blue-800', icon: 'text-blue-600' };
-          case 'forest': return { bg: 'bg-forest-50', text: 'text-forest-800', icon: 'text-forest-600' };
-          case 'copper': return { bg: 'bg-copper-50', text: 'text-copper-800', icon: 'text-copper-600' };
-          case 'clay': return { bg: 'bg-clay-50', text: 'text-clay-800', icon: 'text-clay-600' };
+          case 'forest': return { bg: 'bg-green-100', text: 'text-green-900', icon: 'text-green-700' };
+          case 'copper': return { bg: 'bg-amber-100', text: 'text-amber-900', icon: 'text-amber-700' };
+          case 'clay': return { bg: 'bg-orange-100', text: 'text-orange-900', icon: 'text-orange-700' };
           case 'red': return { bg: 'bg-red-50', text: 'text-red-800', icon: 'text-red-600' };
           case 'olive': return { bg: 'bg-olive-50', text: 'text-olive-800', icon: 'text-olive-600' };
           default: return { bg: 'bg-gray-50', text: 'text-gray-800', icon: 'text-gray-600' };
@@ -127,7 +127,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-cornsilk-100/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-yellow-200/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-olive-50/50 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
 
       {/* Header Area */}
@@ -137,7 +137,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
                 Final Activity
             </div>
             <h2 className="text-6xl font-bold text-olive-900 leading-tight">
-              Design a Realistic<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-forest-600">Evaluation Plan</span>
+              Design a Realistic<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-green-700">Evaluation Plan</span>
             </h2>
             <div className="flex items-center gap-2 mt-2 text-olive-500 font-bold text-sm uppercase tracking-wider animate-pulse">
                 <MousePointerClick size={16} /> Click items to reveal answers
@@ -208,13 +208,13 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
         className={`flex-none relative z-10 transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} cursor-pointer group`}
         onClick={() => setSelectedItem(modalData["hard-choice"])}
       >
-         <div className="bg-gradient-to-r from-olive-900 to-forest-900 rounded-[2.5rem] p-10 shadow-2xl flex items-center justify-between text-white relative overflow-hidden border-4 border-white/20 group-hover:scale-[1.01] transition-transform">
+         <div className="bg-gradient-to-r from-olive-900 to-green-950 rounded-[2.5rem] p-10 shadow-2xl flex items-center justify-between text-white relative overflow-hidden border-4 border-white/20 group-hover:scale-[1.01] transition-transform">
              {/* Decorative pattern */}
              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
              
              <div className="flex items-center gap-10 relative z-10 w-full">
                 <div className="p-6 bg-white/10 rounded-full border-2 border-white/20 flex-shrink-0 shadow-2xl group-hover:bg-white/20 transition-colors">
-                    <Scissors className="w-16 h-16 text-cornsilk-300" />
+                    <Scissors className="w-16 h-16 text-yellow-400" />
                 </div>
                 <div className="flex-1">
                     <h4 className="text-olive-300 font-bold uppercase tracking-widest text-xl mb-3 flex items-center gap-3">
@@ -223,7 +223,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
                     <p className="text-4xl font-bold leading-tight">
                         Resources are cut by 30%. What do you sacrifice?
                     </p>
-                    <div className="flex gap-8 mt-4 text-2xl font-medium text-cornsilk-100">
+                    <div className="flex gap-8 mt-4 text-2xl font-medium text-yellow-200">
                         <span className="border-b-4 border-red-400/50 pb-1">Rigorous Design?</span>
                         <span className="border-b-4 border-red-400/50 pb-1">Sample Size?</span>
                         <span className="border-b-4 border-red-400/50 pb-1">Number of Indicators?</span>

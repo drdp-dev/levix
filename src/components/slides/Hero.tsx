@@ -12,7 +12,7 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Abstract Shapes */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-olive-100/40 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-lime-200/40 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 animate-pulse" style={{ animationDuration: '8s' }}></div>
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gradient-to-tr from-blue-50/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 animate-pulse" style={{ animationDuration: '10s' }}></div>
 
       {/* Main Content */}
@@ -20,12 +20,12 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
         
         {/* Animated Icon Cluster */}
         <div className={`mb-12 relative transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-20 opacity-0'}`}>
-           <div className="absolute inset-0 bg-olive-100 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-           <div className="relative bg-white p-8 rounded-[2.5rem] shadow-2xl border-4 border-olive-50 flex items-center justify-center gap-6">
-              <Activity className="w-16 h-16 text-olive-600 animate-bounce" strokeWidth={2} style={{ animationDuration: '3s' }} />
-              <div className="w-px h-16 bg-olive-200"></div>
+           <div className="absolute inset-0 bg-lime-200 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+           <div className="relative bg-white p-8 rounded-[2.5rem] shadow-2xl border-4 border-lime-100 flex items-center justify-center gap-6">
+              <Activity className="w-16 h-16 text-lime-700 animate-bounce" strokeWidth={2} style={{ animationDuration: '3s' }} />
+              <div className="w-px h-16 bg-lime-300"></div>
               <HeartPulse className="w-20 h-20 text-red-500 animate-pulse" strokeWidth={2} style={{ animationDuration: '2s' }} />
-              <div className="w-px h-16 bg-olive-200"></div>
+              <div className="w-px h-16 bg-lime-300"></div>
               <BookOpen className="w-16 h-16 text-blue-600 animate-bounce" strokeWidth={2} style={{ animationDuration: '3.5s' }} />
            </div>
         </div>
@@ -38,7 +38,7 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
             
             <h1 className="flex flex-col gap-2">
                 <span className={`text-8xl font-black text-olive-900 tracking-tight leading-none transition-all duration-1000 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                    Health <span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-forest-600">Promotion</span>
+                    Health <span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-green-700">Promotion</span>
                 </span>
                 <span className={`text-6xl font-bold text-gray-300 transition-all duration-1000 delay-700 transform ${isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                     &

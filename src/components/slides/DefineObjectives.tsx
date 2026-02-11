@@ -4,10 +4,10 @@ import { Target, Ruler, Mountain, Link2, Clock, AlertTriangle } from 'lucide-rea
 
 const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
   const smart = [
-    { letter: 'S', word: 'Specific', icon: Target, color: 'text-copper-600', bg: 'bg-copper-50', border: 'border-copper-200' },
-    { letter: 'M', word: 'Measurable', icon: Ruler, color: 'text-forest-600', bg: 'bg-forest-50', border: 'border-forest-200' },
+    { letter: 'S', word: 'Specific', icon: Target, color: 'text-amber-700', bg: 'bg-amber-100', border: 'border-amber-300' },
+    { letter: 'M', word: 'Measurable', icon: Ruler, color: 'text-green-700', bg: 'bg-green-100', border: 'border-green-300' },
     { letter: 'A', word: 'Achievable', icon: Mountain, color: 'text-olive-600', bg: 'bg-olive-50', border: 'border-olive-200' },
-    { letter: 'R', word: 'Relevant', icon: Link2, color: 'text-clay-600', bg: 'bg-clay-50', border: 'border-clay-200' },
+    { letter: 'R', word: 'Relevant', icon: Link2, color: 'text-orange-700', bg: 'bg-orange-100', border: 'border-orange-300' },
     { letter: 'T', word: 'Time-bound', icon: Clock, color: 'text-blue-600', bg: 'bg-blue-50', border: 'border-blue-200' },
   ];
 
@@ -20,7 +20,7 @@ const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
           Step 1: Define Clear & Measurable Objectives
         </h2>
         <p className={`text-3xl text-olive-600 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-          Evaluation begins <span className="text-copper-600 font-semibold">before</span> implementation.
+          Evaluation begins <span className="text-amber-700 font-semibold">before</span> implementation.
         </p>
       </div>
 

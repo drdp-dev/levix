@@ -7,7 +7,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cornsilk-50 rounded-full blur-3xl translate-y-1/2 translate-x-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-100 rounded-full blur-3xl translate-y-1/2 translate-x-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-8 text-center">
@@ -21,17 +21,17 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Scenario Section */}
       <div className={`flex-none mb-10 transition-all duration-1000 delay-200 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        <div className="bg-cornsilk-50 border-l-[12px] border-cornsilk-400 rounded-r-3xl p-8 shadow-sm relative overflow-hidden">
+        <div className="bg-yellow-100 border-l-[12px] border-yellow-500 rounded-r-3xl p-8 shadow-sm relative overflow-hidden">
              <div className="absolute right-0 top-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
                  <Users className="w-64 h-64 text-cornsilk-800" />
              </div>
              
              <h3 className="text-2xl font-bold text-olive-800 mb-2 flex items-center gap-3">
-                <MapPin className="w-8 h-8 text-cornsilk-600" />
+                <MapPin className="w-8 h-8 text-yellow-700" />
                 Scenario
              </h3>
              <p className="text-4xl text-olive-900 font-medium leading-snug relative z-10">
-                You are evaluating an <span className="text-forest-700 font-bold">adolescent reproductive health</span> education program in <span className="underline decoration-wavy decoration-cornsilk-500">two villages</span>.
+                You are evaluating an <span className="text-green-800 font-bold">adolescent reproductive health</span> education program in <span className="underline decoration-wavy decoration-yellow-600">two villages</span>.
              </p>
         </div>
       </div>
@@ -66,12 +66,12 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
 
         {/* Q3 */}
         <div 
-            className={`flex flex-col bg-white border-2 border-forest-100 rounded-[2rem] p-8 shadow-sm hover:shadow-xl transition-all duration-700 delay-800 transform ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
+            className={`flex flex-col bg-white border-2 border-green-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl transition-all duration-700 delay-800 transform ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
         >
-            <div className="mb-6 p-5 bg-forest-50 rounded-2xl self-start text-forest-600">
+            <div className="mb-6 p-5 bg-green-100 rounded-2xl self-start text-green-700">
                 <ShieldCheck className="w-12 h-12" strokeWidth={1.5} />
             </div>
-            <h4 className="text-xl font-bold text-forest-800 uppercase tracking-widest mb-4">Minimize Bias</h4>
+            <h4 className="text-xl font-bold text-green-900 uppercase tracking-widest mb-4">Minimize Bias</h4>
             <p className="text-3xl font-bold text-olive-900 leading-tight">
                 How would you design the study to minimize these biases?
             </p>

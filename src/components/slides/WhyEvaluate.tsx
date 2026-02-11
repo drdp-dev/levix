@@ -20,10 +20,10 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
       question: "Did it produce measurable change?",
       focus: "Effectiveness",
       icon: TrendingUp,
-      color: "text-forest-600",
-      bg: "bg-forest-50",
-      border: "border-forest-200",
-      accent: "bg-forest-500",
+      color: "text-green-700",
+      bg: "bg-green-100",
+      border: "border-green-300",
+      accent: "bg-green-600",
       delay: 400
     },
     {
@@ -31,10 +31,10 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
       question: "Was it worth the resources?",
       focus: "Efficiency & Value",
       icon: Scale,
-      color: "text-copper-600",
-      bg: "bg-copper-50",
-      border: "border-copper-200",
-      accent: "bg-copper-500",
+      color: "text-amber-700",
+      bg: "bg-amber-100",
+      border: "border-amber-300",
+      accent: "bg-amber-600",
       delay: 600
     }
   ];
@@ -43,7 +43,7 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background blobs */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-olive-50 rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cornsilk-50 rounded-full blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-100 rounded-full blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
 
         {/* Header */}
         <div className="flex-none mb-10 text-center relative z-10">
@@ -92,17 +92,17 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
         <div className={`flex-none bg-olive-900 rounded-3xl p-8 flex items-center justify-between shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
             <div className="flex items-center gap-8">
                  <div className="p-4 bg-olive-800 rounded-2xl border border-olive-700 shadow-inner">
-                    <ShieldCheck className="w-12 h-12 text-cornsilk-400" />
+                    <ShieldCheck className="w-12 h-12 text-yellow-500" />
                  </div>
                  <div>
                     <h4 className="text-lg font-bold text-olive-400 uppercase tracking-widest mb-1">Critical Mindset Shift</h4>
                     <p className="text-4xl font-bold text-white leading-none">
-                        Evaluation is <span className="text-cornsilk-400 underline decoration-wavy decoration-2 underline-offset-8">learning</span>, not fault-finding.
+                        Evaluation is <span className="text-yellow-500 underline decoration-wavy decoration-2 underline-offset-8">learning</span>, not fault-finding.
                     </p>
                  </div>
             </div>
             <div className="bg-white/10 p-3 rounded-full">
-                <Zap className="w-8 h-8 text-cornsilk-200" fill="currentColor" />
+                <Zap className="w-8 h-8 text-yellow-300" fill="currentColor" />
             </div>
         </div>
     </div>

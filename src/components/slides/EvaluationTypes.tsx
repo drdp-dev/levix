@@ -14,11 +14,11 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
         "Utility: Optimize operations"
       ],
       icon: Settings,
-      color: "text-clay-800",
-      iconColor: "text-clay-600",
-      bg: "bg-clay-50",
-      border: "border-clay-300",
-      bulletColor: "bg-clay-500",
+      color: "text-orange-900",
+      iconColor: "text-orange-700",
+      bg: "bg-orange-100",
+      border: "border-orange-400",
+      bulletColor: "bg-orange-600",
       delay: 300
     },
     {
@@ -31,11 +31,11 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
         "Utility: Assess effectiveness"
       ],
       icon: UserCheck,
-      color: "text-copper-800",
-      iconColor: "text-copper-600",
-      bg: "bg-copper-50",
-      border: "border-copper-300",
-      bulletColor: "bg-copper-500",
+      color: "text-amber-900",
+      iconColor: "text-amber-700",
+      bg: "bg-amber-100",
+      border: "border-amber-400",
+      bulletColor: "bg-amber-600",
       delay: 500
     },
     {
@@ -48,11 +48,11 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
         "Utility: Inform policy & funding"
       ],
       icon: HeartPulse,
-      color: "text-forest-800",
-      iconColor: "text-forest-600",
-      bg: "bg-forest-50",
-      border: "border-forest-300",
-      bulletColor: "bg-forest-500",
+      color: "text-green-900",
+      iconColor: "text-green-700",
+      bg: "bg-green-100",
+      border: "border-green-400",
+      bulletColor: "bg-green-600",
       delay: 700
     }
   ];

@@ -8,7 +8,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
   useEffect(() => {
     if (isActive) {
       const icons = [Sparkles, Award, Trophy, Star, HeartHandshake, Target, Users, TrendingUp, HeartPulse, Leaf, BrainCircuit, CheckCircle2, Lightbulb, Rocket, Zap];
-      const colors = ['text-olive-500', 'text-forest-500', 'text-copper-500', 'text-cornsilk-600', 'text-clay-500', 'text-blue-500', 'text-amber-500', 'text-red-500'];
+      const colors = ['text-olive-500', 'text-green-600', 'text-amber-600', 'text-yellow-700', 'text-orange-600', 'text-blue-500', 'text-amber-500', 'text-red-500'];
       
       let id = 0;
       const addConfetti = () => {
@@ -43,7 +43,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-12 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-olive-50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none animate-drift"></div>
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-cornsilk-50 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none animate-drift" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none animate-drift" style={{ animationDelay: '3s' }}></div>
 
         {/* Confetti - Behind content */}
         {confetti.map((item) => {
@@ -77,7 +77,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
 
             {/* Presenter Details */}
             <div className={`flex flex-col items-center gap-2 mb-16 transition-all duration-1000 delay-300 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                 <h2 className="text-4xl font-bold text-copper-700 hover:text-copper-800 transition-colors">Dr. Devaprasad Reddy</h2>
+                 <h2 className="text-4xl font-bold text-amber-800 hover:text-amber-900 transition-colors">Dr. Devaprasad Reddy</h2>
                  <div className="flex items-center gap-3 text-2xl text-olive-700 font-medium mt-2">
                     <GraduationCap className="w-6 h-6" />
                     <span>Tutor</span>
@@ -91,13 +91,13 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
             {/* References Section */}
             <div className={`w-full max-w-4xl bg-white/80 backdrop-blur border-2 border-olive-100 rounded-3xl p-8 shadow-sm transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl hover:border-olive-200 transition-all`}>
                 <div className="flex items-center gap-3 mb-6 border-b border-olive-100 pb-3">
-                    <BookOpen className="w-8 h-8 text-forest-600" />
+                    <BookOpen className="w-8 h-8 text-green-700" />
                     <h3 className="text-2xl font-bold text-olive-800 uppercase tracking-wide">References</h3>
                 </div>
                 <ul className="space-y-4">
                     {references.map((ref, idx) => (
                         <li key={idx} className="flex items-start gap-4 text-lg text-olive-700 hover:text-olive-900 hover:translate-x-2 transition-all duration-300 cursor-default">
-                            <div className="w-2 h-2 rounded-full bg-forest-400 mt-2.5 flex-shrink-0"></div>
+                            <div className="w-2 h-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
                             <span>{ref}</span>
                         </li>
                     ))}

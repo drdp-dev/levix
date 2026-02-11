@@ -74,20 +74,20 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
 
         {/* Transition Arrow */}
         <div className={`transition-all duration-700 delay-300 transform ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
-           <ArrowDown className="w-10 h-10 text-copper-500 animate-bounce" strokeWidth={4} />
+           <ArrowDown className="w-10 h-10 text-amber-600 animate-bounce" strokeWidth={4} />
         </div>
 
         {/* Evaluable Objective Card */}
         <div 
-          className={`w-full max-w-5xl bg-forest-50 border-l-[16px] border-forest-500 rounded-r-[3rem] p-8 shadow-xl flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+          className={`w-full max-w-5xl bg-green-100 border-l-[16px] border-green-600 rounded-r-[3rem] p-8 shadow-xl flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
         >
-          <div className="p-5 bg-white rounded-full flex-shrink-0 shadow-sm border-2 border-forest-100">
-            <CheckCircle2 className="w-12 h-12 text-forest-600" strokeWidth={3} />
+          <div className="p-5 bg-white rounded-full flex-shrink-0 shadow-sm border-2 border-green-200">
+            <CheckCircle2 className="w-12 h-12 text-green-700" strokeWidth={3} />
           </div>
           <div>
-            <h3 className="text-lg font-black text-forest-700 uppercase tracking-widest mb-2">Evaluable Objective (SMART)</h3>
+            <h3 className="text-lg font-black text-green-800 uppercase tracking-widest mb-2">Evaluable Objective (SMART)</h3>
             <p className="text-3xl text-olive-900 font-bold leading-snug">
-              "Increase proportion of girls who can <span className="text-copper-800 bg-copper-100 px-2 rounded-lg border border-copper-200 shadow-sm">list ≥3 symptoms</span> of anaemia from <span className="text-blue-800 bg-blue-100 px-2 rounded-lg border border-blue-200 shadow-sm">30% to 70%</span> within <span className="text-olive-900 bg-olive-200 px-2 rounded-lg border border-olive-300 shadow-sm">6 months</span>."
+              "Increase proportion of girls who can <span className="text-amber-900 bg-amber-200 px-2 rounded-lg border border-amber-300 shadow-sm">list ≥3 symptoms</span> of anaemia from <span className="text-blue-800 bg-blue-100 px-2 rounded-lg border border-blue-200 shadow-sm">30% to 70%</span> within <span className="text-olive-900 bg-olive-200 px-2 rounded-lg border border-olive-300 shadow-sm">6 months</span>."
             </p>
           </div>
         </div>

@@ -5,16 +5,16 @@ import { TrendingUp, Users, Coins, Leaf, AlertTriangle, FileSearch } from 'lucid
 const AnalysisInterpretation: React.FC<SlideProps> = ({ isActive }) => {
   const factors = [
     { label: "Magnitude of change", icon: TrendingUp, color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-200", delay: 400 },
-    { label: "Practical significance", icon: Users, color: "text-copper-600", bg: "bg-copper-50", border: "border-copper-200", delay: 550 },
-    { label: "Cost involved", icon: Coins, color: "text-clay-600", bg: "bg-clay-50", border: "border-clay-200", delay: 700 },
-    { label: "Sustainability", icon: Leaf, color: "text-forest-600", bg: "bg-forest-50", border: "border-forest-200", delay: 850 },
+    { label: "Practical significance", icon: Users, color: "text-amber-700", bg: "bg-amber-100", border: "border-amber-300", delay: 550 },
+    { label: "Cost involved", icon: Coins, color: "text-orange-700", bg: "bg-orange-100", border: "border-orange-300", delay: 700 },
+    { label: "Sustainability", icon: Leaf, color: "text-green-700", bg: "bg-green-100", border: "border-green-300", delay: 850 },
   ];
 
   return (
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cornsilk-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-100 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-8 text-center">

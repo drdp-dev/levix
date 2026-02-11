@@ -92,7 +92,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       case 'red': return { bg: 'bg-red-50', border: 'border-red-200', text: 'text-red-800', icon: 'text-red-600', iconBg: 'bg-red-100', hover: 'hover:border-red-400', bullet: 'bg-red-500' };
       case 'amber': return { bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-800', icon: 'text-amber-600', iconBg: 'bg-amber-100', hover: 'hover:border-amber-400', bullet: 'bg-amber-500' };
       case 'orange': return { bg: 'bg-orange-50', border: 'border-orange-200', text: 'text-orange-800', icon: 'text-orange-600', iconBg: 'bg-orange-100', hover: 'hover:border-orange-400', bullet: 'bg-orange-500' };
-      case 'clay': return { bg: 'bg-clay-50', border: 'border-clay-200', text: 'text-clay-800', icon: 'text-clay-600', iconBg: 'bg-clay-100', hover: 'hover:border-clay-400', bullet: 'bg-clay-500' };
+      case 'clay': return { bg: 'bg-orange-100', border: 'border-orange-300', text: 'text-orange-900', icon: 'text-orange-700', iconBg: 'bg-orange-200', hover: 'hover:border-orange-500', bullet: 'bg-orange-600' };
       default: return { bg: 'bg-gray-50', border: 'border-gray-300', text: 'text-gray-800', icon: 'text-gray-600', iconBg: 'bg-gray-200', hover: 'hover:border-gray-500', bullet: 'bg-gray-600' };
     }
   };
@@ -159,10 +159,10 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       {/* Footer Insight */}
       <div className={`flex-none mt-6 bg-olive-900 rounded-2xl p-6 flex items-center justify-center gap-6 shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
         <div className="p-3 bg-olive-800 rounded-full border border-olive-700">
-            <Scale className="w-10 h-10 text-cornsilk-500" />
+            <Scale className="w-10 h-10 text-yellow-600" />
         </div>
-        <p className="text-3xl font-bold text-cornsilk-50 tracking-wide">
-            Methodological rigor must match <span className="text-cornsilk-500 underline decoration-wavy underline-offset-4">program ambition</span>.
+        <p className="text-3xl font-bold text-yellow-100 tracking-wide">
+            Methodological rigor must match <span className="text-yellow-600 underline decoration-wavy underline-offset-4">program ambition</span>.
         </p>
       </div>
 

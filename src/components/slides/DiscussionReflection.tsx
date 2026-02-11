@@ -69,8 +69,8 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
   const getThemeStyles = (theme: string) => {
     switch(theme) {
         case 'blue': return { border: 'border-blue-200', bg: 'bg-blue-50', text: 'text-blue-900', icon: 'text-blue-700', iconBg: 'bg-blue-100', hover: 'hover:border-blue-400', selectedBg: 'bg-blue-100', selectedBorder: 'border-blue-400' };
-        case 'forest': return { border: 'border-forest-200', bg: 'bg-forest-50', text: 'text-forest-900', icon: 'text-forest-700', iconBg: 'bg-forest-100', hover: 'hover:border-forest-400', selectedBg: 'bg-forest-100', selectedBorder: 'border-forest-400' };
-        case 'clay': return { border: 'border-clay-200', bg: 'bg-clay-50', text: 'text-clay-900', icon: 'text-clay-700', iconBg: 'bg-clay-100', hover: 'hover:border-clay-400', selectedBg: 'bg-clay-100', selectedBorder: 'border-clay-400' };
+        case 'forest': return { border: 'border-green-300', bg: 'bg-green-100', text: 'text-green-950', icon: 'text-green-800', iconBg: 'bg-green-200', hover: 'hover:border-green-500', selectedBg: 'bg-green-200', selectedBorder: 'border-green-500' };
+        case 'clay': return { border: 'border-orange-300', bg: 'bg-orange-100', text: 'text-orange-950', icon: 'text-orange-800', iconBg: 'bg-orange-200', hover: 'hover:border-orange-500', selectedBg: 'bg-orange-200', selectedBorder: 'border-orange-500' };
         default: return { border: 'border-gray-200', bg: 'bg-gray-50', text: 'text-gray-900', icon: 'text-gray-700', iconBg: 'bg-gray-100', hover: 'hover:border-gray-400', selectedBg: 'bg-gray-100', selectedBorder: 'border-gray-400' };
     }
   };
@@ -80,7 +80,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
       
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-olive-50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cornsilk-50 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-4 text-center">

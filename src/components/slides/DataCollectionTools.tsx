@@ -85,10 +85,10 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
   const getThemeStyles = (theme: string) => {
     switch(theme) {
       case 'blue': return { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800', icon: 'text-blue-600', iconBg: 'bg-blue-100', hover: 'hover:border-blue-400' };
-      case 'copper': return { bg: 'bg-copper-50', border: 'border-copper-200', text: 'text-copper-800', icon: 'text-copper-600', iconBg: 'bg-copper-100', hover: 'hover:border-copper-400' };
-      case 'forest': return { bg: 'bg-forest-50', border: 'border-forest-200', text: 'text-forest-800', icon: 'text-forest-600', iconBg: 'bg-forest-100', hover: 'hover:border-forest-400' };
+      case 'copper': return { bg: 'bg-amber-100', border: 'border-amber-300', text: 'text-amber-900', icon: 'text-amber-700', iconBg: 'bg-amber-200', hover: 'hover:border-amber-500' };
+      case 'forest': return { bg: 'bg-green-100', border: 'border-green-300', text: 'text-green-900', icon: 'text-green-700', iconBg: 'bg-green-200', hover: 'hover:border-green-500' };
       case 'olive': return { bg: 'bg-olive-50', border: 'border-olive-200', text: 'text-olive-800', icon: 'text-olive-600', iconBg: 'bg-olive-100', hover: 'hover:border-olive-400' };
-      case 'clay': return { bg: 'bg-clay-50', border: 'border-clay-200', text: 'text-clay-800', icon: 'text-clay-600', iconBg: 'bg-clay-100', hover: 'hover:border-clay-400' };
+      case 'clay': return { bg: 'bg-orange-100', border: 'border-orange-300', text: 'text-orange-900', icon: 'text-orange-700', iconBg: 'bg-orange-200', hover: 'hover:border-orange-500' };
       default: return { bg: 'bg-gray-50', border: 'border-gray-200', text: 'text-gray-800', icon: 'text-gray-600', iconBg: 'bg-gray-100', hover: 'hover:border-gray-400' };
     }
   };
@@ -162,7 +162,7 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
       <div className={`flex-none mx-auto max-w-4xl bg-white border border-olive-200 rounded-full px-8 py-3 flex items-center gap-6 shadow-sm transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
         <BrainCircuit className="w-8 h-8 text-olive-500" />
         <p className="text-xl font-medium text-olive-800">
-             Insight: "Behavior is often better <span className="font-bold text-forest-600 underline decoration-forest-300">observed</span> than self-reported."
+             Insight: "Behavior is often better <span className="font-bold text-green-700 underline decoration-green-400">observed</span> than self-reported."
         </p>
       </div>
 

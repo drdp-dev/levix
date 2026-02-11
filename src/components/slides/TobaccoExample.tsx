@@ -33,12 +33,12 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
             </div>
 
             {/* Clear */}
-             <div className={`flex items-center p-10 bg-forest-50 border-l-8 border-forest-500 rounded-r-2xl shadow-md transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
-                <CheckCircle2 className="w-16 h-16 text-forest-600 mr-8 flex-shrink-0" strokeWidth={2} />
+             <div className={`flex items-center p-10 bg-green-100 border-l-8 border-green-600 rounded-r-2xl shadow-md transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
+                <CheckCircle2 className="w-16 h-16 text-green-700 mr-8 flex-shrink-0" strokeWidth={2} />
                 <div>
-                    <h3 className="text-xl font-bold text-forest-600 uppercase tracking-widest mb-3">Clear Objective</h3>
+                    <h3 className="text-xl font-bold text-green-700 uppercase tracking-widest mb-3">Clear Objective</h3>
                     <p className="text-5xl text-olive-900 font-bold leading-tight">
-                        Increase proportion of <span className="text-blue-700 bg-blue-50 px-2 rounded-lg">adults</span> who can identify <span className="text-copper-600 bg-copper-50 px-2 rounded-lg">≥3 harms</span> of smokeless tobacco from <span className="text-red-600 bg-red-50 px-2 rounded-lg">40% to 70%</span> in <span className="text-olive-700 bg-olive-100 px-2 rounded-lg">6 months</span>.
+                        Increase proportion of <span className="text-blue-700 bg-blue-50 px-2 rounded-lg">adults</span> who can identify <span className="text-amber-700 bg-amber-100 px-2 rounded-lg">≥3 harms</span> of smokeless tobacco from <span className="text-red-600 bg-red-50 px-2 rounded-lg">40% to 70%</span> in <span className="text-olive-700 bg-olive-100 px-2 rounded-lg">6 months</span>.
                     </p>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
             <div className="grid grid-cols-3 gap-8">
                 <div className="flex flex-col items-center text-center gap-3 group">
                     <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform duration-300">
-                        <History className="w-8 h-8 text-copper-600" />
+                        <History className="w-8 h-8 text-amber-700" />
                     </div>
                     <span className="text-xl font-semibold text-olive-900">Baseline Assessment</span>
                 </div>
@@ -62,7 +62,7 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
                 <div className="flex flex-col items-center text-center gap-3 group">
                      <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform duration-300">
-                        <BarChart3 className="w-8 h-8 text-forest-600" />
+                        <BarChart3 className="w-8 h-8 text-green-700" />
                     </div>
                     <span className="text-xl font-semibold text-olive-900">Measurable Outcome Tracking</span>
                 </div>

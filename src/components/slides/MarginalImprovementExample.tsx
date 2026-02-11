@@ -52,13 +52,13 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
             <div>
                 <div className="flex justify-between text-xl font-bold text-olive-800 mb-2">
                     <span>Post-Intervention</span>
-                    <span className="text-forest-600 flex items-center gap-2">95% <ArrowUpRight className="w-5 h-5" /></span>
+                    <span className="text-green-700 flex items-center gap-2">95% <ArrowUpRight className="w-5 h-5" /></span>
                 </div>
                 <div className="w-full h-10 bg-gray-100 rounded-full overflow-hidden shadow-inner relative">
                      {/* The base 90% visual ref */}
                      <div className="absolute top-0 bottom-0 left-[90%] w-0.5 bg-white/50 z-10"></div>
                      <div 
-                        className="h-full bg-forest-500 rounded-full transition-all duration-1000 ease-out delay-700 flex items-center justify-end px-4 text-white font-bold"
+                        className="h-full bg-green-600 rounded-full transition-all duration-1000 ease-out delay-700 flex items-center justify-end px-4 text-white font-bold"
                         style={{ width: isActive ? '95%' : '0%' }}
                     >
                         {isActive && <span className="animate-pulse">+5%</span>}
@@ -90,13 +90,13 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
             </div>
 
             {/* Real-world Impact */}
-            <div className={`p-5 bg-forest-50 border-l-[12px] border-forest-400 rounded-r-2xl shadow-sm transition-all duration-700 delay-900 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+            <div className={`p-5 bg-green-100 border-l-[12px] border-green-500 rounded-r-2xl shadow-sm transition-all duration-700 delay-900 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                 <div className="flex items-center gap-4 mb-2">
-                    <Users className="w-7 h-7 text-forest-600" strokeWidth={2} />
-                    <h4 className="text-lg font-bold text-forest-800">Real-world Impact?</h4>
+                    <Users className="w-7 h-7 text-green-700" strokeWidth={2} />
+                    <h4 className="text-lg font-bold text-green-900">Real-world Impact?</h4>
                 </div>
                 <p className="text-3xl font-bold text-olive-900 mt-2">Negligible</p>
-                <p className="text-base text-forest-700 font-medium mt-1 opacity-80">Already near maximum</p>
+                <p className="text-base text-green-800 font-medium mt-1 opacity-80">Already near maximum</p>
             </div>
 
             {/* Resource Justification */}

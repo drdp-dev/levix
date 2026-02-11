@@ -88,31 +88,31 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
              <div className="flex-1 flex flex-col gap-5">
                 
                 {/* Q1 Service Delivery */}
-                <div className={`flex-1 bg-white border-[3px] border-forest-100 border-l-[20px] border-l-forest-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-forest-50 rounded-3xl text-forest-700 shadow-inner ring-4 ring-forest-50/50 group-hover:bg-forest-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-green-200 border-l-[20px] border-l-green-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-green-100 rounded-3xl text-green-800 shadow-inner ring-4 ring-green-100/50 group-hover:bg-green-200 transition-colors">
                         <Syringe className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                     <div className="flex-1">
-                        <h4 className="text-2xl font-black text-forest-900 mb-2 uppercase tracking-wide">Service Completeness</h4>
+                        <h4 className="text-2xl font-black text-green-950 mb-2 uppercase tracking-wide">Service Completeness</h4>
                         <p className="text-xl text-olive-800 font-bold leading-snug">
-                            Did the ANM carry out <span className="text-forest-700 bg-forest-100 px-2 py-0.5 rounded-lg border border-forest-200">all</span> mandated services?
+                            Did the ANM carry out <span className="text-green-800 bg-green-200 px-2 py-0.5 rounded-lg border border-green-300">all</span> mandated services?
                         </p>
                         <p className="text-base text-gray-500 font-bold mt-2 flex items-center gap-2">
                              <span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span> ANC, Immunization, Growth Monitoring
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-forest-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-green-300" strokeWidth={3} />
                     </div>
                 </div>
 
                 {/* Q2 Logistics */}
-                <div className={`flex-1 bg-white border-[3px] border-copper-100 border-l-[20px] border-l-copper-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-600 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-copper-50 rounded-3xl text-copper-700 shadow-inner ring-4 ring-copper-50/50 group-hover:bg-copper-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-amber-200 border-l-[20px] border-l-amber-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-600 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-amber-100 rounded-3xl text-amber-800 shadow-inner ring-4 ring-amber-100/50 group-hover:bg-amber-200 transition-colors">
                         <Package className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                      <div className="flex-1">
-                        <h4 className="text-2xl font-black text-copper-900 mb-2 uppercase tracking-wide">Logistics & Supply</h4>
+                        <h4 className="text-2xl font-black text-amber-950 mb-2 uppercase tracking-wide">Logistics & Supply</h4>
                         <p className="text-xl text-olive-800 font-bold leading-snug">
                             Were essential supplies available on site?
                         </p>
@@ -121,23 +121,23 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-copper-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-amber-300" strokeWidth={3} />
                     </div>
                 </div>
 
                 {/* Q3 Attendance */}
-                <div className={`flex-1 bg-white border-[3px] border-clay-100 border-l-[20px] border-l-clay-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-700 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-clay-50 rounded-3xl text-clay-700 shadow-inner ring-4 ring-clay-50/50 group-hover:bg-clay-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-orange-200 border-l-[20px] border-l-orange-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-700 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-orange-100 rounded-3xl text-orange-800 shadow-inner ring-4 ring-orange-100/50 group-hover:bg-orange-200 transition-colors">
                         <Users className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                      <div className="flex-1">
-                        <h4 className="text-2xl font-black text-clay-900 mb-2 uppercase tracking-wide">Beneficiary Reach</h4>
+                        <h4 className="text-2xl font-black text-orange-950 mb-2 uppercase tracking-wide">Beneficiary Reach</h4>
                         <p className="text-xl text-olive-800 font-bold leading-snug">
                             Was mobilization effective? Did target beneficiaries actually attend?
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-clay-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-orange-300" strokeWidth={3} />
                     </div>
                 </div>
 

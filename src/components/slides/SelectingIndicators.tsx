@@ -10,28 +10,28 @@ const SelectingIndicators: React.FC<SlideProps> = ({ isActive }) => {
       icon: Package,
       textColor: "text-amber-800",
       borderColor: "border-amber-400",
-      bgColor: "bg-cornsilk-50",
-      iconBg: "bg-cornsilk-100",
+      bgColor: "bg-yellow-100",
+      iconBg: "bg-yellow-200",
       delay: 200
     },
     {
       type: "Process",
       desc: "Activities conducted (Training, Sessions)",
       icon: Settings,
-      textColor: "text-clay-800",
-      borderColor: "border-clay-400",
-      bgColor: "bg-clay-50",
-      iconBg: "bg-clay-100",
+      textColor: "text-orange-900",
+      borderColor: "border-orange-500",
+      bgColor: "bg-orange-100",
+      iconBg: "bg-orange-200",
       delay: 400
     },
     {
       type: "Output",
       desc: "Services delivered & People reached",
       icon: Users,
-      textColor: "text-copper-800",
-      borderColor: "border-copper-400",
-      bgColor: "bg-copper-50",
-      iconBg: "bg-copper-100",
+      textColor: "text-amber-900",
+      borderColor: "border-amber-500",
+      bgColor: "bg-amber-100",
+      iconBg: "bg-amber-200",
       delay: 600
     },
     {
@@ -48,10 +48,10 @@ const SelectingIndicators: React.FC<SlideProps> = ({ isActive }) => {
       type: "Impact",
       desc: "Morbidity & Mortality reduction",
       icon: HeartPulse,
-      textColor: "text-forest-800",
-      borderColor: "border-forest-400",
-      bgColor: "bg-forest-50",
-      iconBg: "bg-forest-100",
+      textColor: "text-green-900",
+      borderColor: "border-green-500",
+      bgColor: "bg-green-100",
+      iconBg: "bg-green-200",
       delay: 1000
     }
   ];

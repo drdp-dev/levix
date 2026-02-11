@@ -9,26 +9,26 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
       text: "Number of IEC workers trained",
       icon: GraduationCap,
       color: "text-amber-700",
-      bg: "bg-cornsilk-100",
-      border: "border-cornsilk-400",
+      bg: "bg-yellow-200",
+      border: "border-yellow-500",
       delay: 300
     },
     {
       type: "Process",
       text: "Household visits conducted",
       icon: Footprints,
-      color: "text-clay-700",
-      bg: "bg-clay-100",
-      border: "border-clay-400",
+      color: "text-orange-800",
+      bg: "bg-orange-200",
+      border: "border-orange-500",
       delay: 500
     },
     {
       type: "Output",
       text: "Toilets constructed and demonstrated",
       icon: Hammer,
-      color: "text-copper-700",
-      bg: "bg-copper-100",
-      border: "border-copper-400",
+      color: "text-amber-800",
+      bg: "bg-amber-200",
+      border: "border-amber-500",
       delay: 700
     },
     {
@@ -44,9 +44,9 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
       type: "Impact",
       text: "Reduction in diarrhoeal disease incidence",
       icon: TrendingDown,
-      color: "text-forest-700",
-      bg: "bg-forest-100",
-      border: "border-forest-400",
+      color: "text-green-800",
+      bg: "bg-green-200",
+      border: "border-green-500",
       delay: 1100
     }
   ];
