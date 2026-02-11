@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Database, Target, Megaphone, EyeOff, FileText, AlertTriangle, Scale, X, ArrowRight, MousePointerClick, AlertOctagon } from 'lucide-react';
 
 interface PitfallData {

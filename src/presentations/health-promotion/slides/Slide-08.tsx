@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { CalendarDays, ClipboardCheck, Users, Syringe, AlertOctagon, Package, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {

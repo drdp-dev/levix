@@ -1,219 +1,45 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import React from 'react';
 import dynamic from 'next/dynamic';
-import Hero from '@/src/components/slides/Hero';
-import Overview from '@/src/components/slides/Overview';
-import WhyEvaluate from '@/src/components/slides/WhyEvaluate';
-import DefineObjectives from '@/src/components/slides/DefineObjectives';
-import RefiningObjectives from '@/src/components/slides/RefiningObjectives';
-import TobaccoExample from '@/src/components/slides/TobaccoExample';
-import EvaluationTypes from '@/src/components/slides/EvaluationTypes';
-import VHNDExample from '@/src/components/slides/VHNDExample';
-import SelectingIndicators from '@/src/components/slides/SelectingIndicators';
-import SwachhBharatExample from '@/src/components/slides/SwachhBharatExample';
-import EvaluationDesign from '@/src/components/slides/EvaluationDesign';
-import HandwashingExample from '@/src/components/slides/HandwashingExample';
-import DesignCritiqueActivity from '@/src/components/slides/DesignCritiqueActivity';
-import DataCollectionTools from '@/src/components/slides/DataCollectionTools';
-import ORSExample from '@/src/components/slides/ORSExample';
-import AnalysisInterpretation from '@/src/components/slides/AnalysisInterpretation';
-import MarginalImprovementExample from '@/src/components/slides/MarginalImprovementExample';
-import FeedbackUtilization from '@/src/components/slides/FeedbackUtilization';
-import ASHAMeetingExample from '@/src/components/slides/ASHAMeetingExample';
-import CommonPitfalls from '@/src/components/slides/CommonPitfalls';
-import DiscussionReflection from '@/src/components/slides/DiscussionReflection';
-import FinalIntegrativeActivity from '@/src/components/slides/FinalIntegrativeActivity';
-import ThankYou from '@/src/components/slides/ThankYou';
-import { ChevronDown } from 'lucide-react';
+import Slide01 from '@/src/presentations/health-promotion/slides/Slide-01';
+import Slide02 from '@/src/presentations/health-promotion/slides/Slide-02';
+import Slide03 from '@/src/presentations/health-promotion/slides/Slide-03';
+import Slide04 from '@/src/presentations/health-promotion/slides/Slide-04';
+import Slide05 from '@/src/presentations/health-promotion/slides/Slide-05';
+import Slide06 from '@/src/presentations/health-promotion/slides/Slide-06';
+import Slide07 from '@/src/presentations/health-promotion/slides/Slide-07';
+import Slide08 from '@/src/presentations/health-promotion/slides/Slide-08';
+import Slide09 from '@/src/presentations/health-promotion/slides/Slide-09';
+import Slide10 from '@/src/presentations/health-promotion/slides/Slide-10';
+import Slide11 from '@/src/presentations/health-promotion/slides/Slide-11';
+import Slide12 from '@/src/presentations/health-promotion/slides/Slide-12';
+import Slide13 from '@/src/presentations/health-promotion/slides/Slide-13';
+import Slide14 from '@/src/presentations/health-promotion/slides/Slide-14';
+import Slide15 from '@/src/presentations/health-promotion/slides/Slide-15';
+import Slide16 from '@/src/presentations/health-promotion/slides/Slide-16';
+import Slide17 from '@/src/presentations/health-promotion/slides/Slide-17';
+import Slide18 from '@/src/presentations/health-promotion/slides/Slide-18';
+import Slide19 from '@/src/presentations/health-promotion/slides/Slide-19';
+import Slide20 from '@/src/presentations/health-promotion/slides/Slide-20';
+import Slide21 from '@/src/presentations/health-promotion/slides/Slide-21';
+import Slide22 from '@/src/presentations/health-promotion/slides/Slide-22';
+import Slide23 from '@/src/presentations/health-promotion/slides/Slide-23';
+import { PresentationContainer } from '@/src/lib/presentation';
 
-const RadialBackground = dynamic(() => import('@/src/components/RadialBackground'), { ssr: false });
+const RadialBackground = dynamic(() => import('@/src/lib/presentation/RadialBackground'), { ssr: false });
 
-// --- ScaledSlide Component (Handles 4:3 fixed coordinate system scaling) ---
-const ScaledSlide: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [scale, setScale] = useState(1);
-
-  // We design for a fixed resolution of 1280x960 (4:3)
-  const REF_WIDTH = 1280;
-  const REF_HEIGHT = 960;
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (containerRef.current) {
-        const { clientWidth, clientHeight } = containerRef.current;
-        // Calculate scale for both dimensions
-        const scaleX = clientWidth / REF_WIDTH;
-        const scaleY = clientHeight / REF_HEIGHT;
-        
-        // Use the smaller scale to ensure content always fits entirely within the container
-        // This prevents overflow on ultra-wide or ultra-tall screens where the aspect ratio might slightly deviate
-        setScale(Math.min(scaleX, scaleY));
-      }
-    };
-
-    // Initial calculation
-    handleResize();
-
-    // Use ResizeObserver for robust size tracking
-    const observer = new ResizeObserver(handleResize);
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div ref={containerRef} className="w-full h-full relative overflow-hidden flex items-center justify-center">
-      <div 
-        style={{ 
-          width: REF_WIDTH, 
-          height: REF_HEIGHT, 
-          transform: `scale(${scale})`,
-          // transformOrigin 'center' combined with flex centering ensures perfect alignment
-        }}
-        className="flex-shrink-0 origin-center overflow-hidden"
-      >
-        {children}
-      </div>
-    </div>
-  );
-};
-
-// --- Main App Component ---
 const App: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const touchStartY = useRef<number | null>(null);
-  
-  // Define slides array
   const SlideComponents = [
-    Hero, 
-    Overview, 
-    WhyEvaluate, 
-    DefineObjectives, 
-    RefiningObjectives, 
-    TobaccoExample,
-    EvaluationTypes,
-    VHNDExample,
-    SelectingIndicators,
-    SwachhBharatExample,
-    EvaluationDesign,
-    HandwashingExample,
-    DesignCritiqueActivity,
-    DataCollectionTools,
-    ORSExample,
-    AnalysisInterpretation,
-    MarginalImprovementExample,
-    FeedbackUtilization,
-    ASHAMeetingExample,
-    CommonPitfalls,
-    DiscussionReflection,
-    FinalIntegrativeActivity,
-    ThankYou
+    Slide01, Slide02, Slide03, Slide04, Slide05, Slide06,
+    Slide07, Slide08, Slide09, Slide10, Slide11, Slide12,
+    Slide13, Slide14, Slide15, Slide16, Slide17, Slide18,
+    Slide19, Slide20, Slide21, Slide22, Slide23
   ];
-  const TOTAL_SLIDES = SlideComponents.length;
-
-  // Function to handle slide navigation
-  const navigate = useCallback((direction: number) => {
-    if (isScrolling) return;
-
-    const nextIndex = currentSlide + direction;
-
-    // Check bounds
-    if (nextIndex >= 0 && nextIndex < TOTAL_SLIDES) {
-      setIsScrolling(true);
-      setCurrentSlide(nextIndex);
-      
-      // Lock scrolling for the duration of the animation (1000ms)
-      setTimeout(() => {
-        setIsScrolling(false);
-      }, 1000);
-    }
-  }, [currentSlide, isScrolling, TOTAL_SLIDES]);
-
-  const handleJumpToSlide = useCallback((index: number) => {
-    setCurrentSlide(index);
-  }, []);
-
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (['ArrowDown', 'PageDown', ' '].includes(e.key)) {
-        e.preventDefault();
-        navigate(1);
-      } else if (['ArrowUp', 'PageUp'].includes(e.key)) {
-        e.preventDefault();
-        navigate(-1);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [navigate]);
-
-  // Wheel/Scroll navigation
-  useEffect(() => {
-    const handleWheel = (e: WheelEvent) => {
-      // Small threshold to avoid accidental micro-scrolls from sensitive trackpads
-      if (Math.abs(e.deltaY) > 30) {
-        navigate(e.deltaY > 0 ? 1 : -1);
-      }
-    };
-
-    // Use passive: true as we don't need to preventDefault (overflow hidden handles that)
-    window.addEventListener('wheel', handleWheel, { passive: true });
-    return () => window.removeEventListener('wheel', handleWheel);
-  }, [navigate]);
-
-  // Touch navigation
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartY.current = e.touches[0].clientY;
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartY.current === null) return;
-
-    const touchEndY = e.changedTouches[0].clientY;
-    const diff = touchStartY.current - touchEndY;
-
-    // Swipe threshold
-    if (Math.abs(diff) > 50) {
-      navigate(diff > 0 ? 1 : -1);
-    }
-
-    touchStartY.current = null;
-  };
 
   return (
-    <div 
-      className="fixed inset-0 w-full h-full bg-green-100 overflow-hidden select-none"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
-      {/* Background Radial Progress */}
-      <RadialBackground 
-        total={TOTAL_SLIDES} 
-        current={currentSlide} 
-        onNavigate={handleJumpToSlide}
-      />
-
-      {/* Slide Container moving vertically */}
-      <div 
-        className="w-full h-full transition-transform duration-1000 ease-in-out relative z-10 pointer-events-none"
-        style={{ transform: `translateY(-${currentSlide * 100}%)` }}
-      >
-        {SlideComponents.map((Component, index) => (
-          <div key={index} className="w-full h-full flex items-center justify-center p-10">
-            {/* The 4:3 Aspect Ratio Box - Enable pointer events here so slide content is interactive */}
-            <div className="relative aspect-[4/3] max-w-full max-h-full shadow-2xl rounded-sm overflow-hidden bg-white pointer-events-auto">
-              <ScaledSlide>
-                <Component isActive={currentSlide === index} />
-              </ScaledSlide>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <PresentationContainer 
+      slides={SlideComponents}
+      RadialComponent={RadialBackground}
+    />
   );
 };
 

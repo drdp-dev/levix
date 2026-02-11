@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Target, Ruler, Mountain, Link2, Clock, AlertTriangle } from 'lucide-react';
 
 const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
@@ -24,19 +24,19 @@ const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
         </p>
       </div>
 
-      {/* Main Content - SMART Cards */}
-      <div className="flex-1 flex items-stretch justify-center gap-4 px-4 pb-4">
+      {/* Main Content - SMART Cards Vertical */}
+      <div className="flex-1 flex flex-col items-stretch justify-center gap-3 px-10 pb-4">
         {smart.map((item, index) => (
           <div
             key={index}
-            className={`group flex-1 flex flex-col items-center justify-center p-4 rounded-2xl border-2 ${item.border} ${item.bg} shadow-sm transition-all duration-500 transform ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'} hover:-translate-y-4 hover:shadow-xl hover:flex-[1.2] cursor-default`}
+            className={`group w-full grid grid-cols-[100px_1fr_2fr] items-center gap-8 p-5 rounded-2xl border-2 ${item.border} ${item.bg} shadow-sm transition-all duration-500 transform ${isActive ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-24'} hover:translate-x-4 hover:shadow-xl cursor-default`}
             style={{ transitionDelay: `${400 + (index * 150)}ms` }}
           >
-            <div className={`mb-6 p-4 bg-white rounded-full shadow-sm ${item.color} transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12`}>
+            <div className={`flex items-center justify-start p-4 bg-white rounded-full shadow-sm ${item.color} transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12 w-fit`}>
               <item.icon className="w-10 h-10" strokeWidth={2.5} />
             </div>
-            <h3 className={`text-6xl font-black ${item.color} mb-2 leading-none transition-transform duration-300 group-hover:scale-110`}>{item.letter}</h3>
-            <span className="text-2xl font-bold text-slate-800">{item.word}</span>
+            <h3 className={`text-6xl font-black ${item.color} leading-none transition-transform duration-300 group-hover:scale-110 text-center`}>{item.letter}</h3>
+            <span className="text-3xl font-bold text-slate-800 text-right">{item.word}</span>
           </div>
         ))}
       </div>

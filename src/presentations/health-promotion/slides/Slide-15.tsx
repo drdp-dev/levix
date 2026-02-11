@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { MessageCircleQuestion, Eye, ClipboardCheck, FlaskConical, X, Check, ShieldAlert } from 'lucide-react';
 
 const ORSExample: React.FC<SlideProps> = ({ isActive }) => {

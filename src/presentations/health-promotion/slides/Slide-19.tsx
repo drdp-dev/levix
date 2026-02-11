@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { CalendarX, Wheat, ArrowRight, CalendarCheck, Repeat, Users } from 'lucide-react';
 
 const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {

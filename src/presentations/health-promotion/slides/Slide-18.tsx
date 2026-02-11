@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { RefreshCcw, Coins, CalendarClock, TrendingUp, AlertTriangle, Megaphone } from 'lucide-react';
 
 const FeedbackUtilization: React.FC<SlideProps> = ({ isActive }) => {

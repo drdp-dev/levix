@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { TrendingUp, Calculator, Scale, AlertOctagon, ArrowUpRight, Target, Users } from 'lucide-react';
 
 const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {

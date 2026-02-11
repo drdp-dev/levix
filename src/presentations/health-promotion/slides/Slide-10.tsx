@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { GraduationCap, Footprints, Hammer, Repeat, TrendingDown, Info } from 'lucide-react';
 
 const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {

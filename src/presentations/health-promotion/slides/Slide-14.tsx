@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { FileText, Mic, Users, Eye, FolderSearch, BrainCircuit, Check, X, ArrowRight, MousePointerClick } from 'lucide-react';
 
 interface ToolData {

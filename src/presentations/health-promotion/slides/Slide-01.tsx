@@ -1,6 +1,6 @@
 import React from 'react';
-import { SlideProps } from '../../types';
-import { HeartPulse, Activity, ChevronDown, Stethoscope, BookOpen } from 'lucide-react';
+import { SlideProps } from '@/src/types';
+import { HeartPulse, BriefcaseMedical, ChevronDown, Stethoscope, BookOpen } from 'lucide-react';
 
 const Hero: React.FC<SlideProps> = ({ isActive }) => {
   return (
@@ -22,7 +22,7 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
         <div className={`mb-12 relative transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-20 opacity-0'}`}>
            <div className="absolute inset-0 bg-lime-200 rounded-full blur-2xl opacity-50 animate-pulse"></div>
            <div className="relative bg-white p-8 rounded-[2.5rem] shadow-2xl border-4 border-lime-100 flex items-center justify-center gap-6">
-              <Activity className="w-16 h-16 text-emerald-600 animate-bounce" strokeWidth={2} style={{ animationDuration: '3s' }} />
+              <BriefcaseMedical className="w-16 h-16 text-emerald-600 animate-bounce" strokeWidth={2} style={{ animationDuration: '3s' }} />
               <div className="w-px h-16 bg-slate-200"></div>
               <HeartPulse className="w-20 h-20 text-red-500 animate-pulse" strokeWidth={2} style={{ animationDuration: '2s' }} />
               <div className="w-px h-16 bg-slate-200"></div>

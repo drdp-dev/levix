@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { BrainCircuit, Wallet, Scale, Gavel, GitFork, CheckCircle2, XCircle, ArrowRight, X } from 'lucide-react';
 
 const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
