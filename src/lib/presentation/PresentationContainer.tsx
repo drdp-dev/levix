@@ -10,6 +10,8 @@ interface PresentationContainerProps {
   scrollThreshold?: number;
   swipeThreshold?: number;
   showRadialProgress?: boolean;
+  aspectRatio?: string;
+  margin?: number;
   RadialComponent?: React.ComponentType<{
     total: number;
     current: number;
@@ -27,6 +29,8 @@ interface PresentationContainerProps {
  * @param scrollThreshold - Wheel scroll threshold (default: 30)
  * @param swipeThreshold - Touch swipe threshold (default: 50)
  * @param showRadialProgress - Show radial progress indicator (default: true)
+ * @param aspectRatio - Aspect ratio string (default: '4/3')
+ * @param margin - Margin in pixels (default: 40, results in 80px total padding)
  * @param RadialComponent - Custom radial progress component
  */
 export const PresentationContainer: React.FC<PresentationContainerProps> = ({
@@ -36,11 +40,17 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   scrollThreshold = 30,
   swipeThreshold = 50,
   showRadialProgress = true,
+  aspectRatio = '4/3',
+  margin = 40,
   RadialComponent,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const touchStartY = useRef<number | null>(null);
+
+  // Calculate aspect ratio dimensions
+  const [ratioW, ratioH] = aspectRatio.split('/').map(Number);
+  const totalMargin = margin * 2;
 
   const navigate = useCallback((direction: number) => {
     if (isScrolling) return;
@@ -128,12 +138,12 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
         />
       )}
 
-      <div className="w-full h-full p-10">
+      <div className="w-full h-full" style={{ padding: `${margin}px` }}>
         <div className="w-full h-full flex items-center justify-center">
           <div style={{ 
-            aspectRatio: '4/3',
-            width: 'min(100%, calc((100vh - 80px) * 4 / 3))',
-            height: 'min(100%, calc((100vw - 80px) * 3 / 4))'
+            aspectRatio,
+            width: `min(100%, calc((100vh - ${totalMargin}px) * ${ratioW} / ${ratioH}))`,
+            height: `min(100%, calc((100vw - ${totalMargin}px) * ${ratioH} / ${ratioW}))`
           }} className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
             {slides.map((SlideComponent, index) => (
               <div
