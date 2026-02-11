@@ -1,36 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { SlideProps } from '../../types';
-import { Hospital, Building2, HeartHandshake, Sparkles, Stethoscope, Syringe, Pill, HeartPulse, Microscope, TestTubes, BriefcaseMedical, Ambulance, Heart, Thermometer, Droplet, FlaskConical, Dna, PillBottle } from 'lucide-react';
+import { Hospital, Building2, HeartHandshake } from 'lucide-react';
+import { MedicalConfettiRain } from '@/src/lib/presentation';
 
 const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
-  const [confetti, setConfetti] = useState<Array<{ id: number; icon: any; x: number; y: number; delay: number; duration: number; size: number; color: string }>>([]);
-
-  useEffect(() => {
-    if (isActive) {
-      const icons = [Stethoscope, Syringe, Pill, HeartPulse, Microscope, TestTubes, BriefcaseMedical, Ambulance, Heart, Thermometer, Droplet, PillBottle, FlaskConical, Dna, HeartHandshake];
-      const colors = ['text-green-950', 'text-green-600', 'text-amber-600', 'text-yellow-700', 'text-orange-600', 'text-blue-500', 'text-amber-500', 'text-red-500'];
-      
-      let id = 0;
-      const addConfetti = () => {
-        const newItem = {
-          id: Date.now() + id++,
-          icon: icons[Math.floor(Math.random() * icons.length)],
-          x: Math.random() * 100,
-          y: -10,
-          delay: 0,
-          duration: 3000 + Math.random() * 2000,
-          size: 32 + Math.random() * 32,
-          color: colors[Math.floor(Math.random() * colors.length)],
-        };
-        setConfetti(prev => [...prev.slice(-49), newItem]);
-      };
-
-      const interval = setInterval(addConfetti, 200);
-      return () => clearInterval(interval);
-    } else {
-      setConfetti([]);
-    }
-  }, [isActive]);
 
   const references = [
     "Park K. Park’s Textbook of Preventive and Social Medicine. Latest Edition.",
@@ -46,23 +19,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
         <div className="absolute bottom-0 right-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none animate-drift" style={{ animationDelay: '3s' }}></div>
 
         {/* Confetti - Behind content */}
-        {confetti.map((item) => {
-          const Icon = item.icon;
-          return (
-            <div
-              key={item.id}
-              className="absolute pointer-events-none animate-confetti-fall z-0"
-              style={{
-                left: `${item.x}%`,
-                top: `${item.y}%`,
-                animationDelay: `${item.delay}ms`,
-                animationDuration: `${item.duration}ms`,
-              }}
-            >
-              <Icon className={`${item.color}`} style={{ width: `${item.size}px`, height: `${item.size}px` }} strokeWidth={2.5} />
-            </div>
-          );
-        })}
+        <MedicalConfettiRain isActive={isActive} />
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col items-center justify-center relative z-10">
