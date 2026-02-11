@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Health Evaluation Presenter",
+  title: "Levix - Health Evaluation Presenter",
   description: "Interactive presentation on health program evaluation",
 };
 
