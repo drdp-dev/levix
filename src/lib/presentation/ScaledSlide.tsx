@@ -43,14 +43,14 @@ export const ScaledSlide: React.FC<ScaledSlideProps> = ({
   }, [refWidth, refHeight]);
 
   return (
-    <div ref={containerRef} className="w-full h-full relative flex items-center justify-center">
+    <div ref={containerRef} className="w-full h-full relative overflow-hidden flex items-center justify-center">
       <div 
         style={{ 
           width: refWidth, 
           height: refHeight, 
           transform: `scale(${scale})`,
         }}
-        className="flex-shrink-0 origin-center"
+        className="flex-shrink-0 origin-center overflow-hidden"
       >
         {children}
       </div>

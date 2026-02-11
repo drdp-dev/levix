@@ -127,7 +127,7 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
             aspectRatio: '4/3',
             width: 'min(100%, calc((100vh - 80px) * 4 / 3))',
             height: 'min(100%, calc((100vw - 80px) * 3 / 4))'
-          }} className="relative rounded-3xl shadow-2xl bg-white">
+          }} className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
             {slides.map((SlideComponent, index) => (
               <div
                 key={index}
