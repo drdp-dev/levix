@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import type { LucideIcon } from 'lucide-react';
 import { 
   // Core Medical Icons
   Activity,
@@ -36,7 +37,7 @@ import {
 
 interface ConfettiItem {
   id: number;
-  icon: any;
+  icon: LucideIcon;
   x: number;
   y: number;
   delay: number;
