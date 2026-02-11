@@ -78,10 +78,6 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
             {/* Presenter Details */}
             <div className={`flex flex-col items-center gap-2 mb-16 transition-all duration-1000 delay-300 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                  <h2 className="text-4xl font-bold text-amber-800 hover:text-amber-900 transition-colors">Dr. Devaprasad Reddy</h2>
-                 <div className="flex items-center gap-3 text-2xl text-green-800 font-medium mt-2">
-                    <GraduationCap className="w-6 h-6" />
-                    <span>Tutor</span>
-                 </div>
                  <div className="flex items-center gap-3 text-xl text-green-700">
                     <Building2 className="w-5 h-5" />
                     <span>Department of Community Medicine</span>
