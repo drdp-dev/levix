@@ -124,7 +124,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
                 
                 {/* Question */}
-                <p className="text-2xl font-black text-olive-950 leading-tight mb-8 min-h-[4.5rem]">
+                <p className="text-2xl font-black text-lime-950 leading-tight mb-8 min-h-[4.5rem]">
                     {q.question}
                 </p>
 

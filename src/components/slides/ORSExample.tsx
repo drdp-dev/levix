@@ -75,7 +75,7 @@ const ORSExample: React.FC<SlideProps> = ({ isActive }) => {
       <div className={`flex-none mt-10 bg-yellow-100 border-l-[10px] border-yellow-500 rounded-r-2xl p-6 flex items-center gap-6 shadow-sm transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
          <ShieldAlert className="w-12 h-12 text-yellow-800" strokeWidth={2} />
          <div>
-            <h4 className="text-xl font-bold text-cornsilk-800 uppercase tracking-wide mb-1">Key Benefit</h4>
+            <h4 className="text-xl font-bold text-yellow-800 uppercase tracking-wide mb-1">Key Benefit</h4>
             <p className="text-3xl font-medium text-lime-950">
                 Observation reduces <span className="text-green-800 font-bold underline decoration-wavy decoration-green-500 underline-offset-4">social desirability bias</span>.
             </p>

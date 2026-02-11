@@ -23,7 +23,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
       <div className={`flex-none mb-10 transition-all duration-1000 delay-200 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <div className="bg-yellow-100 border-l-[12px] border-yellow-500 rounded-r-3xl p-8 shadow-sm relative overflow-hidden">
              <div className="absolute right-0 top-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
-                 <Users className="w-64 h-64 text-cornsilk-800" />
+                 <Users className="w-64 h-64 text-yellow-800" />
              </div>
              
              <h3 className="text-2xl font-bold text-lime-900 mb-2 flex items-center gap-3">
