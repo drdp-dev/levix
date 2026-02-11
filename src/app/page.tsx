@@ -30,12 +30,10 @@ export default function LandingPage() {
             <Image src="/icon1.png" alt="LEVIX" width={120} height={120} className="rounded-3xl shadow-2xl" />
           </div>
           <h2 className={`text-6xl font-black text-white mb-6 tracking-tight ${expletus.className}`}>
-            Interactive Presentation
-            <br />
-            <span className="text-[#ffdc00]">Platform</span>
+            Levitate Your Learning
           </h2>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            A professional, large-screen optimized presentation application for creating and delivering engaging interactive presentations
+            Interactive full-screen presentation framework for creating and delivering engaging presentations
           </p>
         </div>
 
