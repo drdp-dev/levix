@@ -1,6 +1,20 @@
 # Levix - Interactive Full-Screen Presentation Framework
 
-A modern, interactive full-screen presentation application built with Next.js, React, and Tailwind CSS. Create engaging presentations with smooth animations, interactive elements, and responsive design.
+<div align="center">
+  <img src="logo.png" alt="Levix Logo" width="120" height="120">
+  
+  <p><strong>A modern, interactive full-screen presentation application built with Next.js, React, and Tailwind CSS.</strong></p>
+  
+  <p>Create engaging presentations with smooth animations, interactive elements, and responsive design.</p>
+
+  ![Next.js](https://img.shields.io/badge/Next.js-15.1.6-black?style=flat-square&logo=next.js)
+  ![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=flat-square&logo=react)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?style=flat-square&logo=typescript)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.18-38B2AC?style=flat-square&logo=tailwind-css)
+  ![License](https://img.shields.io/badge/License-Private-red?style=flat-square)
+</div>
+
+---
 
 ## 🎯 Overview
 
