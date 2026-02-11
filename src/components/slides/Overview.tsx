@@ -7,6 +7,9 @@ const Overview: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Decorative Background */}
         <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-lime-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+
+      {/* Content Wrapper with Padding */}
+      <div className="relative z-10 w-full h-full p-10 flex flex-col">
         <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         {/* Content Wrapper with Padding */}
