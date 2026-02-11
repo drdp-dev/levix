@@ -2,21 +2,36 @@
 
 import React, { useEffect, useState } from 'react';
 import { 
-  Stethoscope, 
-  Syringe, 
-  Pill, 
-  HeartPulse, 
-  Microscope, 
-  TestTubes, 
-  BriefcaseMedical, 
-  Ambulance, 
-  Heart, 
-  Thermometer, 
-  Droplet, 
-  PillBottle, 
-  FlaskConical, 
-  Dna, 
-  HeartHandshake 
+  // Core Medical Icons
+  Activity,
+  Ambulance,
+  BriefcaseMedical,
+  Cross,
+  Dna,
+  Droplet,
+  Eye,
+  FlaskConical,
+  Hospital,
+  Microscope,
+  Pill,
+  PillBottle,
+  Pipette,
+  Siren,
+  Stethoscope,
+  Syringe,
+  TestTube,
+  TestTubes,
+  Thermometer,
+  // Heart-Related Icons
+  Heart,
+  HeartCrack,
+  HeartHandshake,
+  HeartOff,
+  HeartPlus,
+  HeartMinus,
+  HeartPulse,
+  HandHeart,
+  ScanHeart,
 } from 'lucide-react';
 
 interface ConfettiItem {
@@ -38,21 +53,36 @@ interface MedicalConfettiRainProps {
 }
 
 const MEDICAL_ICONS = [
+  // Core Medical Icons
+  Activity,
+  Ambulance,
+  BriefcaseMedical,
+  Cross,
+  Dna,
+  Droplet,
+  Eye,
+  FlaskConical,
+  Hospital,
+  Microscope,
+  Pill,
+  PillBottle,
+  Pipette,
+  Siren,
   Stethoscope,
   Syringe,
-  Pill,
-  HeartPulse,
-  Microscope,
+  TestTube,
   TestTubes,
-  BriefcaseMedical,
-  Ambulance,
-  Heart,
   Thermometer,
-  Droplet,
-  PillBottle,
-  FlaskConical,
-  Dna,
-  HeartHandshake
+  // Heart-Related Icons
+  Heart,
+  HeartCrack,
+  HeartHandshake,
+  HeartOff,
+  HeartPlus,
+  HeartMinus,
+  HeartPulse,
+  HandHeart,
+  ScanHeart,
 ];
 
 const DEFAULT_COLORS = [
