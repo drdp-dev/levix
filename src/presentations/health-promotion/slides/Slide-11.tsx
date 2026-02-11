@@ -1,6 +1,6 @@
 import React from 'react';
 import { SlideProps } from '../../types';
-import { ArrowRight, Users, Activity, Scale, HeartHandshake, Wallet, CheckCircle2, XCircle } from 'lucide-react';
+import { ArrowRight, Users, TrendingUp, Scale, HeartHandshake, Wallet, CheckCircle2, XCircle } from 'lucide-react';
 
 const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
   return (
@@ -160,7 +160,7 @@ const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {
           {/* Section 1: Title & Icon - Height Increased */}
           <div className="flex-none flex items-center gap-4 py-10 px-6 bg-amber-100 border-b border-amber-200">
             <div className="bg-white p-3 rounded-2xl shadow-sm text-amber-700 border border-amber-200">
-                <Activity className="w-8 h-8" strokeWidth={3} />
+                <TrendingUp className="w-8 h-8" strokeWidth={3} />
             </div>
             <div>
                 <h3 className="text-3xl font-bold text-green-950 leading-none">Time Series</h3>
