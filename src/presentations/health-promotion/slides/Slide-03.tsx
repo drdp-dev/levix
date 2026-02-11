@@ -71,7 +71,7 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
                         <item.icon className="w-14 h-14" strokeWidth={1.5} />
                     </div>
 
-                    <h3 className={`text-sm font-bold uppercase tracking-widest mb-4 ${item.color} opacity-80 bg-white px-3 py-1 rounded-full shadow-sm`}>
+                    <h3 className={`text-lg font-bold uppercase tracking-widest mb-4 ${item.color} opacity-80 bg-white px-5 py-2 rounded-full shadow-sm`}>
                         {item.label}
                     </h3>
                     
