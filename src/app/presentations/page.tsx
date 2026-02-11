@@ -83,6 +83,7 @@ export default function PresentationsPage() {
                 <span>Launch</span>
                 <ArrowRight className="w-5 h-5" />
               </div>
+              </div>
             </Link>
           ))}
         </div>
