@@ -89,7 +89,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-olive-100 bg-white/50 backdrop-blur-sm mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8 text-center text-olive-600">
-          <p className="text-lg">Dr. Devaprasad Reddy • Department of Community Medicine</p>
+          <p className="text-lg">© 2026 drdp. All rights reserved.</p>
         </div>
       </footer>
     </div>
