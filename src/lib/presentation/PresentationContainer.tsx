@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import { ScaledSlide } from './ScaledSlide';
 import { Maximize, Minimize, X } from 'lucide-react';
 
@@ -52,6 +53,7 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   const touchStartY = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const router = useRouter();
 
   // Calculate aspect ratio dimensions
   const [ratioW, ratioH] = aspectRatio.split('/').map(Number);
@@ -72,8 +74,8 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
     if (document.fullscreenElement) {
       document.exitFullscreen();
     }
-    window.location.href = '/presentations';
-  }, []);
+    router.push('/presentations');
+  }, [router]);
 
   // Listen for fullscreen changes
   useEffect(() => {
