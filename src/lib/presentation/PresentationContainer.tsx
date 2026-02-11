@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { ScaledSlide } from './ScaledSlide';
+import { Maximize, Minimize, X } from 'lucide-react';
 
 interface PresentationContainerProps {
   slides: React.ComponentType<{ isActive: boolean }>[];
@@ -46,11 +47,41 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const touchStartY = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // Calculate aspect ratio dimensions
   const [ratioW, ratioH] = aspectRatio.split('/').map(Number);
   const totalMargin = margin * 2;
+
+  // Fullscreen handlers
+  const toggleFullscreen = useCallback(() => {
+    if (!document.fullscreenElement) {
+      containerRef.current?.requestFullscreen();
+      setIsFullscreen(true);
+    } else {
+      document.exitFullscreen();
+      setIsFullscreen(false);
+    }
+  }, []);
+
+  const exitPresentation = useCallback(() => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+    window.location.href = '/presentations';
+  }, []);
+
+  // Listen for fullscreen changes
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
 
   const navigate = useCallback((direction: number) => {
     if (isScrolling) return;
@@ -126,6 +157,7 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
 
   return (
     <div 
+      ref={containerRef}
       className={`fixed inset-0 w-full h-full ${backgroundColor} overflow-hidden select-none`}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -137,6 +169,28 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
           onNavigate={handleJumpToSlide}
         />
       )}
+
+      {/* Control Buttons */}
+      <div className="fixed top-6 right-6 z-50 flex gap-3">
+        <button
+          onClick={toggleFullscreen}
+          className="p-3 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          title={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
+        >
+          {isFullscreen ? (
+            <Minimize className="w-6 h-6 text-gray-700" />
+          ) : (
+            <Maximize className="w-6 h-6 text-gray-700" />
+          )}
+        </button>
+        <button
+          onClick={exitPresentation}
+          className="p-3 bg-red-500/90 hover:bg-red-600 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          title="Exit Presentation"
+        >
+          <X className="w-6 h-6 text-white" />
+        </button>
+      </div>
 
       <div className="w-full h-full" style={{ padding: `${margin}px` }}>
         <div className="w-full h-full flex items-center justify-center">
