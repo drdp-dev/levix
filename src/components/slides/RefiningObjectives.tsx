@@ -45,7 +45,7 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
   };
 
   return (
-    <div className={`w-full h-full flex flex-col px-10 py-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col px-10 py-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Header */}
       <div className="flex-none text-center mb-6">

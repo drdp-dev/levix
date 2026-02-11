@@ -4,7 +4,7 @@ import { TrendingUp, Calculator, Scale, AlertOctagon, ArrowUpRight, Target, User
 
 const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-10 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
       <div className="absolute -top-20 -left-20 w-96 h-96 bg-gray-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>

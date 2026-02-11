@@ -4,7 +4,7 @@ import { CalendarDays, ClipboardCheck, Users, Syringe, AlertOctagon, Package, Ar
 
 const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full p-8 relative overflow-hidden bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full p-8 relative bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background with skewed partition */}
       <div className="absolute top-0 right-0 w-[55%] h-full bg-lime-100/50 -z-10 transform -skew-x-6 origin-top-right translate-x-20"></div>

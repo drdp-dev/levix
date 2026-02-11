@@ -4,7 +4,7 @@ import { HeartPulse, Activity, ChevronDown, Stethoscope, BookOpen } from 'lucide
 
 const Hero: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden bg-white transition-opacity duration-1000 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col items-center justify-center relative bg-white transition-opacity duration-1000 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Dynamic Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-[0.03]" 

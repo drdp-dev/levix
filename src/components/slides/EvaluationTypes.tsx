@@ -58,7 +58,7 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
   ];
 
   return (
-    <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-10 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Header */}
       <div className="flex-none mb-6 text-center">

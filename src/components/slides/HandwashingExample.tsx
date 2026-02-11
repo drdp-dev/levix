@@ -4,7 +4,7 @@ import { ClipboardList, Droplets, ClipboardCheck, AlertOctagon, ArrowRight, Wave
 
 const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Dynamic Background */}
       <div className="absolute top-0 right-0 w-full h-full bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-70 pointer-events-none animate-pulse" style={{ animationDuration: '8s' }}></div>

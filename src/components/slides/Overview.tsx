@@ -4,7 +4,7 @@ import { Target, Footprints, Globe2, AlertTriangle, Lightbulb, Map, ArrowRight }
 
 const Overview: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full p-10 relative overflow-hidden bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full p-10 relative bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Decorative Background */}
         <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-lime-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>

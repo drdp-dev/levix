@@ -40,7 +40,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
   ];
 
   return (
-    <div className={`w-full h-full flex flex-col p-12 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-12 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background */}
         <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-lime-100 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none animate-drift"></div>
         <div className="absolute bottom-0 right-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none animate-drift" style={{ animationDelay: '3s' }}></div>

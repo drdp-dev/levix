@@ -124,7 +124,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
   };
 
   return (
-    <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-yellow-200/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
