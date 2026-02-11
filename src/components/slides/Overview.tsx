@@ -6,8 +6,8 @@ const Overview: React.FC<SlideProps> = ({ isActive }) => {
   return (
     <div className={`w-full h-full p-10 relative overflow-hidden bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Decorative Background */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-lime-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-yellow-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-lime-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         {/* Header Section */}
         <div className="flex-none mb-8 flex items-center justify-between border-b-4 border-lime-200 pb-4 relative z-10">

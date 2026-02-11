@@ -127,8 +127,8 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-yellow-200/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-lime-100/50 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-yellow-200/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-gradient-to-tr from-lime-100/50 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
 
       {/* Header Area */}
       <div className="flex-none mb-6 flex justify-between items-start relative z-10">
@@ -145,7 +145,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
         </div>
 
         {/* Scenario Card - Large & Wide */}
-        <div className={`bg-white/95 backdrop-blur-md border-2 border-lime-300 rounded-[2rem] p-8 shadow-xl flex flex-col gap-6 min-w-[600px] transition-all duration-1000 transform origin-top-right ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+        <div className={`bg-white/95 backdrop-blur-md border-2 border-lime-300 rounded-[2rem] p-8 shadow-xl flex flex-col gap-6 min-w-3/4 transition-all duration-1000 transform origin-top-right ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
             <div className="flex items-center justify-between border-b-2 border-gray-100 pb-3">
                  <div className="text-xl font-bold text-gray-400 uppercase tracking-widest">Mission Constraints</div>
                  <div className="px-4 py-1.5 bg-red-100 text-red-700 rounded-full font-bold text-sm flex items-center gap-2">

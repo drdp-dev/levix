@@ -12,8 +12,8 @@ const Hero: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Abstract Shapes */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-lime-200/40 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 animate-pulse" style={{ animationDuration: '8s' }}></div>
-      <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gradient-to-tr from-blue-50/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 animate-pulse" style={{ animationDuration: '10s' }}></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-lime-200/40 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-tr from-blue-50/40 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 animate-pulse" style={{ animationDuration: '10s' }}></div>
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-6xl px-4">

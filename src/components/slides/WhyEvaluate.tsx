@@ -42,8 +42,8 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
   return (
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background blobs */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-lime-100 rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-100 rounded-full blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-2/3 h-2/3 bg-lime-100 rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-yellow-100 rounded-full blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
 
         {/* Header */}
         <div className="flex-none mb-10 text-center relative z-10">

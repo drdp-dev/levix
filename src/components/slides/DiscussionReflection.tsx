@@ -79,8 +79,8 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-lime-100 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-2/3 h-2/3 bg-lime-100 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-4 text-center">

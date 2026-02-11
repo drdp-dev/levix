@@ -7,7 +7,7 @@ const ORSExample: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 opacity-60 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-blue-50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
        <div className="flex-none mb-10">

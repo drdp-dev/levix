@@ -7,7 +7,7 @@ const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-amber-50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-amber-50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-10">

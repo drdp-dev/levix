@@ -101,7 +101,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-40 pointer-events-none animate-pulse"></div>
+      <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-red-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-40 pointer-events-none animate-pulse"></div>
 
       {/* Header */}
       <div className={`flex-none mb-6 flex items-center justify-between transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>

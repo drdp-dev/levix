@@ -7,8 +7,8 @@ const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Dynamic Background */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-70 pointer-events-none animate-pulse" style={{ animationDuration: '8s' }}></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-yellow-100/50 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 opacity-60 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-blue-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-70 pointer-events-none animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-yellow-100/50 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-12 relative z-10">

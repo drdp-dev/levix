@@ -6,7 +6,7 @@ const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {
   return (
     <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background Element */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-2/3 h-2/3 bg-red-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50 pointer-events-none"></div>
 
         {/* Header */}
         <div className="flex-none mb-8 relative z-10">
