@@ -116,14 +116,15 @@ export const MedicalConfettiRain: React.FC<MedicalConfettiRainProps> = ({
     if (isActive) {
       let id = 0;
       const addConfetti = () => {
+        const size = 32 + Math.random() * 32;
         const newItem: ConfettiItem = {
           id: Date.now() + id++,
           icon: MEDICAL_ICONS[Math.floor(Math.random() * MEDICAL_ICONS.length)],
-          x: Math.random() * 100,
+          x: Math.random() * 95, // 0-95% to prevent overflow on right
           y: -10,
           delay: 0,
           duration: 3000 + Math.random() * 2000,
-          size: 32 + Math.random() * 32,
+          size,
           color: colors[Math.floor(Math.random() * colors.length)],
         };
         setConfetti(prev => [...prev.slice(-(maxItems - 1)), newItem]);
