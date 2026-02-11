@@ -104,74 +104,74 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
 
   const tasks = [
     { id: "task-0", text: "Define one measurable objective", icon: Target, color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-100" },
-    { id: "task-1", text: "Identify 3 key indicators", icon: ListChecks, color: "text-forest-600", bg: "bg-forest-50", border: "border-forest-100" },
-    { id: "task-2", text: "Choose evaluation design", icon: LayoutTemplate, color: "text-copper-600", bg: "bg-copper-50", border: "border-copper-100" },
-    { id: "task-3", text: "Decide data collection tools", icon: ClipboardPen, color: "text-clay-600", bg: "bg-clay-50", border: "border-clay-100" },
+    { id: "task-1", text: "Identify 3 key indicators", icon: ListChecks, color: "text-green-700", bg: "bg-green-100", border: "border-green-200" },
+    { id: "task-2", text: "Choose evaluation design", icon: LayoutTemplate, color: "text-amber-700", bg: "bg-amber-100", border: "border-amber-200" },
+    { id: "task-3", text: "Decide data collection tools", icon: ClipboardPen, color: "text-orange-700", bg: "bg-orange-100", border: "border-orange-200" },
     { id: "task-4", text: "Identify bias strategy", icon: ShieldAlert, color: "text-red-500", bg: "bg-red-50", border: "border-red-100" },
-    { id: "task-5", text: "District action plan", icon: Megaphone, color: "text-olive-600", bg: "bg-olive-50", border: "border-olive-100" },
+    { id: "task-5", text: "District action plan", icon: Megaphone, color: "text-green-700", bg: "bg-green-100", border: "border-green-200" },
   ];
 
   const getThemeStyles = (theme: string) => {
       switch(theme) {
           case 'blue': return { bg: 'bg-blue-50', text: 'text-blue-800', icon: 'text-blue-600' };
-          case 'forest': return { bg: 'bg-forest-50', text: 'text-forest-800', icon: 'text-forest-600' };
-          case 'copper': return { bg: 'bg-copper-50', text: 'text-copper-800', icon: 'text-copper-600' };
-          case 'clay': return { bg: 'bg-clay-50', text: 'text-clay-800', icon: 'text-clay-600' };
+          case 'forest': return { bg: 'bg-green-100', text: 'text-green-900', icon: 'text-green-700' };
+          case 'copper': return { bg: 'bg-amber-100', text: 'text-amber-900', icon: 'text-amber-700' };
+          case 'clay': return { bg: 'bg-orange-100', text: 'text-orange-900', icon: 'text-orange-700' };
           case 'red': return { bg: 'bg-red-50', text: 'text-red-800', icon: 'text-red-600' };
-          case 'olive': return { bg: 'bg-olive-50', text: 'text-olive-800', icon: 'text-olive-600' };
+          case 'olive': return { bg: 'bg-green-100', text: 'text-green-900', icon: 'text-green-700' };
           default: return { bg: 'bg-gray-50', text: 'text-gray-800', icon: 'text-gray-600' };
       }
   };
 
   return (
-    <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-cornsilk-100/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-olive-50/50 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-yellow-200/50 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-gradient-to-tr from-green-100/50 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
 
       {/* Header Area */}
       <div className="flex-none mb-6 flex justify-between items-start relative z-10">
         <div className="flex-1 pr-6 pt-2">
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-olive-100 rounded-full text-olive-800 font-bold uppercase tracking-widest text-sm mb-3">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-green-200 rounded-full text-green-900 font-bold uppercase tracking-widest text-sm mb-3">
                 Final Activity
             </div>
-            <h2 className="text-6xl font-bold text-olive-900 leading-tight">
-              Design a Realistic<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-olive-600 to-forest-600">Evaluation Plan</span>
+            <h2 className="text-6xl font-bold text-green-950 leading-tight">
+              Design a Realistic<br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-700">Evaluation Plan</span>
             </h2>
-            <div className="flex items-center gap-2 mt-2 text-olive-500 font-bold text-sm uppercase tracking-wider animate-pulse">
+            <div className="flex items-center gap-2 mt-2 text-green-950 font-bold text-sm uppercase tracking-wider animate-pulse">
                 <MousePointerClick size={16} /> Click items to reveal answers
             </div>
         </div>
 
-        {/* Scenario Card - Large & Wide */}
-        <div className={`bg-white/95 backdrop-blur-md border-2 border-olive-200 rounded-[2rem] p-8 shadow-xl flex flex-col gap-6 min-w-[600px] transition-all duration-1000 transform origin-top-right ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
-            <div className="flex items-center justify-between border-b-2 border-gray-100 pb-3">
-                 <div className="text-xl font-bold text-gray-400 uppercase tracking-widest">Mission Constraints</div>
-                 <div className="px-4 py-1.5 bg-red-100 text-red-700 rounded-full font-bold text-sm flex items-center gap-2">
-                    <AlertTriangle size={16} /> RESTRICTED
+        {/* Scenario Card - Compact */}
+        <div className={`bg-white/95 backdrop-blur-md border-2 border-green-300 rounded-[2rem] p-6 shadow-xl flex flex-col gap-5 w-[640px] transition-all duration-1000 transform origin-top-right ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+            <div className="flex items-center justify-between border-b-2 border-gray-100 pb-2">
+                 <div className="text-base font-bold text-gray-400 uppercase tracking-widest">Mission Constraints</div>
+                 <div className="px-3 py-1.5 bg-red-100 text-red-700 rounded-full font-bold text-sm flex items-center gap-1.5">
+                    <AlertTriangle size={14} /> RESTRICTED
                  </div>
             </div>
             
-            <div className="flex items-center justify-between gap-8">
-                <div className="flex items-center gap-5">
-                    <div className="p-4 bg-green-100 rounded-2xl text-green-700 shadow-sm"><IndianRupee size={36} /></div>
+            <div className="flex items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-green-100 rounded-xl text-green-700"><IndianRupee size={28} /></div>
                     <div>
-                        <div className="text-base font-bold text-gray-500 uppercase">Budget</div>
-                        <div className="text-4xl font-black text-olive-900">₹15 Lakh</div>
+                        <div className="text-sm font-bold text-gray-500 uppercase">Budget</div>
+                        <div className="text-3xl font-black text-green-950">₹15 Lakh</div>
                     </div>
                 </div>
-                <div className="w-0.5 h-16 bg-gray-200"></div>
-                <div className="flex items-center gap-5">
-                    <div className="p-4 bg-blue-100 rounded-2xl text-blue-600 shadow-sm"><CalendarClock size={36} /></div>
+                <div className="w-px h-14 bg-gray-200"></div>
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-blue-100 rounded-xl text-blue-600"><CalendarClock size={28} /></div>
                     <div>
-                        <div className="text-base font-bold text-gray-500 uppercase">Timeline</div>
-                        <div className="text-4xl font-black text-olive-900">12 Months</div>
+                        <div className="text-sm font-bold text-gray-500 uppercase">Timeline</div>
+                        <div className="text-3xl font-black text-green-950">12 Months</div>
                     </div>
                 </div>
             </div>
-            <div className="text-2xl font-bold text-olive-700 bg-olive-50 p-4 rounded-xl text-center border border-olive-200 shadow-inner">
-                Target: District-level adolescent anaemia program
+            <div className="text-xl font-bold text-green-800 bg-green-100 p-3.5 rounded-xl text-center border border-green-300">
+                Target: District adolescent anaemia program
             </div>
         </div>
       </div>
@@ -182,7 +182,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
             <div 
                 key={index}
                 onClick={() => setSelectedItem(modalData[task.id])}
-                className={`group relative bg-white border-[3px] ${task.border} rounded-3xl p-5 shadow-sm hover:shadow-2xl hover:-translate-y-1 hover:border-transparent hover:ring-4 hover:ring-offset-2 hover:ring-olive-200 transition-all duration-500 transform ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'} flex items-center gap-5 overflow-hidden cursor-pointer`}
+                className={`group relative bg-white border-[3px] ${task.border} rounded-3xl p-5 shadow-sm hover:shadow-2xl hover:-translate-y-1 hover:border-transparent hover:ring-4 hover:ring-offset-2 hover:ring-green-300 transition-all duration-500 transform ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-0'} flex items-center gap-5 overflow-hidden cursor-pointer`}
                 style={{ transitionDelay: `${200 + (index * 100)}ms` }}
             >
                 {/* Number Background */}
@@ -193,11 +193,11 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
                 <div className={`w-20 h-20 flex-shrink-0 rounded-2xl ${task.bg} ${task.color} flex items-center justify-center shadow-md relative z-10 group-hover:scale-110 transition-transform duration-300`}>
                     <task.icon size={36} strokeWidth={2.5} />
                 </div>
-                <p className="text-3xl font-bold text-gray-800 leading-tight group-hover:text-olive-900 transition-colors relative z-10">
+                <p className="text-3xl font-bold text-gray-800 leading-tight group-hover:text-green-950 transition-colors relative z-10">
                     {task.text}
                 </p>
                 <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
-                    <MousePointerClick className="w-8 h-8 text-olive-300" />
+                    <MousePointerClick className="w-8 h-8 text-green-400" />
                 </div>
             </div>
         ))}
@@ -208,22 +208,22 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
         className={`flex-none relative z-10 transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} cursor-pointer group`}
         onClick={() => setSelectedItem(modalData["hard-choice"])}
       >
-         <div className="bg-gradient-to-r from-olive-900 to-forest-900 rounded-[2.5rem] p-10 shadow-2xl flex items-center justify-between text-white relative overflow-hidden border-4 border-white/20 group-hover:scale-[1.01] transition-transform">
+         <div className="bg-gradient-to-r from-green-950 to-green-950 rounded-[2.5rem] p-10 shadow-2xl flex items-center justify-between text-white relative overflow-hidden border-4 border-white/20 group-hover:scale-[1.01] transition-transform">
              {/* Decorative pattern */}
              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
              
              <div className="flex items-center gap-10 relative z-10 w-full">
                 <div className="p-6 bg-white/10 rounded-full border-2 border-white/20 flex-shrink-0 shadow-2xl group-hover:bg-white/20 transition-colors">
-                    <Scissors className="w-16 h-16 text-cornsilk-300" />
+                    <Scissors className="w-16 h-16 text-yellow-400" />
                 </div>
                 <div className="flex-1">
-                    <h4 className="text-olive-300 font-bold uppercase tracking-widest text-xl mb-3 flex items-center gap-3">
+                    <h4 className="text-green-400 font-bold uppercase tracking-widest text-xl mb-3 flex items-center gap-3">
                         <AlertTriangle size={24} /> The Hard Choice
                     </h4>
                     <p className="text-4xl font-bold leading-tight">
                         Resources are cut by 30%. What do you sacrifice?
                     </p>
-                    <div className="flex gap-8 mt-4 text-2xl font-medium text-cornsilk-100">
+                    <div className="flex gap-8 mt-4 text-2xl font-medium text-yellow-200">
                         <span className="border-b-4 border-red-400/50 pb-1">Rigorous Design?</span>
                         <span className="border-b-4 border-red-400/50 pb-1">Sample Size?</span>
                         <span className="border-b-4 border-red-400/50 pb-1">Number of Indicators?</span>
@@ -277,7 +277,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
                                 <div className={`mt-1.5 p-1 rounded-full flex-shrink-0 ${getThemeStyles(selectedItem.theme).bg} ${getThemeStyles(selectedItem.theme).text}`}>
                                     <Check className="w-5 h-5" strokeWidth={4} />
                                 </div>
-                                <p className="text-3xl font-medium text-olive-900 leading-snug">
+                                <p className="text-3xl font-medium text-green-950 leading-snug">
                                     {line.includes('**') ? (
                                         <>
                                             {line.split('**')[0]}
@@ -290,7 +290,7 @@ const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {
                         ))}
                     </div>
 
-                    <div className="mt-8 flex items-center gap-3 text-olive-500 font-bold uppercase tracking-widest text-sm">
+                    <div className="mt-8 flex items-center gap-3 text-green-950 font-bold uppercase tracking-widest text-sm">
                         <Lightbulb className="w-5 h-5" /> Optimized for Budget & Timeline
                     </div>
                 </div>

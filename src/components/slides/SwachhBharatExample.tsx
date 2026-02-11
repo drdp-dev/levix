@@ -9,50 +9,50 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
       text: "Number of IEC workers trained",
       icon: GraduationCap,
       color: "text-amber-700",
-      bg: "bg-cornsilk-100",
-      border: "border-cornsilk-400",
+      bg: "bg-yellow-200",
+      border: "border-yellow-500",
       delay: 300
     },
     {
       type: "Process",
       text: "Household visits conducted",
       icon: Footprints,
-      color: "text-clay-700",
-      bg: "bg-clay-100",
-      border: "border-clay-400",
+      color: "text-orange-800",
+      bg: "bg-orange-200",
+      border: "border-orange-500",
       delay: 500
     },
     {
       type: "Output",
       text: "Toilets constructed and demonstrated",
       icon: Hammer,
-      color: "text-copper-700",
-      bg: "bg-copper-100",
-      border: "border-copper-400",
+      color: "text-amber-800",
+      bg: "bg-amber-200",
+      border: "border-amber-500",
       delay: 700
     },
     {
       type: "Outcome",
       text: "Percentage of households regularly using toilets",
       icon: Repeat,
-      color: "text-olive-700",
-      bg: "bg-olive-100",
-      border: "border-olive-400",
+      color: "text-teal-800",
+      bg: "bg-teal-200",
+      border: "border-teal-500",
       delay: 900
     },
     {
       type: "Impact",
       text: "Reduction in diarrhoeal disease incidence",
       icon: TrendingDown,
-      color: "text-forest-700",
-      bg: "bg-forest-100",
-      border: "border-forest-400",
+      color: "text-lime-800",
+      bg: "bg-lime-200",
+      border: "border-lime-500",
       delay: 1100
     }
   ];
 
   return (
-    <div className={`w-full h-full flex flex-col p-10 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-10 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
       <div className="absolute right-0 top-1/4 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50 -z-10"></div>
@@ -62,7 +62,7 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
          <div className="flex items-center gap-4">
             <div className="w-2 h-16 bg-blue-500 rounded-full"></div>
             <div>
-                <h2 className={`text-4xl font-bold text-olive-900 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h2 className={`text-4xl font-bold text-slate-900 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                 Example: Swachh Bharat IEC Campaign
                 </h2>
                 <h3 className={`text-2xl text-blue-600 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
@@ -96,7 +96,7 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
                     </span>
                     <div className="h-px flex-1 bg-gray-200"></div>
                 </div>
-                <p className="text-2xl font-bold text-olive-900 leading-tight">
+                <p className="text-2xl font-bold text-slate-900 leading-tight">
                     {step.text}
                 </p>
             </div>
@@ -105,7 +105,7 @@ const SwachhBharatExample: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer */}
-      <div className={`flex-none mt-6 flex items-center justify-center gap-3 text-olive-600 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div className={`flex-none mt-6 flex items-center justify-center gap-3 text-teal-700 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <Info className="w-6 h-6" />
         <p className="text-xl font-medium tracking-wide">
           Different indicators answer different questions.

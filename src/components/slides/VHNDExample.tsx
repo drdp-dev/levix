@@ -4,21 +4,21 @@ import { CalendarDays, ClipboardCheck, Users, Syringe, AlertOctagon, Package, Ar
 
 const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full p-8 relative overflow-hidden bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full p-8 relative bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background with skewed partition */}
-      <div className="absolute top-0 right-0 w-[55%] h-full bg-olive-50/50 -z-10 transform -skew-x-6 origin-top-right translate-x-20"></div>
+      <div className="absolute top-0 right-0 w-[55%] h-full bg-green-100/50 -z-10 transform -skew-x-6 origin-top-right translate-x-20"></div>
 
       {/* Header */}
-      <div className="flex-none mb-4 flex justify-between items-end border-b-2 border-olive-100 pb-3">
+      <div className="flex-none mb-4 flex justify-between items-end border-b-2 border-green-200 pb-3">
         <div>
-             <div className="flex items-center gap-3 mb-2 text-olive-600 font-bold uppercase tracking-widest">
+             <div className="flex items-center gap-3 mb-2 text-green-700 font-bold uppercase tracking-widest">
                 <ClipboardCheck className="w-6 h-6" /> Process Evaluation
              </div>
-             <h2 className="text-4xl font-bold text-olive-900">Village Health Nutrition Day (VHND)</h2>
+             <h2 className="text-4xl font-bold text-green-950">Village Health Nutrition Day (VHND)</h2>
         </div>
         <div className="text-right pb-1">
-             <p className="text-xl text-olive-500 font-serif italic">"Are we doing what we said we'd do?"</p>
+             <p className="text-xl text-green-950 font-serif italic">"Are we doing what we said we'd do?"</p>
         </div>
       </div>
 
@@ -79,8 +79,8 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
         <div className="col-span-7 flex flex-col gap-6">
              {/* Title */}
              <div className={`transition-all duration-700 delay-400 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-                <h3 className="text-2xl font-black text-olive-900 flex items-center gap-4 pl-2 uppercase tracking-widest">
-                    <div className="p-2 bg-olive-100 rounded-xl"><Users className="w-8 h-8" strokeWidth={2.5} /></div> Qualitative Assessment
+                <h3 className="text-2xl font-black text-green-950 flex items-center gap-4 pl-2 uppercase tracking-widest">
+                    <div className="p-2 bg-green-200 rounded-xl"><Users className="w-8 h-8" strokeWidth={2.5} /></div> Qualitative Assessment
                 </h3>
              </div>
 
@@ -88,32 +88,32 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
              <div className="flex-1 flex flex-col gap-5">
                 
                 {/* Q1 Service Delivery */}
-                <div className={`flex-1 bg-white border-[3px] border-forest-100 border-l-[20px] border-l-forest-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-forest-50 rounded-3xl text-forest-700 shadow-inner ring-4 ring-forest-50/50 group-hover:bg-forest-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-green-200 border-l-[20px] border-l-green-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-500 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-green-100 rounded-3xl text-green-800 shadow-inner ring-4 ring-green-100/50 group-hover:bg-green-200 transition-colors">
                         <Syringe className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                     <div className="flex-1">
-                        <h4 className="text-2xl font-black text-forest-900 mb-2 uppercase tracking-wide">Service Completeness</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
-                            Did the ANM carry out <span className="text-forest-700 bg-forest-100 px-2 py-0.5 rounded-lg border border-forest-200">all</span> mandated services?
+                        <h4 className="text-2xl font-black text-green-950 mb-2 uppercase tracking-wide">Service Completeness</h4>
+                        <p className="text-xl text-green-900 font-bold leading-snug">
+                            Did the ANM carry out <span className="text-green-800 bg-green-200 px-2 py-0.5 rounded-lg border border-green-300">all</span> mandated services?
                         </p>
                         <p className="text-base text-gray-500 font-bold mt-2 flex items-center gap-2">
                              <span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span> ANC, Immunization, Growth Monitoring
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-forest-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-green-300" strokeWidth={3} />
                     </div>
                 </div>
 
                 {/* Q2 Logistics */}
-                <div className={`flex-1 bg-white border-[3px] border-copper-100 border-l-[20px] border-l-copper-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-600 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-copper-50 rounded-3xl text-copper-700 shadow-inner ring-4 ring-copper-50/50 group-hover:bg-copper-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-amber-200 border-l-[20px] border-l-amber-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-600 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-amber-100 rounded-3xl text-amber-800 shadow-inner ring-4 ring-amber-100/50 group-hover:bg-amber-200 transition-colors">
                         <Package className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                      <div className="flex-1">
-                        <h4 className="text-2xl font-black text-copper-900 mb-2 uppercase tracking-wide">Logistics & Supply</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
+                        <h4 className="text-2xl font-black text-amber-950 mb-2 uppercase tracking-wide">Logistics & Supply</h4>
+                        <p className="text-xl text-green-900 font-bold leading-snug">
                             Were essential supplies available on site?
                         </p>
                         <p className="text-base text-gray-500 font-bold mt-2 flex items-center gap-2">
@@ -121,23 +121,23 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-copper-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-amber-300" strokeWidth={3} />
                     </div>
                 </div>
 
                 {/* Q3 Attendance */}
-                <div className={`flex-1 bg-white border-[3px] border-clay-100 border-l-[20px] border-l-clay-500 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-700 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
-                    <div className="p-6 bg-clay-50 rounded-3xl text-clay-700 shadow-inner ring-4 ring-clay-50/50 group-hover:bg-clay-100 transition-colors">
+                <div className={`flex-1 bg-white border-[3px] border-orange-200 border-l-[20px] border-l-orange-600 rounded-r-[2.5rem] p-8 shadow-md flex items-center gap-8 transition-all duration-700 delay-700 transform ${isActive ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'} hover:shadow-xl hover:-translate-y-1 group`}>
+                    <div className="p-6 bg-orange-100 rounded-3xl text-orange-800 shadow-inner ring-4 ring-orange-100/50 group-hover:bg-orange-200 transition-colors">
                         <Users className="w-10 h-10" strokeWidth={2.5} />
                     </div>
                      <div className="flex-1">
-                        <h4 className="text-2xl font-black text-clay-900 mb-2 uppercase tracking-wide">Beneficiary Reach</h4>
-                        <p className="text-xl text-olive-800 font-bold leading-snug">
+                        <h4 className="text-2xl font-black text-orange-950 mb-2 uppercase tracking-wide">Beneficiary Reach</h4>
+                        <p className="text-xl text-green-900 font-bold leading-snug">
                             Was mobilization effective? Did target beneficiaries actually attend?
                         </p>
                     </div>
                     <div className="ml-auto">
-                        <CheckCircle2 className="w-12 h-12 text-clay-200" strokeWidth={3} />
+                        <CheckCircle2 className="w-12 h-12 text-orange-300" strokeWidth={3} />
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer Insight */}
-      <div className={`flex-none mt-6 bg-olive-900 text-white p-6 rounded-2xl flex items-center justify-between shadow-lg transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
+      <div className={`flex-none mt-6 bg-green-950 text-white p-6 rounded-2xl flex items-center justify-between shadow-lg transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
           <div className="flex items-center gap-6">
                <div className="p-3 bg-white/10 rounded-full">
                     <AlertOctagon className="w-8 h-8 text-red-300" strokeWidth={2} />
@@ -156,7 +156,7 @@ const VHNDExample: React.FC<SlideProps> = ({ isActive }) => {
                    "Numbers tell you <span className="font-bold text-red-300 border-b-2 border-red-300/50">what</span> happened. Process evaluation tells you <span className="font-bold text-green-300 border-b-2 border-green-300/50">why</span>."
                </p>
           </div>
-          <ArrowRight className="w-8 h-8 text-olive-400" />
+          <ArrowRight className="w-8 h-8 text-green-500" />
       </div>
 
     </div>

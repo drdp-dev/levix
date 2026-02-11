@@ -85,24 +85,24 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
   const getThemeStyles = (theme: string) => {
     switch(theme) {
       case 'blue': return { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800', icon: 'text-blue-600', iconBg: 'bg-blue-100', hover: 'hover:border-blue-400' };
-      case 'copper': return { bg: 'bg-copper-50', border: 'border-copper-200', text: 'text-copper-800', icon: 'text-copper-600', iconBg: 'bg-copper-100', hover: 'hover:border-copper-400' };
-      case 'forest': return { bg: 'bg-forest-50', border: 'border-forest-200', text: 'text-forest-800', icon: 'text-forest-600', iconBg: 'bg-forest-100', hover: 'hover:border-forest-400' };
-      case 'olive': return { bg: 'bg-olive-50', border: 'border-olive-200', text: 'text-olive-800', icon: 'text-olive-600', iconBg: 'bg-olive-100', hover: 'hover:border-olive-400' };
-      case 'clay': return { bg: 'bg-clay-50', border: 'border-clay-200', text: 'text-clay-800', icon: 'text-clay-600', iconBg: 'bg-clay-100', hover: 'hover:border-clay-400' };
+      case 'copper': return { bg: 'bg-amber-100', border: 'border-amber-300', text: 'text-amber-900', icon: 'text-amber-700', iconBg: 'bg-amber-200', hover: 'hover:border-amber-500' };
+      case 'forest': return { bg: 'bg-teal-100', border: 'border-teal-300', text: 'text-teal-900', icon: 'text-teal-700', iconBg: 'bg-teal-200', hover: 'hover:border-teal-500' };
+      case 'olive': return { bg: 'bg-lime-100', border: 'border-lime-300', text: 'text-lime-900', icon: 'text-lime-700', iconBg: 'bg-lime-200', hover: 'hover:border-lime-500' };
+      case 'clay': return { bg: 'bg-orange-100', border: 'border-orange-300', text: 'text-orange-900', icon: 'text-orange-700', iconBg: 'bg-orange-200', hover: 'hover:border-orange-500' };
       default: return { bg: 'bg-gray-50', border: 'border-gray-200', text: 'text-gray-800', icon: 'text-gray-600', iconBg: 'bg-gray-100', hover: 'hover:border-gray-400' };
     }
   };
 
   return (
-    <div className={`w-full h-full flex flex-col p-8 relative overflow-hidden bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full flex flex-col p-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Header */}
       <div className={`flex-none mb-6 text-center transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-        <h2 className="text-5xl font-bold text-olive-900 mb-4">
+        <h2 className="text-5xl font-bold text-slate-900 mb-4">
           Step 5: Data Collection Tools
         </h2>
         
-        <div className="inline-flex items-center gap-2 px-6 py-2 bg-olive-50 rounded-full border border-olive-100 text-olive-600 animate-pulse">
+        <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-100 rounded-full border border-emerald-200 text-emerald-700 animate-pulse">
             <MousePointerClick className="w-5 h-5" />
             <span className="font-bold uppercase tracking-wider text-sm">Click cards for details</span>
         </div>
@@ -126,7 +126,7 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
                         <tool.icon className="w-12 h-12" strokeWidth={1.5} />
                     </div>
                     <h3 className={`text-2xl font-bold text-center ${styles.text}`}>{tool.title}</h3>
-                    <div className="absolute bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-olive-400">
+                    <div className="absolute bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-teal-500">
                         View Details <ArrowRight className="w-4 h-4" />
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
                             <tool.icon className="w-12 h-12" strokeWidth={1.5} />
                         </div>
                         <h3 className={`text-2xl font-bold text-center ${styles.text}`}>{tool.title}</h3>
-                        <div className="absolute bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-olive-400">
+                        <div className="absolute bottom-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-teal-500">
                             View Details <ArrowRight className="w-4 h-4" />
                         </div>
                     </div>
@@ -159,10 +159,10 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer Insight */}
-      <div className={`flex-none mx-auto max-w-4xl bg-white border border-olive-200 rounded-full px-8 py-3 flex items-center gap-6 shadow-sm transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-        <BrainCircuit className="w-8 h-8 text-olive-500" />
-        <p className="text-xl font-medium text-olive-800">
-             Insight: "Behavior is often better <span className="font-bold text-forest-600 underline decoration-forest-300">observed</span> than self-reported."
+      <div className={`flex-none mx-auto max-w-4xl bg-white border border-emerald-300 rounded-full px-8 py-3 flex items-center gap-6 shadow-sm transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+        <BrainCircuit className="w-8 h-8 text-slate-900" />
+        <p className="text-xl font-medium text-slate-700">
+             Insight: "Behavior is often better <span className="font-bold text-emerald-700 underline decoration-emerald-400">observed</span> than self-reported."
         </p>
       </div>
 
@@ -200,7 +200,7 @@ const DataCollectionTools: React.FC<SlideProps> = ({ isActive }) => {
                                 <div className={`mt-1 p-1 rounded-full ${getThemeStyles(selectedTool.theme).bg} ${getThemeStyles(selectedTool.theme).icon}`}>
                                     <Check className="w-5 h-5" strokeWidth={3} />
                                 </div>
-                                <span className="text-2xl font-medium text-olive-900 leading-snug">
+                                <span className="text-2xl font-medium text-slate-900 leading-snug">
                                     {point}
                                 </span>
                             </li>

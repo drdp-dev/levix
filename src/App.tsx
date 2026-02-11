@@ -186,7 +186,7 @@ const App: React.FC = () => {
 
   return (
     <div 
-      className="fixed inset-0 w-full h-full bg-olive-50 overflow-hidden select-none"
+      className="fixed inset-0 w-full h-full bg-green-100 overflow-hidden select-none"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -205,7 +205,7 @@ const App: React.FC = () => {
         {SlideComponents.map((Component, index) => (
           <div key={index} className="w-full h-full flex items-center justify-center p-10">
             {/* The 4:3 Aspect Ratio Box - Enable pointer events here so slide content is interactive */}
-            <div className="relative aspect-[4/3] w-full max-h-full max-w-[calc(100vh*1.333)] shadow-2xl rounded-sm overflow-hidden bg-white pointer-events-auto">
+            <div className="relative aspect-[4/3] max-w-full max-h-full shadow-2xl rounded-sm overflow-hidden bg-white pointer-events-auto">
               <ScaledSlide>
                 <Component isActive={currentSlide === index} />
               </ScaledSlide>

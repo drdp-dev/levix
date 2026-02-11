@@ -124,8 +124,8 @@ const RadialBackground: React.FC<RadialBackgroundProps> = ({ total, current, onN
             onClick={() => onNavigate(sector.id)}
             className={`cursor-pointer pointer-events-auto transition-all duration-300 ease-out hover:opacity-90 ${
               sector.isActive 
-                ? 'fill-olive-300 hover:fill-olive-400' 
-                : 'fill-olive-100 hover:fill-olive-200'
+                ? 'fill-green-400 hover:fill-green-500' 
+                : 'fill-green-200 hover:fill-green-300'
             }`}
             stroke="white"
             strokeWidth="0.5"
@@ -150,10 +150,10 @@ const RadialBackground: React.FC<RadialBackgroundProps> = ({ total, current, onN
                 key={item.id}
                 className={`absolute w-8 h-8 -ml-4 -mt-4 flex items-center justify-center text-sm transition-all duration-500 z-20 select-none ${
                     item.isActive 
-                        ? 'text-olive-900 font-extrabold scale-150' 
+                        ? 'text-green-950 font-extrabold scale-150' 
                         : item.isPast
-                            ? 'text-olive-700 font-bold scale-100'
-                            : 'text-olive-300 font-normal scale-90'
+                            ? 'text-green-800 font-bold scale-100'
+                            : 'text-green-400 font-normal scale-90'
                 }`}
                 style={{ 
                     left: item.x, 
