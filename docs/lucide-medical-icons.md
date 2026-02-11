@@ -65,9 +65,13 @@ import { Stethoscope, Hospital, Pill } from 'lucide-react';
 
 ## Current Usage in Levix Health Promotion Presentation
 
-- **Slide 1 (Hero)**: `HeartPulse`, `BriefcaseMedical`, `Stethoscope`, `BookOpen`
+**Medical Icons:**
+- **Slide 1 (Hero)**: `HeartPulse`, `BriefcaseMedical`, `Stethoscope`
 - **Slide 11**: `TrendingUp` (evaluation metrics)
-- **Various slides**: Medical and health-related icons throughout
+
+**Non-Medical Icons Used:**
+- `BookOpen` (education/learning - from File icons category)
+- Various other icons throughout for navigation and UI elements
 
 ## Recommended Icons for Health Education
 
