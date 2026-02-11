@@ -157,8 +157,10 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   }, [isScrolling, transitionDuration]);
 
   const handleJumpToSlide = useCallback((index: number) => {
+    if (isScrolling || index === currentSlide) return;
+    setIsScrolling(true);
     setCurrentSlide(index);
-  }, []);
+  }, [isScrolling, currentSlide]);
 
   // Keyboard navigation
   useEffect(() => {
