@@ -63,10 +63,8 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   const toggleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
       containerRef.current?.requestFullscreen();
-      setIsFullscreen(true);
     } else {
       document.exitFullscreen();
-      setIsFullscreen(false);
     }
   }, []);
 
