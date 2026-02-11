@@ -30,12 +30,12 @@ export default function LandingPage() {
             <Image src="/icon1.png" alt="LEVIX" width={120} height={120} className="rounded-3xl shadow-2xl" />
           </div>
           <h2 className="text-6xl font-black text-olive-900 mb-6 tracking-tight">
-            Health Program Evaluation
+            Interactive Presentation
             <br />
-            <span className="text-forest-600">Made Interactive</span>
+            <span className="text-forest-600">Platform</span>
           </h2>
           <p className="text-2xl text-olive-700 max-w-3xl mx-auto leading-relaxed">
-            A professional, large-screen optimized presentation application for Health Promotion & Education Program Evaluation
+            A professional, large-screen optimized presentation application for creating and delivering engaging interactive presentations
           </p>
         </div>
 
@@ -46,31 +46,31 @@ export default function LandingPage() {
               <Presentation className="w-8 h-8 text-blue-600" />
             </div>
             <h3 className="text-xl font-bold text-olive-900 mb-2">Interactive Slides</h3>
-            <p className="text-olive-600">23 comprehensive slides with animations and real-world examples</p>
+            <p className="text-olive-600">Smooth animations, transitions, and engaging visual elements</p>
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-forest-50 rounded-2xl flex items-center justify-center mb-4">
               <Target className="w-8 h-8 text-forest-600" />
             </div>
-            <h3 className="text-xl font-bold text-olive-900 mb-2">Practical Examples</h3>
-            <p className="text-olive-600">Real Indian health programs: VHND, Swachh Bharat, and more</p>
+            <h3 className="text-xl font-bold text-olive-900 mb-2">Rich Content</h3>
+            <p className="text-olive-600">Support for examples, case studies, and interactive elements</p>
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-copper-50 rounded-2xl flex items-center justify-center mb-4">
               <TrendingUp className="w-8 h-8 text-copper-600" />
             </div>
-            <h3 className="text-xl font-bold text-olive-900 mb-2">Step-by-Step Guide</h3>
-            <p className="text-olive-600">From defining objectives to feedback utilization</p>
+            <h3 className="text-xl font-bold text-olive-900 mb-2">Structured Flow</h3>
+            <p className="text-olive-600">Organized navigation with radial progress indicator</p>
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-4">
               <Users className="w-8 h-8 text-amber-600" />
             </div>
-            <h3 className="text-xl font-bold text-olive-900 mb-2">Community Medicine</h3>
-            <p className="text-olive-600">Designed for medical education and public health professionals</p>
+            <h3 className="text-xl font-bold text-olive-900 mb-2">Professional Design</h3>
+            <p className="text-olive-600">Clean, modern interface optimized for large displays</p>
           </div>
         </div>
 
