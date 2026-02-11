@@ -250,29 +250,36 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
             width: `min(100%, calc((100vh - ${totalMargin}px) * ${ratioW} / ${ratioH}))`,
             height: `min(100%, calc((100vw - ${totalMargin}px) * ${ratioH} / ${ratioW}))`
           }} className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
-            {slides.map((SlideComponent, index) => (
-              <div
-                key={index}
-                className="absolute inset-0 w-full h-full"
-                style={{
-                  pointerEvents: currentSlide === index ? 'auto' : 'none',
-                  zIndex: currentSlide === index ? 10 : 0
-                }}
-              >
-                <ScaledSlide>
-                  <div
-                    style={{
-                      opacity: currentSlide === index ? 1 : 0,
-                      transition: `opacity ${transitionDuration}ms ease-in-out`,
-                      pointerEvents: currentSlide === index ? 'auto' : 'none',
-                    }}
-                    className="w-full h-full"
-                  >
-                    <SlideComponent isActive={currentSlide === index} />
-                  </div>
-                </ScaledSlide>
-              </div>
-            ))}
+            {slides.map((SlideComponent, index) => {
+              // Only render current, previous, and next slides (windowing)
+              if (Math.abs(currentSlide - index) > 1) {
+                return null;
+              }
+
+              return (
+                <div
+                  key={index}
+                  className="absolute inset-0 w-full h-full"
+                  style={{
+                    pointerEvents: currentSlide === index ? 'auto' : 'none',
+                    zIndex: currentSlide === index ? 10 : 0
+                  }}
+                >
+                  <ScaledSlide>
+                    <div
+                      style={{
+                        opacity: currentSlide === index ? 1 : 0,
+                        transition: `opacity ${transitionDuration}ms ease-in-out`,
+                        pointerEvents: currentSlide === index ? 'auto' : 'none',
+                      }}
+                      className="w-full h-full"
+                    >
+                      <SlideComponent isActive={currentSlide === index} />
+                    </div>
+                  </ScaledSlide>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
