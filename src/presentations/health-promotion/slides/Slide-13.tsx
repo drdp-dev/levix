@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { MapPin, HelpCircle, AlertTriangle, ShieldCheck, MessageSquare, Users } from 'lucide-react';
 
 const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {

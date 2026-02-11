@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Target, Footprints, Globe2, AlertTriangle, Lightbulb, Map, ArrowRight } from 'lucide-react';
 
 const Overview: React.FC<SlideProps> = ({ isActive }) => {

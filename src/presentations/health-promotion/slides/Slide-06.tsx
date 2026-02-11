@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { CigaretteOff, XCircle, CheckCircle2, BarChart3, History, Scale } from 'lucide-react';
 
 const TobaccoExample: React.FC<SlideProps> = ({ isActive }) => {

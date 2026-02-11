@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { IndianRupee, CalendarClock, Target, ListChecks, LayoutTemplate, ClipboardPen, ShieldAlert, Megaphone, Scissors, ChevronRight, MousePointer2, AlertTriangle, X, Lightbulb, Check, MousePointerClick } from 'lucide-react';
 
 const FinalIntegrativeActivity: React.FC<SlideProps> = ({ isActive }) => {

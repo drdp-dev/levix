@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Package, Settings, Users, BrainCircuit, HeartPulse, AlertTriangle, ArrowDown } from 'lucide-react';
 
 const SelectingIndicators: React.FC<SlideProps> = ({ isActive }) => {

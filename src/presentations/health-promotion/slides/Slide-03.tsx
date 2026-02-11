@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { ClipboardCheck, TrendingUp, Scale, ShieldCheck, Search, Zap } from 'lucide-react';
 
 const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {

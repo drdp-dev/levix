@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Settings, UserCheck, HeartPulse, Layers } from 'lucide-react';
 
 const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {

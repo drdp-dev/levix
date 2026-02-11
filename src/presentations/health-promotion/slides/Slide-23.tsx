@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Hospital, Building2, HeartHandshake } from 'lucide-react';
 import { MedicalConfettiRain } from '@/src/lib/presentation';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { HeartPulse, BriefcaseMedical, ChevronDown, Stethoscope, BookOpen } from 'lucide-react';
 
 const Hero: React.FC<SlideProps> = ({ isActive }) => {

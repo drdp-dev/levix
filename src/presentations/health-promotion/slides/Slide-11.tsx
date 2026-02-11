@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { ArrowRight, Users, TrendingUp, Scale, HeartHandshake, Wallet, CheckCircle2, XCircle } from 'lucide-react';
 
 const EvaluationDesign: React.FC<SlideProps> = ({ isActive }) => {

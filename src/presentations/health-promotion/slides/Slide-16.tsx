@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { TrendingUp, Users, Coins, Leaf, AlertTriangle, FileSearch } from 'lucide-react';
 
 const AnalysisInterpretation: React.FC<SlideProps> = ({ isActive }) => {

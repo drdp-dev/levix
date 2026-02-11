@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { CloudFog, ArrowDown, CheckCircle2, Ruler, Database, Check, X, HelpCircle, AlertCircle, MousePointerClick } from 'lucide-react';
 
 const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {

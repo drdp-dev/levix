@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideProps } from '../../types';
+import { SlideProps } from '@/src/types';
 import { Target, Ruler, Mountain, Link2, Clock, AlertTriangle } from 'lucide-react';
 
 const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
