@@ -41,32 +41,32 @@ export default function LandingPage() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <div className="bg-gray-900 rounded-3xl p-8 shadow-sm border border-gray-800 hover:shadow-lg hover:border-yellow-400/50 transition-all">
-            <div className="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
               <Presentation className="w-8 h-8 text-yellow-400" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Interactive Slides</h3>
             <p className="text-gray-400">Smooth animations, transitions, and engaging visual elements</p>
           </div>
 
-          <div className="bg-gray-900 rounded-3xl p-8 shadow-sm border border-gray-800 hover:shadow-lg hover:border-yellow-400/50 transition-all">
-            <div className="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
               <Target className="w-8 h-8 text-yellow-400" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Rich Content</h3>
             <p className="text-gray-400">Support for examples, case studies, and interactive elements</p>
           </div>
 
-          <div className="bg-gray-900 rounded-3xl p-8 shadow-sm border border-gray-800 hover:shadow-lg hover:border-yellow-400/50 transition-all">
-            <div className="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
               <TrendingUp className="w-8 h-8 text-yellow-400" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Structured Flow</h3>
             <p className="text-gray-400">Organized navigation with radial progress indicator</p>
           </div>
 
-          <div className="bg-gray-900 rounded-3xl p-8 shadow-sm border border-gray-800 hover:shadow-lg hover:border-yellow-400/50 transition-all">
-            <div className="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[#1a1a1a] rounded-3xl p-8 shadow-sm border border-[#2a2a2a] hover:shadow-lg hover:border-yellow-400/50 transition-all">
+            <div className="w-16 h-16 bg-[#2a2a2a] rounded-2xl flex items-center justify-center mb-4">
               <Users className="w-8 h-8 text-yellow-400" />
             </div>
             <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Professional Design</h3>
