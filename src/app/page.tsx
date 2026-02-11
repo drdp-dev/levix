@@ -77,11 +77,11 @@ export default function LandingPage() {
         {/* CTA */}
         <div className="text-center">
           <Link 
-            href="/presentation"
+            href="/presentations"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#ffdc00] hover:bg-[#ffd700] text-black text-xl font-bold rounded-full transition-colors shadow-lg hover:shadow-xl"
           >
             <Presentation className="w-6 h-6" />
-            Start Presentation
+            Explore LEVIX
           </Link>
         </div>
       </section>
