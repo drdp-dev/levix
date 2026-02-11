@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-olive-50: #f4f6ee;
+  --color-olive-100: #eaeedd;
+  --color-olive-200: #d5dcbc;
+  --color-olive-300: #c0cb9a;
+  --color-olive-400: #aaba78;
+  --color-olive-500: #95a857;
+  --color-olive-600: #778745;
+  --color-olive-700: #5a6534;
+  --color-olive-800: #3c4323;
+  --color-olive-900: #1e2211;
+  --color-olive-950: #15180c;
+  
+  --color-forest-50: #f3f7ed;
+  --color-forest-100: #e6efdc;
+  --color-forest-200: #cddfb9;
+  --color-forest-300: #b4d095;
+  --color-forest-400: #9cc072;
+  --color-forest-500: #83b04f;
+  --color-forest-600: #698d3f;
+  --color-forest-700: #4e6a2f;
+  --color-forest-800: #344620;
+  --color-forest-900: #1a2310;
+  --color-forest-950: #12190b;
+  
+  --color-cornsilk-50: #fefbe6;
+  --color-cornsilk-100: #fdf7ce;
+  --color-cornsilk-200: #fcef9c;
+  --color-cornsilk-300: #fae76b;
+  --color-cornsilk-400: #f9df39;
+  --color-cornsilk-500: #f7d708;
+  --color-cornsilk-600: #c6ac06;
+  --color-cornsilk-700: #948105;
+  --color-cornsilk-800: #635603;
+  --color-cornsilk-900: #312b02;
+  --color-cornsilk-950: #221e01;
+  
+  --color-clay-50: #fbf3ea;
+  --color-clay-100: #f6e7d5;
+  --color-clay-200: #edceab;
+  --color-clay-300: #e4b681;
+  --color-clay-400: #db9d57;
+  --color-clay-500: #d2852d;
+  --color-clay-600: #a86a24;
+  --color-clay-700: #7e501b;
+  --color-clay-800: #543512;
+  --color-clay-900: #2a1b09;
+  --color-clay-950: #1d1306;
+  
+  --color-copper-50: #fbf2ea;
+  --color-copper-100: #f7e4d4;
+  --color-copper-200: #eecaaa;
+  --color-copper-300: #e6af7f;
+  --color-copper-400: #dd9455;
+  --color-copper-500: #d57a2a;
+  --color-copper-600: #aa6122;
+  --color-copper-700: #804919;
+  --color-copper-800: #553111;
+  --color-copper-900: #2b1808;
+  --color-copper-950: #1e1106;
+  
+  --backdrop-blur-sm: 4px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes confetti-burst {
+  0% {
+    transform: translate(0, 0) rotate(var(--rotation));
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--vx), var(--vy)) rotate(calc(var(--rotation) + 720deg));
+    opacity: 0;
+  }
+}
+
+.animate-confetti-fall {
+  animation: confetti-fall linear forwards;
+}
+
+.animate-confetti-burst {
+  animation: confetti-burst 3s ease-out forwards;
 }
