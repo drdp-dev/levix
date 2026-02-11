@@ -48,8 +48,10 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showControls, setShowControls] = useState(true);
   const touchStartY = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Calculate aspect ratio dimensions
   const [ratioW, ratioH] = aspectRatio.split('/').map(Number);
@@ -76,12 +78,59 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
   // Listen for fullscreen changes
   useEffect(() => {
     const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
+      const isFs = !!document.fullscreenElement;
+      setIsFullscreen(isFs);
+      if (!isFs) {
+        setShowControls(true);
+      } else {
+        setShowControls(false);
+      }
     };
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
+
+  // Show controls temporarily in fullscreen
+  const showControlsTemporarily = useCallback(() => {
+    if (!isFullscreen) return;
+    
+    setShowControls(true);
+    
+    if (controlsTimeoutRef.current) {
+      clearTimeout(controlsTimeoutRef.current);
+    }
+    
+    controlsTimeoutRef.current = setTimeout(() => {
+      setShowControls(false);
+    }, 3000);
+  }, [isFullscreen]);
+
+  // Handle double click and Esc key
+  useEffect(() => {
+    const handleDoubleClick = () => {
+      if (isFullscreen) {
+        showControlsTemporarily();
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isFullscreen) {
+        showControlsTemporarily();
+      }
+    };
+
+    window.addEventListener('dblclick', handleDoubleClick);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('dblclick', handleDoubleClick);
+      window.removeEventListener('keydown', handleKeyDown);
+      if (controlsTimeoutRef.current) {
+        clearTimeout(controlsTimeoutRef.current);
+      }
+    };
+  }, [isFullscreen, showControlsTemporarily]);
 
   const navigate = useCallback((direction: number) => {
     if (isScrolling) return;
@@ -171,7 +220,7 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
       )}
 
       {/* Control Buttons */}
-      <div className="fixed top-6 right-6 z-50 flex gap-3">
+      <div className={`fixed top-6 right-6 z-50 flex gap-3 transition-opacity duration-300 ${showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <button
           onClick={toggleFullscreen}
           className="p-3 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 hover:scale-110"
