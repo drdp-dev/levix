@@ -15,17 +15,11 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
       {/* Header */}
       <header className="border-b border-gray-700 bg-black/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-4">
             <Image src="/icon1.png" alt="LEVIX Logo" width={48} height={48} className="rounded-xl" />
             <h1 className={`text-3xl font-black text-yellow-400 tracking-tight ${expletus.className}`}>LEVIX</h1>
           </div>
-          <Link 
-            href="/presentation"
-            className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-full transition-colors"
-          >
-            Launch Presentation
-          </Link>
         </div>
       </header>
 
