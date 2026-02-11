@@ -7,7 +7,7 @@
   
   <p>Create engaging presentations with smooth animations, interactive elements, and responsive design.</p>
 
-  ![Next.js](https://img.shields.io/badge/Next.js-15.1.6-black?style=flat-square&logo=next.js)
+  ![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=flat-square&logo=next.js)
   ![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=flat-square&logo=react)
   ![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?style=flat-square&logo=typescript)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.18-38B2AC?style=flat-square&logo=tailwind-css)
@@ -82,7 +82,7 @@ npm start
 
 ## 🛠️ Technology Stack
 
-- **Framework**: Next.js 15.1.6
+- **Framework**: Next.js 16.1.6
 - **UI Library**: React 19.2.4
 - **Styling**: Tailwind CSS 4.1.18
 - **Icons**: Lucide React 0.563.0
