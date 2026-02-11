@@ -50,12 +50,19 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
     if (nextIndex >= 0 && nextIndex < slides.length) {
       setIsScrolling(true);
       setCurrentSlide(nextIndex);
-      
-      setTimeout(() => {
-        setIsScrolling(false);
-      }, transitionDuration);
     }
-  }, [currentSlide, isScrolling, slides.length, transitionDuration]);
+  }, [currentSlide, isScrolling, slides.length]);
+
+  // Cleanup timeout for isScrolling
+  useEffect(() => {
+    if (!isScrolling) return;
+    
+    const timerId = setTimeout(() => {
+      setIsScrolling(false);
+    }, transitionDuration);
+
+    return () => clearTimeout(timerId);
+  }, [isScrolling, transitionDuration]);
 
   const handleJumpToSlide = useCallback((index: number) => {
     setCurrentSlide(index);
