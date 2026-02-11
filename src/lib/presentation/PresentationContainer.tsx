@@ -106,7 +106,7 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
     }, 3000);
   }, [isFullscreen]);
 
-  // Handle double click and Esc key
+  // Handle double click for controls
   useEffect(() => {
     const handleDoubleClick = () => {
       if (isFullscreen) {
@@ -114,18 +114,10 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
       }
     };
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isFullscreen) {
-        showControlsTemporarily();
-      }
-    };
-
     window.addEventListener('dblclick', handleDoubleClick);
-    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('dblclick', handleDoubleClick);
-      window.removeEventListener('keydown', handleKeyDown);
       if (controlsTimeoutRef.current) {
         clearTimeout(controlsTimeoutRef.current);
       }
@@ -169,12 +161,14 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
       } else if (['ArrowUp', 'PageUp'].includes(e.key)) {
         e.preventDefault();
         navigate(-1);
+      } else if (e.key === 'Escape' && isFullscreen) {
+        showControlsTemporarily();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [navigate]);
+  }, [navigate, isFullscreen, showControlsTemporarily]);
 
   // Wheel navigation
   useEffect(() => {
