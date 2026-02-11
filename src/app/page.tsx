@@ -3,6 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Presentation, Target, TrendingUp, Users } from 'lucide-react';
+import { Expletus_Sans } from 'next/font/google';
+
+const expletus = Expletus_Sans({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function LandingPage() {
   return (
@@ -12,7 +18,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image src="/icon1.png" alt="LEVIX Logo" width={48} height={48} className="rounded-xl" />
-            <h1 className="text-3xl font-black text-yellow-400 tracking-tight">LEVIX</h1>
+            <h1 className={`text-3xl font-black text-yellow-400 tracking-tight ${expletus.className}`}>LEVIX</h1>
           </div>
           <Link 
             href="/presentation"
@@ -29,7 +35,7 @@ export default function LandingPage() {
           <div className="inline-block mb-6">
             <Image src="/icon1.png" alt="LEVIX" width={120} height={120} className="rounded-3xl shadow-2xl" />
           </div>
-          <h2 className="text-6xl font-black text-white mb-6 tracking-tight">
+          <h2 className={`text-6xl font-black text-white mb-6 tracking-tight ${expletus.className}`}>
             Interactive Presentation
             <br />
             <span className="text-yellow-400">Platform</span>
@@ -45,7 +51,7 @@ export default function LandingPage() {
             <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mb-4">
               <Presentation className="w-8 h-8 text-yellow-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Interactive Slides</h3>
+            <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Interactive Slides</h3>
             <p className="text-gray-400">Smooth animations, transitions, and engaging visual elements</p>
           </div>
 
@@ -53,7 +59,7 @@ export default function LandingPage() {
             <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mb-4">
               <Target className="w-8 h-8 text-yellow-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Rich Content</h3>
+            <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Rich Content</h3>
             <p className="text-gray-400">Support for examples, case studies, and interactive elements</p>
           </div>
 
@@ -61,7 +67,7 @@ export default function LandingPage() {
             <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mb-4">
               <TrendingUp className="w-8 h-8 text-yellow-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Structured Flow</h3>
+            <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Structured Flow</h3>
             <p className="text-gray-400">Organized navigation with radial progress indicator</p>
           </div>
 
@@ -69,7 +75,7 @@ export default function LandingPage() {
             <div className="w-16 h-16 bg-yellow-400/10 rounded-2xl flex items-center justify-center mb-4">
               <Users className="w-8 h-8 text-yellow-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Professional Design</h3>
+            <h3 className={`text-xl font-bold text-white mb-2 ${expletus.className}`}>Professional Design</h3>
             <p className="text-gray-400">Clean, modern interface optimized for large displays</p>
           </div>
         </div>
