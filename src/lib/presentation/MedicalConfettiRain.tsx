@@ -123,7 +123,7 @@ export const MedicalConfettiRain: React.FC<MedicalConfettiRainProps> = ({
           x: Math.random() * 95, // 0-95% to prevent overflow on right
           y: -10,
           delay: 0,
-          duration: 3000 + Math.random() * 2000,
+          duration: 2000 + Math.random() * 4000, // 2-6 seconds (wider range)
           size,
           color: colors[Math.floor(Math.random() * colors.length)],
         };
