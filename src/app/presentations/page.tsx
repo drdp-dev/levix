@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Presentation, ArrowRight, Calendar } from 'lucide-react';
 import { Expletus_Sans } from 'next/font/google';
-import Hero from '@/src/components/slides/Hero';
+import Hero from '@/src/presentations/health-promotion/slides/Slide-01';
 
 const expletus = Expletus_Sans({
   subsets: ["latin"],
