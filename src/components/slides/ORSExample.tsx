@@ -16,7 +16,7 @@ const ORSExample: React.FC<SlideProps> = ({ isActive }) => {
                 <FlaskConical className="w-10 h-10 text-blue-600" />
             </div>
             <div>
-                <h2 className={`text-4xl font-bold text-lime-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h2 className={`text-4xl font-bold text-green-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     Example: ORS Demonstration
                 </h2>
                 <h3 className={`text-2xl text-blue-600 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
@@ -57,14 +57,14 @@ const ORSExample: React.FC<SlideProps> = ({ isActive }) => {
                     <div className="p-3 bg-green-200 rounded-full text-green-700">
                         <ClipboardCheck className="w-8 h-8" />
                     </div>
-                    <span className="text-2xl font-bold text-lime-950">Direct observation checklist</span>
+                    <span className="text-2xl font-bold text-green-950">Direct observation checklist</span>
                 </div>
 
                 <div className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-green-200 transition-transform duration-300 hover:scale-105">
                     <div className="p-3 bg-green-200 rounded-full text-green-700">
                         <Eye className="w-8 h-8" />
                     </div>
-                    <span className="text-2xl font-bold text-lime-950">Participant prepares ORS in front of evaluator</span>
+                    <span className="text-2xl font-bold text-green-950">Participant prepares ORS in front of evaluator</span>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ const ORSExample: React.FC<SlideProps> = ({ isActive }) => {
          <ShieldAlert className="w-12 h-12 text-yellow-800" strokeWidth={2} />
          <div>
             <h4 className="text-xl font-bold text-yellow-800 uppercase tracking-wide mb-1">Key Benefit</h4>
-            <p className="text-3xl font-medium text-lime-950">
+            <p className="text-3xl font-medium text-green-950">
                 Observation reduces <span className="text-green-800 font-bold underline decoration-wavy decoration-green-500 underline-offset-4">social desirability bias</span>.
             </p>
          </div>

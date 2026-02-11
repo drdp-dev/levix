@@ -49,7 +49,7 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
       
       {/* Header */}
       <div className="flex-none text-center mb-6">
-        <h2 className={`text-5xl font-black text-lime-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-black text-green-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Activity: Refining Objectives
         </h2>
       </div>
@@ -86,8 +86,8 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
           </div>
           <div>
             <h3 className="text-lg font-black text-green-800 uppercase tracking-widest mb-2">Evaluable Objective (SMART)</h3>
-            <p className="text-3xl text-lime-950 font-bold leading-snug">
-              "Increase proportion of girls who can <span className="text-amber-900 bg-amber-200 px-2 rounded-lg border border-amber-300 shadow-sm">list ≥3 symptoms</span> of anaemia from <span className="text-blue-800 bg-blue-100 px-2 rounded-lg border border-blue-200 shadow-sm">30% to 70%</span> within <span className="text-lime-950 bg-lime-300 px-2 rounded-lg border border-lime-400 shadow-sm">6 months</span>."
+            <p className="text-3xl text-green-950 font-bold leading-snug">
+              "Increase proportion of girls who can <span className="text-amber-900 bg-amber-200 px-2 rounded-lg border border-amber-300 shadow-sm">list ≥3 symptoms</span> of anaemia from <span className="text-blue-800 bg-blue-100 px-2 rounded-lg border border-blue-200 shadow-sm">30% to 70%</span> within <span className="text-green-950 bg-green-300 px-2 rounded-lg border border-green-400 shadow-sm">6 months</span>."
             </p>
           </div>
         </div>
@@ -99,17 +99,17 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
              const isSolved = solved.includes(q.id);
 
              return (
-                 <div key={q.id} className="bg-white border-[3px] border-lime-200 rounded-[2.5rem] p-6 shadow-md flex flex-col h-full relative overflow-hidden group hover:border-lime-400 transition-colors">
+                 <div key={q.id} className="bg-white border-[3px] border-green-200 rounded-[2.5rem] p-6 shadow-md flex flex-col h-full relative overflow-hidden group hover:border-green-400 transition-colors">
                      {/* Header */}
                      <div className="flex items-center gap-4 mb-4">
-                         <div className="p-3 bg-lime-100 rounded-2xl text-lime-800 group-hover:bg-lime-200 transition-colors">
+                         <div className="p-3 bg-green-100 rounded-2xl text-green-800 group-hover:bg-green-200 transition-colors">
                              <q.icon className="w-7 h-7" strokeWidth={2.5} />
                          </div>
-                         <h4 className="text-xl font-black text-lime-900 uppercase tracking-wide">{q.category}</h4>
+                         <h4 className="text-xl font-black text-green-900 uppercase tracking-wide">{q.category}</h4>
                      </div>
                      
                      {/* Question */}
-                     <p className="text-2xl font-bold text-lime-950 mb-6 leading-tight min-h-[4rem]">{q.query}</p>
+                     <p className="text-2xl font-bold text-green-950 mb-6 leading-tight min-h-[4rem]">{q.query}</p>
 
                      {/* Options */}
                      <div className="flex flex-col gap-3 relative z-10">
@@ -146,7 +146,7 @@ const RefiningObjectives: React.FC<SlideProps> = ({ isActive }) => {
                              <Check className="w-10 h-10" strokeWidth={4} />
                          </div>
                          <h5 className="text-2xl font-black text-green-800 uppercase tracking-widest mb-3">Excellent!</h5>
-                         <p className="text-xl text-lime-950 font-bold leading-relaxed">
+                         <p className="text-xl text-green-950 font-bold leading-relaxed">
                              {q.explanation.split('**').map((part, i) => 
                                 i % 2 === 1 ? <span key={i} className="text-green-700 underline decoration-green-300">{part}</span> : part
                              )}

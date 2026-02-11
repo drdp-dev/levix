@@ -17,11 +17,11 @@ const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
                 <Waves className="w-12 h-12 text-blue-600" />
             </div>
             <div>
-                <h2 className={`text-5xl font-bold text-lime-950 mb-1 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h2 className={`text-5xl font-bold text-green-950 mb-1 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     School Handwashing Program
                 </h2>
                 <div className={`flex items-center gap-3 transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-                     <span className="px-3 py-1 bg-lime-200 text-lime-800 font-bold uppercase tracking-wider text-sm rounded-full">Design Application</span>
+                     <span className="px-3 py-1 bg-green-200 text-green-800 font-bold uppercase tracking-wider text-sm rounded-full">Design Application</span>
                      <span className="text-2xl text-blue-600 font-medium">Pre-test / Post-test (Before-After)</span>
                 </div>
             </div>
@@ -47,8 +47,8 @@ const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
                     <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center border-2 border-white shadow-sm font-bold text-blue-800">O1</div>
                 </div>
                 <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-blue-100 shadow-sm w-full">
-                    <h3 className="text-2xl font-bold text-lime-950 mb-1">Knowledge Check</h3>
-                    <p className="text-lg text-lime-700 font-medium">Score: <span className="text-red-500 font-bold">45%</span></p>
+                    <h3 className="text-2xl font-bold text-green-950 mb-1">Knowledge Check</h3>
+                    <p className="text-lg text-green-700 font-medium">Score: <span className="text-red-500 font-bold">45%</span></p>
                 </div>
             </div>
 
@@ -75,8 +75,8 @@ const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
                     <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-green-50 rounded-full flex items-center justify-center border-2 border-white shadow-sm font-bold text-green-800">O2</div>
                 </div>
                 <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-green-100 shadow-sm w-full">
-                    <h3 className="text-2xl font-bold text-lime-950 mb-1">Re-Assessment</h3>
-                    <p className="text-lg text-lime-700 font-medium">Score: <span className="text-green-600 font-bold">85%</span></p>
+                    <h3 className="text-2xl font-bold text-green-950 mb-1">Re-Assessment</h3>
+                    <p className="text-lg text-green-700 font-medium">Score: <span className="text-green-600 font-bold">85%</span></p>
                 </div>
             </div>
 
@@ -91,10 +91,10 @@ const HandwashingExample: React.FC<SlideProps> = ({ isActive }) => {
             </div>
             <div>
                 <h4 className="text-lg font-bold text-red-800 uppercase tracking-widest mb-1">Critical Limitation: "History Threat"</h4>
-                <p className="text-2xl font-medium text-lime-900 leading-snug">
+                <p className="text-2xl font-medium text-green-900 leading-snug">
                     "Did the score improve because of our song, or because <span className="font-bold text-red-600 underline decoration-red-300 decoration-wavy">TV ads</span> were running the same week?"
                 </p>
-                <p className="text-lg text-lime-1000 mt-2 italic flex items-center gap-2">
+                <p className="text-lg text-green-950 mt-2 italic flex items-center gap-2">
                     <ArrowRight className="w-4 h-4" /> Without a control group, we cannot be sure.
                 </p>
             </div>

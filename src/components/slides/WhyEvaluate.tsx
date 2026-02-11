@@ -42,16 +42,16 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
   return (
     <div className={`w-full h-full flex flex-col p-10 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Background blobs */}
-        <div className="absolute top-0 right-0 w-2/3 h-2/3 bg-lime-100 rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-2/3 h-2/3 bg-green-100 rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/2"></div>
         <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-yellow-100 rounded-full blur-3xl opacity-60 translate-y-1/2 -translate-x-1/2"></div>
 
         {/* Header */}
         <div className="flex-none mb-10 text-center relative z-10">
-            <h2 className={`text-6xl font-bold text-lime-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+            <h2 className={`text-6xl font-bold text-green-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
                 The Purpose of Evaluation
             </h2>
-            <div className={`h-1.5 w-32 bg-lime-300 mx-auto rounded-full mb-4 transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
-            <p className={`text-3xl text-lime-700 font-medium transition-all duration-1000 delay-300 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`h-1.5 w-32 bg-green-300 mx-auto rounded-full mb-4 transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
+            <p className={`text-3xl text-green-700 font-medium transition-all duration-1000 delay-300 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                 To answer three fundamental questions
             </p>
         </div>
@@ -75,12 +75,12 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
                         {item.label}
                     </h3>
                     
-                    <p className="text-3xl font-bold text-lime-950 leading-tight mb-6 flex-1 flex items-center">
+                    <p className="text-3xl font-bold text-green-950 leading-tight mb-6 flex-1 flex items-center">
                         "{item.question}"
                     </p>
 
                     <div className="w-full pt-6 border-t border-gray-200/50">
-                        <span className="text-xl text-lime-700 font-medium flex items-center justify-center gap-2">
+                        <span className="text-xl text-green-700 font-medium flex items-center justify-center gap-2">
                              <Search className="w-5 h-5 opacity-50" /> Checks <span className={`font-bold ${item.color.replace('600', '800')}`}>{item.focus}</span>
                         </span>
                     </div>
@@ -89,13 +89,13 @@ const WhyEvaluate: React.FC<SlideProps> = ({ isActive }) => {
         </div>
 
         {/* Bottom Insight Banner */}
-        <div className={`flex-none bg-lime-950 rounded-3xl p-8 flex items-center justify-between shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
+        <div className={`flex-none bg-green-950 rounded-3xl p-8 flex items-center justify-between shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
             <div className="flex items-center gap-8">
-                 <div className="p-4 bg-lime-900 rounded-2xl border border-lime-800 shadow-inner">
+                 <div className="p-4 bg-green-900 rounded-2xl border border-green-800 shadow-inner">
                     <ShieldCheck className="w-12 h-12 text-yellow-500" />
                  </div>
                  <div>
-                    <h4 className="text-lg font-bold text-lime-500 uppercase tracking-widest mb-1">Critical Mindset Shift</h4>
+                    <h4 className="text-lg font-bold text-green-500 uppercase tracking-widest mb-1">Critical Mindset Shift</h4>
                     <p className="text-4xl font-bold text-white leading-none">
                         Evaluation is <span className="text-yellow-500 underline decoration-wavy decoration-2 underline-offset-8">learning</span>, not fault-finding.
                     </p>

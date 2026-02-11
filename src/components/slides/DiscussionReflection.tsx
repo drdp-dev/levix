@@ -56,9 +56,8 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
     const qId = quizData[qIndex].id;
     const optId = quizData[qIndex].options[optIndex].id;
     
-    setSelectedOptions(prev => ({ ...prev, [qId]: optId }));
-
     if (isCorrect) {
+      setSelectedOptions(prev => ({ ...prev, [qId]: optId }));
       setTimeout(() => setActiveModal(qIndex), 600);
     } else {
       setShakeId(`${qId}-${optId}`);
@@ -79,15 +78,15 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
     <div className={`w-full h-full flex flex-col p-8 relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
       
       {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-2/3 h-2/3 bg-lime-100 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-2/3 h-2/3 bg-green-100 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-yellow-100 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 opacity-60 pointer-events-none"></div>
 
       {/* Header */}
       <div className="flex-none mb-4 text-center">
-        <div className={`inline-flex items-center gap-3 px-8 py-3 bg-lime-200 rounded-full mb-3 text-lime-950 font-black uppercase tracking-widest text-lg transition-all duration-700 transform ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} shadow-sm`}>
+        <div className={`inline-flex items-center gap-3 px-8 py-3 bg-green-200 rounded-full mb-3 text-green-950 font-black uppercase tracking-widest text-lg transition-all duration-700 transform ${isActive ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} shadow-sm`}>
              <BrainCircuit className="w-6 h-6" strokeWidth={3} /> Reflection Activity
         </div>
-        <h2 className={`text-5xl font-black text-lime-950 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-black text-green-950 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Critical Thinking: Resource Constraints
         </h2>
       </div>
@@ -99,7 +98,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
         </div>
         <div>
             <h3 className="text-lg font-black text-amber-800 uppercase tracking-widest mb-1">The Scenario</h3>
-            <p className="text-2xl text-lime-950 font-bold leading-tight">
+            <p className="text-2xl text-green-950 font-bold leading-tight">
                 You have <span className="underline decoration-amber-500 decoration-wavy decoration-4 underline-offset-4 text-amber-900">limited resources</span>. You must make a hard choice.
             </p>
         </div>
@@ -124,7 +123,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
                 
                 {/* Question */}
-                <p className="text-2xl font-black text-lime-950 leading-tight mb-8 min-h-[4.5rem]">
+                <p className="text-2xl font-black text-green-950 leading-tight mb-8 min-h-[4.5rem]">
                     {q.question}
                 </p>
 
@@ -184,7 +183,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
                      </div>
                      <div>
                         <h3 className={`text-2xl font-black uppercase tracking-widest mb-2 ${getThemeStyles(quizData[activeModal].theme).text}`}>Correct Answer</h3>
-                        <p className="text-4xl font-black text-lime-950 leading-tight">
+                        <p className="text-4xl font-black text-green-950 leading-tight">
                             {quizData[activeModal].options.find(o => o.isCorrect)?.text}
                         </p>
                      </div>
@@ -194,7 +193,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
                     <h4 className="flex items-center gap-4 text-xl font-black text-green-800 uppercase tracking-widest mb-6">
                         <CheckCircle2 className="w-8 h-8" strokeWidth={3} /> Why is this correct?
                     </h4>
-                    <p className="text-3xl font-medium text-lime-950 leading-relaxed">
+                    <p className="text-3xl font-medium text-green-950 leading-relaxed">
                         {quizData[activeModal].explanation}
                     </p>
                 </div>
@@ -202,7 +201,7 @@ const DiscussionReflection: React.FC<SlideProps> = ({ isActive }) => {
                 <div className="text-right mt-2">
                     <button 
                         onClick={() => setActiveModal(null)}
-                        className="px-10 py-4 bg-lime-950 text-white text-xl font-bold rounded-2xl hover:bg-lime-900 transition-all hover:scale-105 inline-flex items-center gap-3 shadow-xl"
+                        className="px-10 py-4 bg-green-950 text-white text-xl font-bold rounded-2xl hover:bg-green-900 transition-all hover:scale-105 inline-flex items-center gap-3 shadow-xl"
                     >
                         Continue <ArrowRight className="w-6 h-6" strokeWidth={3} />
                     </button>

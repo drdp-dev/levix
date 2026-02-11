@@ -5,8 +5,8 @@ import { Target, Ruler, Mountain, Link2, Clock, AlertTriangle } from 'lucide-rea
 const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
   const smart = [
     { letter: 'S', word: 'Specific', icon: Target, color: 'text-amber-700', bg: 'bg-amber-100', border: 'border-amber-300' },
-    { letter: 'M', word: 'Measurable', icon: Ruler, color: 'text-green-700', bg: 'bg-green-100', border: 'border-green-300' },
-    { letter: 'A', word: 'Achievable', icon: Mountain, color: 'text-lime-700', bg: 'bg-lime-100', border: 'border-lime-300' },
+    { letter: 'M', word: 'Measurable', icon: Ruler, color: 'text-teal-700', bg: 'bg-teal-100', border: 'border-teal-300' },
+    { letter: 'A', word: 'Achievable', icon: Mountain, color: 'text-emerald-700', bg: 'bg-emerald-100', border: 'border-emerald-300' },
     { letter: 'R', word: 'Relevant', icon: Link2, color: 'text-orange-700', bg: 'bg-orange-100', border: 'border-orange-300' },
     { letter: 'T', word: 'Time-bound', icon: Clock, color: 'text-blue-600', bg: 'bg-blue-50', border: 'border-blue-200' },
   ];
@@ -16,10 +16,10 @@ const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
       
       {/* Header */}
       <div className="flex-none mb-6 text-center">
-        <h2 className={`text-5xl font-bold text-lime-950 mb-3 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-bold text-slate-900 mb-3 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Step 1: Define Clear & Measurable Objectives
         </h2>
-        <p className={`text-3xl text-lime-700 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <p className={`text-3xl text-teal-700 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Evaluation begins <span className="text-amber-700 font-semibold">before</span> implementation.
         </p>
       </div>
@@ -36,7 +36,7 @@ const DefineObjectives: React.FC<SlideProps> = ({ isActive }) => {
               <item.icon className="w-10 h-10" strokeWidth={2.5} />
             </div>
             <h3 className={`text-6xl font-black ${item.color} mb-2 leading-none transition-transform duration-300 group-hover:scale-110`}>{item.letter}</h3>
-            <span className="text-2xl font-bold text-lime-900">{item.word}</span>
+            <span className="text-2xl font-bold text-slate-800">{item.word}</span>
           </div>
         ))}
       </div>

@@ -11,10 +11,10 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Header */}
       <div className="flex-none mb-8 text-center">
-        <div className="inline-flex items-center gap-3 px-6 py-2 bg-lime-200 rounded-full mb-4 text-lime-900 font-bold uppercase tracking-widest transition-all duration-1000 transform scale-0" style={{ transform: isActive ? 'scale(1)' : 'scale(0)' }}>
+        <div className="inline-flex items-center gap-3 px-6 py-2 bg-green-200 rounded-full mb-4 text-green-900 font-bold uppercase tracking-widest transition-all duration-1000 transform scale-0" style={{ transform: isActive ? 'scale(1)' : 'scale(0)' }}>
              <MessageSquare className="w-5 h-5" /> Activity
         </div>
-        <h2 className={`text-5xl font-bold text-lime-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-5xl font-bold text-green-950 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Design Critique
         </h2>
       </div>
@@ -26,11 +26,11 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
                  <Users className="w-64 h-64 text-yellow-800" />
              </div>
              
-             <h3 className="text-2xl font-bold text-lime-900 mb-2 flex items-center gap-3">
+             <h3 className="text-2xl font-bold text-green-900 mb-2 flex items-center gap-3">
                 <MapPin className="w-8 h-8 text-yellow-700" />
                 Scenario
              </h3>
-             <p className="text-4xl text-lime-950 font-medium leading-snug relative z-10">
+             <p className="text-4xl text-green-950 font-medium leading-snug relative z-10">
                 You are evaluating an <span className="text-green-800 font-bold">adolescent reproductive health</span> education program in <span className="underline decoration-wavy decoration-yellow-600">two villages</span>.
              </p>
         </div>
@@ -46,7 +46,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
                 <HelpCircle className="w-12 h-12" strokeWidth={1.5} />
             </div>
             <h4 className="text-xl font-bold text-blue-800 uppercase tracking-widest mb-4">Control Village?</h4>
-            <p className="text-3xl font-bold text-lime-950 leading-tight">
+            <p className="text-3xl font-bold text-green-950 leading-tight">
                 Would you include a control village in your design? Why or why not?
             </p>
         </div>
@@ -59,7 +59,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
                 <AlertTriangle className="w-12 h-12" strokeWidth={1.5} />
             </div>
             <h4 className="text-xl font-bold text-red-800 uppercase tracking-widest mb-4">Potential Biases</h4>
-            <p className="text-3xl font-bold text-lime-950 leading-tight">
+            <p className="text-3xl font-bold text-green-950 leading-tight">
                 What selection or confounding biases could occur in this setting?
             </p>
         </div>
@@ -72,7 +72,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
                 <ShieldCheck className="w-12 h-12" strokeWidth={1.5} />
             </div>
             <h4 className="text-xl font-bold text-green-900 uppercase tracking-widest mb-4">Minimize Bias</h4>
-            <p className="text-3xl font-bold text-lime-950 leading-tight">
+            <p className="text-3xl font-bold text-green-950 leading-tight">
                 How would you design the study to minimize these biases?
             </p>
         </div>
@@ -80,7 +80,7 @@ const DesignCritiqueActivity: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Footer */}
       <div className={`flex-none mt-8 text-center transition-all duration-1000 delay-1000 transform ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-        <p className="text-2xl text-lime-500 font-bold tracking-wide uppercase">
+        <p className="text-2xl text-green-500 font-bold tracking-wide uppercase">
             Encourage methodological critique
         </p>
       </div>

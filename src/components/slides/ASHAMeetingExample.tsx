@@ -12,14 +12,14 @@ const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {
       {/* Header */}
       <div className="flex-none mb-10">
          <div className="flex items-center gap-4">
-            <div className="p-3 bg-lime-200 rounded-2xl">
-                 <Users className="w-10 h-10 text-lime-800" />
+            <div className="p-3 bg-green-200 rounded-2xl">
+                 <Users className="w-10 h-10 text-green-800" />
             </div>
             <div>
-                <h2 className={`text-4xl font-bold text-lime-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h2 className={`text-4xl font-bold text-green-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     Example: ASHA Meeting Attendance Low
                 </h2>
-                <h3 className={`text-2xl text-lime-700 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h3 className={`text-2xl text-green-700 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     From Finding to Action
                 </h3>
             </div>
@@ -40,7 +40,7 @@ const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
             </div>
             <h4 className="text-xl font-bold text-red-800 uppercase tracking-widest mb-4">Evaluation Finding</h4>
-            <p className="text-4xl text-lime-950 font-medium leading-snug">
+            <p className="text-4xl text-green-950 font-medium leading-snug">
                 Poor attendance due to <span className="text-amber-700 font-bold underline decoration-amber-400 decoration-wavy underline-offset-4">agricultural season</span> workload.
             </p>
         </div>
@@ -59,10 +59,10 @@ const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {
             </div>
             <h4 className="text-xl font-bold text-green-900 uppercase tracking-widest mb-6">Programmatic Response</h4>
             <ul className="space-y-6">
-                <li className="flex items-center gap-4 text-3xl text-lime-950 font-bold">
+                <li className="flex items-center gap-4 text-3xl text-green-950 font-bold">
                     <div className="w-4 h-4 bg-green-600 rounded-full flex-shrink-0"></div> Reschedule meetings
                 </li>
-                <li className="flex items-center gap-4 text-3xl text-lime-950 font-bold">
+                <li className="flex items-center gap-4 text-3xl text-green-950 font-bold">
                     <div className="w-4 h-4 bg-green-600 rounded-full flex-shrink-0"></div> Provide flexible timing
                 </li>
             </ul>
@@ -73,7 +73,7 @@ const ASHAMeetingExample: React.FC<SlideProps> = ({ isActive }) => {
       {/* Footer Loop Concept */}
       <div className={`flex-none mt-10 bg-yellow-100 border-l-[12px] border-yellow-600 rounded-r-full p-6 flex items-center justify-center gap-6 shadow-md transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
          <Repeat className="w-10 h-10 text-yellow-800" strokeWidth={3} />
-         <p className="text-3xl font-bold text-lime-950">
+         <p className="text-3xl font-bold text-green-950">
             Feedback closes the <span className="text-yellow-800 underline decoration-4 underline-offset-4">evaluation loop</span>.
          </p>
       </div>

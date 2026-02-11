@@ -16,7 +16,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
                  <TrendingUp className="w-10 h-10 text-gray-700" />
             </div>
             <div>
-                <h2 className={`text-4xl font-bold text-lime-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                <h2 className={`text-4xl font-bold text-green-950 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     Example: Marginal Knowledge Improvement
                 </h2>
                 <h3 className={`text-2xl text-gray-500 font-medium transition-all duration-1000 delay-200 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
@@ -35,7 +35,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
             
             {/* 90% Bar */}
             <div className="mb-6">
-                <div className="flex justify-between text-xl font-bold text-lime-900 mb-2">
+                <div className="flex justify-between text-xl font-bold text-green-900 mb-2">
                     <span>Baseline</span>
                     <span>90%</span>
                 </div>
@@ -50,7 +50,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
 
             {/* 95% Bar */}
             <div>
-                <div className="flex justify-between text-xl font-bold text-lime-900 mb-2">
+                <div className="flex justify-between text-xl font-bold text-green-900 mb-2">
                     <span>Post-Intervention</span>
                     <span className="text-green-700 flex items-center gap-2">95% <ArrowUpRight className="w-5 h-5" /></span>
                 </div>
@@ -75,7 +75,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
                     <Calculator className="w-7 h-7 text-blue-600" strokeWidth={2} />
                     <h4 className="text-lg font-bold text-blue-800">Statistically Significant?</h4>
                 </div>
-                <p className="text-3xl font-bold text-lime-950 mt-2">Possibly Yes</p>
+                <p className="text-3xl font-bold text-green-950 mt-2">Possibly Yes</p>
                 <p className="text-base text-blue-600 font-medium mt-1 opacity-80">(p &lt; 0.05)</p>
             </div>
 
@@ -85,7 +85,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
                     <Scale className="w-7 h-7 text-amber-600" strokeWidth={2} />
                     <h4 className="text-lg font-bold text-amber-800">Programmatically Meaningful?</h4>
                 </div>
-                <p className="text-3xl font-bold text-lime-950 mt-2">Likely Minimal</p>
+                <p className="text-3xl font-bold text-green-950 mt-2">Likely Minimal</p>
                 <p className="text-base text-amber-700 font-medium mt-1 opacity-80">High effort, low yield</p>
             </div>
 
@@ -95,7 +95,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
                     <Users className="w-7 h-7 text-green-700" strokeWidth={2} />
                     <h4 className="text-lg font-bold text-green-900">Real-world Impact?</h4>
                 </div>
-                <p className="text-3xl font-bold text-lime-950 mt-2">Negligible</p>
+                <p className="text-3xl font-bold text-green-950 mt-2">Negligible</p>
                 <p className="text-base text-green-800 font-medium mt-1 opacity-80">Already near maximum</p>
             </div>
 
@@ -105,7 +105,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
                     <Target className="w-7 h-7 text-red-600" strokeWidth={2} />
                     <h4 className="text-lg font-bold text-red-800">Resource Justification?</h4>
                 </div>
-                <p className="text-3xl font-bold text-lime-950 mt-2">Questionable</p>
+                <p className="text-3xl font-bold text-green-950 mt-2">Questionable</p>
                 <p className="text-base text-red-700 font-medium mt-1 opacity-80">Better targets exist</p>
             </div>
         </div>
@@ -118,7 +118,7 @@ const MarginalImprovementExample: React.FC<SlideProps> = ({ isActive }) => {
              <AlertOctagon className="w-10 h-10" />
         </div>
         <p className="text-2xl font-medium text-gray-700">
-            Evaluation must consider <span className="font-bold text-lime-950 border-b-4 border-lime-400">baseline saturation</span> (ceiling effect).
+            Evaluation must consider <span className="font-bold text-green-950 border-b-4 border-green-400">baseline saturation</span> (ceiling effect).
         </p>
       </div>
 

@@ -48,11 +48,11 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
         "Utility: Inform policy & funding"
       ],
       icon: HeartPulse,
-      color: "text-green-900",
-      iconColor: "text-green-700",
-      bg: "bg-green-100",
-      border: "border-green-400",
-      bulletColor: "bg-green-600",
+      color: "text-lime-900",
+      iconColor: "text-lime-700",
+      bg: "bg-lime-100",
+      border: "border-lime-400",
+      bulletColor: "bg-lime-600",
       delay: 700
     }
   ];
@@ -62,10 +62,10 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
       
       {/* Header */}
       <div className="flex-none mb-6 text-center">
-        <h2 className={`text-6xl font-black text-lime-950 mb-4 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+        <h2 className={`text-6xl font-black text-slate-900 mb-4 transition-all duration-1000 transform ${isActive ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
           Step 2: Decide the Type of Evaluation
         </h2>
-        <div className={`h-2 w-48 bg-lime-400 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
+        <div className={`h-2 w-48 bg-teal-400 mx-auto rounded-full transition-all duration-1000 delay-200 transform ${isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
       </div>
 
       {/* Main Content - 3 Cards */}
@@ -84,7 +84,7 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
             <h3 className={`text-3xl font-black ${item.color} mb-4 uppercase tracking-wide leading-none flex-none`}>{item.title}</h3>
             
             <div className="mb-8 min-h-[4rem] flex items-center justify-center flex-none px-2">
-                 <p className="text-2xl text-lime-950 font-extrabold leading-tight">
+                 <p className="text-2xl text-slate-900 font-extrabold leading-tight">
                     "{item.question}"
                 </p>
             </div>
@@ -96,10 +96,10 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
                 return (
                   <li key={i} className="flex items-start gap-4">
                     <div className={`w-3 h-3 mt-2.5 rounded-full flex-shrink-0 ${item.bulletColor}`}></div>
-                    <span className="text-xl text-lime-900 leading-snug font-medium">
+                    <span className="text-xl text-slate-700 leading-snug font-medium">
                       {value ? (
                         <>
-                          <span className="font-black text-lime-950 uppercase text-sm tracking-widest block mb-0.5">{label}</span>
+                          <span className="font-black text-slate-900 uppercase text-sm tracking-widest block mb-0.5">{label}</span>
                           {value}
                         </>
                       ) : (
@@ -116,11 +116,11 @@ const EvaluationTypes: React.FC<SlideProps> = ({ isActive }) => {
 
       {/* Footer */}
       <div className={`flex-none mt-4 flex items-center justify-center gap-4 transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        <Layers className="w-8 h-8 text-lime-500 animate-bounce" strokeWidth={2.5} style={{ animationDuration: '3s' }} />
-        <p className="text-2xl text-lime-700 font-bold tracking-widest uppercase">
+        <Layers className="w-8 h-8 text-teal-500 animate-bounce" strokeWidth={2.5} style={{ animationDuration: '3s' }} />
+        <p className="text-2xl text-teal-700 font-bold tracking-widest uppercase">
           Different levels for different needs
         </p>
-        <Layers className="w-8 h-8 text-lime-500 animate-bounce" strokeWidth={2.5} style={{ animationDuration: '3s', animationDelay: '1.5s' }} />
+        <Layers className="w-8 h-8 text-teal-500 animate-bounce" strokeWidth={2.5} style={{ animationDuration: '3s', animationDelay: '1.5s' }} />
       </div>
 
     </div>

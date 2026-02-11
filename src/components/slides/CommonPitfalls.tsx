@@ -7,7 +7,7 @@ interface PitfallData {
   title: string;
   desc: string;
   icon: React.ElementType;
-  theme: 'red' | 'amber' | 'orange' | 'clay' | 'gray';
+  theme: 'red' | 'amber' | 'orange' | 'clay' | 'purple';
   points: string[];
 }
 
@@ -76,7 +76,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       title: "Evaluation only for Reporting", 
       desc: "Treating it as a compliance task rather than learning.",
       icon: FileText, 
-      theme: "gray",
+      theme: "purple",
       points: [
         "Data is collected and filed but never analyzed for improvement.",
         "Field staff view collection as a burden, leading to poor data quality.",
@@ -93,6 +93,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       case 'amber': return { bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-800', icon: 'text-amber-600', iconBg: 'bg-amber-100', hover: 'hover:border-amber-400', bullet: 'bg-amber-500' };
       case 'orange': return { bg: 'bg-orange-50', border: 'border-orange-200', text: 'text-orange-800', icon: 'text-orange-600', iconBg: 'bg-orange-100', hover: 'hover:border-orange-400', bullet: 'bg-orange-500' };
       case 'clay': return { bg: 'bg-orange-100', border: 'border-orange-300', text: 'text-orange-900', icon: 'text-orange-700', iconBg: 'bg-orange-200', hover: 'hover:border-orange-500', bullet: 'bg-orange-600' };
+      case 'purple': return { bg: 'bg-purple-50', border: 'border-purple-300', text: 'text-purple-800', icon: 'text-purple-600', iconBg: 'bg-purple-100', hover: 'hover:border-purple-500', bullet: 'bg-purple-500' };
       default: return { bg: 'bg-gray-50', border: 'border-gray-300', text: 'text-gray-800', icon: 'text-gray-600', iconBg: 'bg-gray-200', hover: 'hover:border-gray-500', bullet: 'bg-gray-600' };
     }
   };
@@ -110,7 +111,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                 <AlertTriangle className="w-12 h-12 text-red-600" strokeWidth={2.5} />
             </div>
             <div>
-                <h2 className="text-4xl font-bold text-lime-950">
+                <h2 className="text-4xl font-bold text-slate-900">
                 Common Pitfalls
                 </h2>
                 <h3 className="text-2xl text-red-500 font-medium">
@@ -140,10 +141,10 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                 </div>
                 
                 <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-lime-950 leading-tight group-hover:text-black transition-colors">
+                    <h3 className="text-2xl font-bold text-slate-900 leading-tight group-hover:text-black transition-colors">
                     {item.title}
                     </h3>
-                    <p className="text-lg text-lime-700 font-medium mt-1 group-hover:text-lime-900 transition-colors">
+                    <p className="text-lg text-slate-600 font-medium mt-1 group-hover:text-slate-800 transition-colors">
                         {item.desc}
                     </p>
                 </div>
@@ -157,12 +158,12 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
       </div>
 
       {/* Footer Insight */}
-      <div className={`flex-none mt-6 bg-lime-950 rounded-2xl p-6 flex items-center justify-center gap-6 shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
-        <div className="p-3 bg-lime-900 rounded-full border border-lime-800">
-            <Scale className="w-10 h-10 text-yellow-600" />
+      <div className={`flex-none mt-6 bg-teal-900 rounded-2xl p-6 flex items-center justify-center gap-6 shadow-xl transition-all duration-1000 delay-1000 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:scale-[1.01]`}>
+        <div className="p-3 bg-teal-800 rounded-full border border-teal-700">
+            <Scale className="w-10 h-10 text-lime-400" />
         </div>
-        <p className="text-3xl font-bold text-yellow-100 tracking-wide">
-            Methodological rigor must match <span className="text-yellow-600 underline decoration-wavy underline-offset-4">program ambition</span>.
+        <p className="text-3xl font-bold text-lime-100 tracking-wide">
+            Methodological rigor must match <span className="text-lime-400 underline decoration-wavy underline-offset-4">program ambition</span>.
         </p>
       </div>
 
@@ -202,7 +203,7 @@ const CommonPitfalls: React.FC<SlideProps> = ({ isActive }) => {
                         {selectedPitfall.points.map((point, i) => (
                             <li key={i} className="flex items-start gap-4">
                                 <div className={`mt-2 p-1.5 rounded-full ${getThemeStyles(selectedPitfall.theme).bullet}`}></div>
-                                <span className="text-2xl font-medium text-lime-950 leading-snug">
+                                <span className="text-2xl font-medium text-slate-900 leading-snug">
                                     {point}
                                 </span>
                             </li>
