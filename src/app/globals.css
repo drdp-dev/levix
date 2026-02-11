@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-expletus), system-ui, sans-serif;
+  --font-sans: "Expletus Sans", system-ui, sans-serif;
   
   --color-olive-50: #f4f6ee;
   --color-olive-100: #eaeedd;
