@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { SlideProps } from '../../types';
-import { BookOpen, Building2, GraduationCap, HeartHandshake, Sparkles, Award, Trophy, Star, Target, Users, TrendingUp, HeartPulse, Leaf, BrainCircuit, CheckCircle2, Lightbulb, Rocket, Zap } from 'lucide-react';
+import { Hospital, Building2, HeartHandshake, Sparkles, Stethoscope, Syringe, Pill, HeartPulse, Microscope, TestTubes, BriefcaseMedical, Ambulance, Heart, Thermometer, Droplet, FlaskConical, Dna, PillBottle } from 'lucide-react';
 
 const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
   const [confetti, setConfetti] = useState<Array<{ id: number; icon: any; x: number; y: number; delay: number; duration: number; size: number; color: string }>>([]);
 
   useEffect(() => {
     if (isActive) {
-      const icons = [Sparkles, Award, Trophy, Star, HeartHandshake, Target, Users, TrendingUp, HeartPulse, Leaf, BrainCircuit, CheckCircle2, Lightbulb, Rocket, Zap];
+      const icons = [Stethoscope, Syringe, Pill, HeartPulse, Microscope, TestTubes, BriefcaseMedical, Ambulance, Heart, Thermometer, Droplet, PillBottle, FlaskConical, Dna, HeartHandshake];
       const colors = ['text-green-950', 'text-green-600', 'text-amber-600', 'text-yellow-700', 'text-orange-600', 'text-blue-500', 'text-amber-500', 'text-red-500'];
       
       let id = 0;
@@ -87,7 +87,7 @@ const ThankYou: React.FC<SlideProps> = ({ isActive }) => {
             {/* References Section */}
             <div className={`w-full max-w-4xl bg-white/80 backdrop-blur border-2 border-green-200 rounded-3xl p-8 shadow-sm transition-all duration-1000 delay-700 transform ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl hover:border-green-300 transition-all`}>
                 <div className="flex items-center gap-3 mb-6 border-b border-green-200 pb-3">
-                    <BookOpen className="w-8 h-8 text-green-700" />
+                    <Hospital className="w-8 h-8 text-green-700" />
                     <h3 className="text-2xl font-bold text-green-900 uppercase tracking-wide">References</h3>
                 </div>
                 <ul className="space-y-4">
