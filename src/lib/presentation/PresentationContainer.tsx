@@ -122,8 +122,12 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
       )}
 
       <div className="w-full h-full p-10">
-        <div className="relative w-full h-full">
-          <div className="aspect-[4/3] max-w-full max-h-full mx-auto relative overflow-hidden rounded-3xl shadow-2xl bg-white">
+        <div className="w-full h-full flex items-center justify-center">
+          <div style={{ 
+            aspectRatio: '4/3',
+            width: 'min(100%, calc(100vh * 4 / 3 - 80px))',
+            height: 'min(100%, calc(100vw * 3 / 4 - 60px))'
+          }} className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
             {slides.map((SlideComponent, index) => (
               <div
                 key={index}
