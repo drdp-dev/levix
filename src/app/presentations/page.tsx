@@ -15,7 +15,7 @@ const presentations = [
   {
     id: 'health-evaluation',
     title: 'Health Program Evaluation',
-    description: 'Comprehensive guide to evaluating health promotion and education programs',
+    description: 'Levitate your learning',
     slides: 23,
     duration: '45 min',
   },

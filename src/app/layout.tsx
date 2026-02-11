@@ -10,7 +10,7 @@ const expletus = Expletus_Sans({
 
 export const metadata: Metadata = {
   title: "Levix - Health Evaluation Presenter",
-  description: "Interactive presentation on health program evaluation",
+  description: "Levitate your learning",
   appleWebApp: {
     title: "LEVIX",
   },

@@ -3,9 +3,9 @@
 <div align="center">
   <img src="logo.png" alt="Levix Logo" width="120" height="120">
   
-  <p><strong>A modern, interactive full-screen presentation application built with Next.js, React, and Tailwind CSS.</strong></p>
+  <p><strong>Levitate your learning</strong></p>
   
-  <p>Create engaging presentations with smooth animations, interactive elements, and responsive design.</p>
+  <p>A modern, interactive full-screen presentation application built with Next.js, React, and Tailwind CSS.</p>
 
   ![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=flat-square&logo=next.js)
   ![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=flat-square&logo=react)
