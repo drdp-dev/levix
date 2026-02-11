@@ -125,8 +125,8 @@ export const PresentationContainer: React.FC<PresentationContainerProps> = ({
         <div className="w-full h-full flex items-center justify-center">
           <div style={{ 
             aspectRatio: '4/3',
-            width: 'min(100%, calc(100vh * 4 / 3 - 80px))',
-            height: 'min(100%, calc(100vw * 3 / 4 - 60px))'
+            width: 'min(100%, calc((100vh - 80px) * 4 / 3))',
+            height: 'min(100%, calc((100vw - 80px) * 3 / 4))'
           }} className="relative overflow-hidden rounded-3xl shadow-2xl bg-white">
             {slides.map((SlideComponent, index) => (
               <div
