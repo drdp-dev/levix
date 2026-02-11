@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Presentation, ArrowRight, Users, Calendar } from 'lucide-react';
+import { Presentation, ArrowRight, Calendar } from 'lucide-react';
 import { Expletus_Sans } from 'next/font/google';
+import Hero from '@/src/components/slides/Hero';
 
 const expletus = Expletus_Sans({
   subsets: ["latin"],
@@ -17,7 +18,6 @@ const presentations = [
     description: 'Comprehensive guide to evaluating health promotion and education programs',
     slides: 23,
     duration: '45 min',
-    thumbnail: '/icon1.png',
   },
 ];
 
@@ -51,18 +51,15 @@ export default function PresentationsPage() {
             <Link
               key={presentation.id}
               href={`/presentation/${presentation.id}`}
-              className="bg-[#1a1a1a] rounded-3xl p-6 border border-[#2a2a2a] hover:border-[#ffdc00]/50 transition-all hover:shadow-lg group"
+              className="bg-[#1a1a1a] rounded-3xl overflow-hidden border border-[#2a2a2a] hover:border-[#ffdc00]/50 transition-all hover:shadow-lg group"
             >
-              <div className="mb-4">
-                <Image
-                  src={presentation.thumbnail}
-                  alt={presentation.title}
-                  width={120}
-                  height={120}
-                  className="rounded-2xl mx-auto"
-                />
+              <div className="aspect-[4/3] bg-white overflow-hidden relative">
+                <div className="scale-[0.25] origin-top-left w-[400%] h-[400%]">
+                  <Hero isActive={true} />
+                </div>
               </div>
               
+              <div className="p-6">
               <h3 className={`text-2xl font-bold text-white mb-2 ${expletus.className}`}>
                 {presentation.title}
               </h3>
