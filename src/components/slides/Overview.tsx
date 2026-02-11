@@ -4,13 +4,15 @@ import { Target, Footprints, Globe2, AlertTriangle, Lightbulb, Map, ArrowRight }
 
 const Overview: React.FC<SlideProps> = ({ isActive }) => {
   return (
-    <div className={`w-full h-full p-10 relative bg-white flex flex-col transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`w-full h-full relative bg-white transition-opacity duration-700 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
         {/* Decorative Background */}
         <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-lime-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-yellow-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
+        {/* Content Wrapper with Padding */}
+        <div className="relative z-10 w-full h-full p-10 flex flex-col">
         {/* Header Section */}
-        <div className="flex-none mb-8 flex items-center justify-between border-b-4 border-lime-200 pb-4 relative z-10">
+        <div className="flex-none mb-8 flex items-center justify-between border-b-4 border-lime-200 pb-4">
             <div>
                 <div className={`flex items-center gap-3 mb-2 transition-all duration-1000 transform ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                     <Map className="w-8 h-8 text-lime-700" />
@@ -138,6 +140,8 @@ const Overview: React.FC<SlideProps> = ({ isActive }) => {
                     </p>
                  </div>
             </div>
+        </div>
+    </div>
         </div>
     </div>
   );
