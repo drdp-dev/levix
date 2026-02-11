@@ -16,7 +16,7 @@ export default function LandingPage() {
           </div>
           <Link 
             href="/presentation"
-            className="px-6 py-3 bg-olive-600 hover:bg-olive-700 text-white font-bold rounded-full transition-colors"
+            className="px-6 py-3 bg-forest-600 hover:bg-forest-700 text-white font-bold rounded-full transition-colors"
           >
             Launch Presentation
           </Link>
@@ -41,33 +41,33 @@ export default function LandingPage() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-4">
-              <Presentation className="w-8 h-8 text-blue-600" />
+          <div className="bg-white rounded-3xl p-8 shadow-sm border border-forest-100 hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-forest-50 rounded-2xl flex items-center justify-center mb-4">
+              <Presentation className="w-8 h-8 text-forest-600" />
             </div>
             <h3 className="text-xl font-bold text-olive-900 mb-2">Interactive Slides</h3>
             <p className="text-olive-600">Smooth animations, transitions, and engaging visual elements</p>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-forest-50 rounded-2xl flex items-center justify-center mb-4">
-              <Target className="w-8 h-8 text-forest-600" />
+          <div className="bg-white rounded-3xl p-8 shadow-sm border border-copper-100 hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-copper-50 rounded-2xl flex items-center justify-center mb-4">
+              <Target className="w-8 h-8 text-copper-600" />
             </div>
             <h3 className="text-xl font-bold text-olive-900 mb-2">Rich Content</h3>
             <p className="text-olive-600">Support for examples, case studies, and interactive elements</p>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-copper-50 rounded-2xl flex items-center justify-center mb-4">
-              <TrendingUp className="w-8 h-8 text-copper-600" />
+          <div className="bg-white rounded-3xl p-8 shadow-sm border border-clay-100 hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-clay-50 rounded-2xl flex items-center justify-center mb-4">
+              <TrendingUp className="w-8 h-8 text-clay-600" />
             </div>
             <h3 className="text-xl font-bold text-olive-900 mb-2">Structured Flow</h3>
             <p className="text-olive-600">Organized navigation with radial progress indicator</p>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-sm border border-olive-100 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-4">
-              <Users className="w-8 h-8 text-amber-600" />
+          <div className="bg-white rounded-3xl p-8 shadow-sm border border-cornsilk-200 hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-cornsilk-50 rounded-2xl flex items-center justify-center mb-4">
+              <Users className="w-8 h-8 text-cornsilk-700" />
             </div>
             <h3 className="text-xl font-bold text-olive-900 mb-2">Professional Design</h3>
             <p className="text-olive-600">Clean, modern interface optimized for large displays</p>
@@ -78,7 +78,7 @@ export default function LandingPage() {
         <div className="text-center">
           <Link 
             href="/presentation"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-olive-600 hover:bg-olive-700 text-white text-xl font-bold rounded-full transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-forest-600 hover:bg-forest-700 text-white text-xl font-bold rounded-full transition-colors shadow-lg hover:shadow-xl"
           >
             <Presentation className="w-6 h-6" />
             Start Presentation
